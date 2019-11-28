@@ -1,0 +1,140 @@
+$color-green1: #00865B;
+$color-green2: #2AA275;
+$color-green2: #18D379;
+$color-green3: #DCF4E8;
+$color-green3: #E7F1ED;
+$color-green3: #F6FBF9;
+
+
+
+
+
+
+
+/* ====================
+Переменные шрифтов в SCSS
+*/
+$font-family-roboto: Roboto,
+-apple-system,
+BlinkMacSystem,
+"Segoe UI",
+Oxygen,
+Ubuntu,
+Cantarell,
+"Open Sans",
+"Helvetica Neue",
+sans-serif;
+$font-family-opensans: "Open Sans",
+sans-serif;
+
+
+body {
+      font-family: Roboto, sans-serif;
+      color: #181920;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0;
+      margin: 0;
+}
+
+a {
+      text-decoration: none;
+}
+
+img {
+      max-width: 100%;
+      height: auto;
+}
+
+button {
+      padding: 0;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;
+      cursor: pointer;
+}
+
+ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+}
+
+.typography__flex-container {
+      position: relative;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+
+}
+
+.typography__header {
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: scroll;
+      overflow-x: hidden;
+      z-index: 10;
+
+
+}
+
+.header__navigation {
+      box-sizing: border-box;
+      width: 250px;
+      margin: 0;
+      padding: 120px 30px 30px;
+      background-color: #f8f8f8;
+}
+
+.header__navigation-menu {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+}
+
+.header__navigation-menu-item {
+      display: block;
+      font-size: 20px;
+      line-height: 30px;
+      color: #181920;
+}
+
+.header__navigation-list {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      margin-top: 5px;
+}
+
+.header__navigation-item {
+      display: block;
+      font-size: 17px;
+      line-height: 25px;
+      margin-bottom: 5px;
+      color: rgba(24, 25, 32, .5);
+}
+
+.typography__main {
+      padding-left: 250px;
+      position: relative;
+}
