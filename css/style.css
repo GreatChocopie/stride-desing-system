@@ -104,6 +104,10 @@ input[type=radio].visually-hidden {
   color: rgba(24, 25, 32, 0.75);
 }
 
+.header__navigation-menu-item:focus {
+  color: #2d52da;
+}
+
 .header__navigation-menu-item--current {
   display: block;
   font-size: 20px;
@@ -126,7 +130,8 @@ input[type=radio].visually-hidden {
   color: rgba(24, 25, 32, 0.5);
 }
 
-.header__navigation-item:hover {
+.header__navigation-item:hover,
+.header__navigation-item:focus {
   color: rgba(24, 25, 32, 0.3);
 }
 
@@ -159,6 +164,314 @@ input[type=radio].visually-hidden {
   width: 683px;
   font-size: 20px;
   line-height: 30px;
+}
+
+.typography__tittle-style {
+  margin-bottom: 40px;
+}
+
+.typography__tittle-style-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.typography__tittle-style-headline {
+  align-self: flex-start;
+  box-sizing: border-box;
+  padding: 0 15px;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.typography__tittle-style-h1 {
+  box-sizing: border-box;
+  min-height: 90px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typography__tittle-style-h2 {
+  box-sizing: border-box;
+  min-height: 90px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typography__tittle-style-h3 {
+  box-sizing: border-box;
+  min-height: 90px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typography__tittle-style-name {
+  box-sizing: border-box;
+  width: 356px;
+  padding: 0 15px;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(24, 25, 32, 0.5);
+}
+
+.typography__tittle-h1 {
+  box-sizing: border-box;
+  width: 713px;
+  padding: 0 15px;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+
+.typography__tittle-h2 {
+  box-sizing: border-box;
+  width: 713px;
+  padding: 0 15px;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+}
+
+.typography__tittle-h3 {
+  box-sizing: border-box;
+  width: 713px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+.typography__text-style {
+  margin-bottom: 40px;
+}
+
+.typography__text-style-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.typography__text-style-headline {
+  align-self: flex-start;
+  box-sizing: border-box;
+  padding: 0 15px;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.typography__text-style-subtitle {
+  box-sizing: border-box;
+  min-height: 90px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typography__text-style-paragraph {
+  box-sizing: border-box;
+  min-height: 90px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typography__text-style-name {
+  box-sizing: border-box;
+  width: 356px;
+  padding: 0 15px;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(24, 25, 32, 0.5);
+}
+
+.typography__text-subtitle {
+  box-sizing: border-box;
+  width: 713px;
+  padding: 0 15px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #181920;
+}
+
+.typography__text-paragraph {
+  box-sizing: border-box;
+  width: 713px;
+  padding: 0 15px;
+  font-size: 17px;
+  line-height: 25px;
+  color: #181920;
+}
+
+.typography__tech-style {
+  margin-bottom: 40px;
+}
+
+.typography__tech-style-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.typography__tech-style-headline {
+  align-self: flex-start;
+  box-sizing: border-box;
+  padding: 0 15px;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.typography__tech-style-link {
+  box-sizing: border-box;
+  min-height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typography__tech-style-auxiliary {
+  box-sizing: border-box;
+  min-height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typography__tech-style-label {
+  box-sizing: border-box;
+  min-height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typography__tech-style-name {
+  box-sizing: border-box;
+  width: 356px;
+  padding: 0 15px;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(24, 25, 32, 0.5);
+}
+
+.typography__tech-link {
+  box-sizing: border-box;
+  width: 713px;
+  padding: 0 15px;
+}
+
+.typography__tech-link-a {
+  transition: all 0.1s ease;
+  color: #2d52da;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.typography__tech-link-a:hover,
+.typography__tech-link-a:focus {
+  color: rgba(45, 82, 218, 0.75);
+}
+
+.typography__tech-auxiliary {
+  box-sizing: border-box;
+  width: 713px;
+  padding: 0 15px;
+  color: rgba(24, 25, 32, 0.5);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.typography__tech-label {
+  box-sizing: border-box;
+  width: 713px;
+  padding: 0 15px;
+  color: rgba(24, 25, 32, 0.5);
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.typography__span-style-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.typography__span-style-headline {
+  align-self: flex-start;
+  box-sizing: border-box;
+  padding: 0 15px;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.typography__span-style-marker {
+  box-sizing: border-box;
+  min-height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typography__span-style-link {
+  box-sizing: border-box;
+  min-height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typography__span-style-name {
+  box-sizing: border-box;
+  width: 356px;
+  padding: 0 15px;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(24, 25, 32, 0.5);
+}
+
+.typography__span-marker {
+  box-sizing: border-box;
+  width: 713px;
+  padding: 0 15px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #181920;
+}
+
+.typography__span-uppercase {
+  letter-spacing: 2px;
+}
+
+.typography__span-link {
+  box-sizing: border-box;
+  width: 713px;
+  padding: 0 15px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #181920;
+}
+
+.typography__span-link-a {
+  transition: all 0.1s ease;
+  color: #2d52da;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.typography__span-link-a:hover,
+.typography__span-link-a:focus {
+  color: rgba(45, 82, 218, 0.75);
 }
 
 /*# sourceMappingURL=style.css.map */
