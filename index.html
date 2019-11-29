@@ -20,12 +20,12 @@
                         <a class="header__navigation-logo" href=""><img class="header__navigation-logo-image"
                                     src="img/blue-logo.svg" width="105" height="30" alt="Логотип"></a>
                         <ul class="header__navigation-menu">
-                              <li><a class="header__navigation-menu-item--current" href="">Типографика</a>
+                              <li><a class="header__navigation-menu-item--current" href="#typography">Типографика</a>
                                     <ul class="header__navigation-list">
-                                          <li><a class="header__navigation-item" href="">Заголовки</a></li>
-                                          <li><a class="header__navigation-item" href="">Текст</a></li>
-                                          <li><a class="header__navigation-item" href="">Технические</a></li>
-                                          <li><a class="header__navigation-item" href="">Span</a></li>
+                                          <li><a class="header__navigation-item" href="#tittle-style">Заголовки</a></li>
+                                          <li><a class="header__navigation-item" href="#text-style">Текст</a></li>
+                                          <li><a class="header__navigation-item" href="#tech-style">Технические</a></li>
+                                          <li><a class="header__navigation-item" href="#span-style">Span</a></li>
                                     </ul>
                               </li>
                               <li><a class="header__navigation-menu-item" href="">Элементы формы</a>
@@ -72,101 +72,117 @@
                   </nav>
             </header>
             <main class="typography__main">
-                  <header class="typography__main-header">
-                        <h1 class="typography__header-headline">Типографика</h1>
-                        <p class="typography__header-subtitle">Текстовые стили делятся на контентные и технические.
-                              Рекомендуется использовать в проекте не более
-                              6 размеров шрифта, исключая особые случаи.</p>
-                  </header>
-                  <section class="typography__tittle-style">
-                        <h2 class="visually-hidden">Заголовки</h2>
-                        <table class="typography__tittle-style-table">
-                              <caption class="typography__tittle-style-headline">Заголовки</caption>
-                              <tr class="typography__tittle-style-h1">
-                                    <td class="typography__tittle-style-name">H1</td>
-                                    <td class="typography__tittle-h1">Заголовок</td>
-                              </tr>
-                              <tr class="typography__tittle-style-h2">
-                                    <td class="typography__tittle-style-name">H2</td>
-                                    <td class="typography__tittle-h2">Заголовок второго уровня</td>
-                              </tr>
-                              <tr class="typography__tittle-style-h3">
-                                    <td class="typography__tittle-style-name">H3</td>
-                                    <td class="typography__tittle-h3"><span>Заголовок третьего уровня</span>
-                                          <span>Заголовок третьего уровня</span>
-                                    </td>
-                              </tr>
-                        </table>
-                  </section>
-                  <section class="typography__text-style">
-                        <h2 class="visually-hidden">Текст</h2>
-                        <table class="typography__text-style-table">
-                              <caption class="typography__text-style-headline">Текст</caption>
-                              <tr class="typography__text-style-subtitle">
-                                    <td class="typography__text-style-name">Подзаголовок</td>
-                                    <td class="typography__text-subtitle">Речь зашла об одном из соседних помещиков.
-                                          «Дрянь, аристократишко», —
-                                          равнодушно заметил Базаров, который встречался с ним в Петербурге.</td>
-                              </tr>
-                              <tr class="typography__text-style-paragraph">
-                                    <td class="typography__text-style-name">Параграф</td>
-                                    <td class="typography__text-paragraph">Прогуляться собираетесь? Вечерок-то будет
-                                          хорош, только грозы бы вот не
-                                          было.
-                                          А впрочем, и лучше, кабы освежило... И вдруг Раскольникову ясно припомнилась
-                                          вся
-                                          сцена третьего дня под воротами; он сообразил, что кроме дворников там стояло
-                                          тогда
-                                          еще несколько человек, стояли и женщины. Он припомнил один голос, предлагавший
-                                          вести
-                                          его прямо в квартал. Лицо говорившего не мог он вспомнить и даже теперь не
-                                          признавал, но ему памятно было, что он даже что-то ответил ему тогда,
-                                          обернулся к
-                                          нему...</td>
-                              </tr>
-                        </table>
-                  </section>
-                  <section class="typography__tech-style">
-                        <h2 class="visually-hidden">Технические</h2>
-                        <table class="typography__tech-style-table">
-                              <caption class="typography__tech-style-headline">Технические</caption>
-                              <tr class="typography__tech-style-link">
-                                    <td class="typography__tech-style-name">Ссылка</td>
-                                    <td class="typography__tech-link"><a class="typography__tech-link-a" href="">Перейти
-                                                на сайт Студии</a></td>
-                              </tr>
-                              <tr class="typography__tech-style-auxiliary">
-                                    <td class="typography__tech-style-name">Вспомогательный</td>
-                                    <td class="typography__tech-auxiliary">Photo: Getty Images / Ilnur Kalimullin</td>
-                              </tr>
-                              <tr class="typography__tech-style-label">
-                                    <td class="typography__tech-style-name">Лейбл</td>
-                                    <td class="typography__tech-label">НАЗВАНИЕ КОМПАНИИ</td>
-                              </tr>
-                        </table>
+                  <a id="typography"></a>
+                  <div class="typography__main-container">
+                        <header class="typography__main-header">
+                              <h1 class="typography__header-headline">Типографика</h1>
+                              <p class="typography__header-subtitle">Текстовые стили делятся на контентные и
+                                    технические.
+                                    Рекомендуется использовать в проекте не более
+                                    6 размеров шрифта, исключая особые случаи.</p>
+                        </header>
+                        <section class="typography__tittle-style">
+                              <a id="tittle-style"></a>
+                              <h2 class="visually-hidden">Заголовки</h2>
+                              <table class="typography__tittle-style-table">
+                                    <caption class="typography__tittle-style-headline">Заголовки</caption>
+                                    <tr class="typography__tittle-style-h1">
+                                          <td class="typography__tittle-style-name">H1</td>
+                                          <td class="typography__tittle-h1">Заголовок</td>
+                                    </tr>
+                                    <tr class="typography__tittle-style-h2">
+                                          <td class="typography__tittle-style-name">H2</td>
+                                          <td class="typography__tittle-h2">Заголовок второго уровня</td>
+                                    </tr>
+                                    <tr class="typography__tittle-style-h3">
+                                          <td class="typography__tittle-style-name">H3</td>
+                                          <td class="typography__tittle-h3"><span>Заголовок третьего уровня</span>
+                                                <span>Заголовок третьего уровня</span>
+                                          </td>
+                                    </tr>
+                              </table>
+                        </section>
+                        <section class="typography__text-style">
+                              <a id="text-style"></a>
+                              <h2 class="visually-hidden">Текст</h2>
+                              <table class="typography__text-style-table">
+                                    <caption class="typography__text-style-headline">Текст</caption>
+                                    <tr class="typography__text-style-subtitle">
+                                          <td class="typography__text-style-name">Подзаголовок</td>
+                                          <td class="typography__text-subtitle">Речь зашла об одном из соседних
+                                                помещиков.
+                                                «Дрянь, аристократишко», —
+                                                равнодушно заметил Базаров, который встречался с ним в Петербурге.</td>
+                                    </tr>
+                                    <tr class="typography__text-style-paragraph">
+                                          <td class="typography__text-style-name">Параграф</td>
+                                          <td class="typography__text-paragraph">Прогуляться собираетесь? Вечерок-то
+                                                будет
+                                                хорош, только грозы бы вот не
+                                                было.
+                                                А впрочем, и лучше, кабы освежило... И вдруг Раскольникову ясно
+                                                припомнилась
+                                                вся
+                                                сцена третьего дня под воротами; он сообразил, что кроме дворников там
+                                                стояло
+                                                тогда
+                                                еще несколько человек, стояли и женщины. Он припомнил один голос,
+                                                предлагавший
+                                                вести
+                                                его прямо в квартал. Лицо говорившего не мог он вспомнить и даже теперь
+                                                не
+                                                признавал, но ему памятно было, что он даже что-то ответил ему тогда,
+                                                обернулся к
+                                                нему...</td>
+                                    </tr>
+                              </table>
+                        </section>
+                        <section class="typography__tech-style">
+                              <a id="tech-style"></a>
+                              <h2 class="visually-hidden">Технические</h2>
+                              <table class="typography__tech-style-table">
+                                    <caption class="typography__tech-style-headline">Технические</caption>
+                                    <tr class="typography__tech-style-link">
+                                          <td class="typography__tech-style-name">Ссылка</td>
+                                          <td class="typography__tech-link"><a class="typography__tech-link-a"
+                                                      href="">Перейти
+                                                      на сайт Студии</a></td>
+                                    </tr>
+                                    <tr class="typography__tech-style-auxiliary">
+                                          <td class="typography__tech-style-name">Вспомогательный</td>
+                                          <td class="typography__tech-auxiliary">Photo: Getty Images / Ilnur Kalimullin
+                                          </td>
+                                    </tr>
+                                    <tr class="typography__tech-style-label">
+                                          <td class="typography__tech-style-name">Лейбл</td>
+                                          <td class="typography__tech-label">НАЗВАНИЕ КОМПАНИИ</td>
+                                    </tr>
+                              </table>
 
-                  </section>
-                  <section class="typography__span-style">
-                        <h2 class="visually-hidden">Span</h2>
-                        <table class="typography__span-style-table">
-                              <caption class="typography__span-style-headline">Технические</caption>
-                              <tr class="typography__span-style-marker">
-                                    <td class="typography__span-style-name">Верхний регистр и курсив</td>
-                                    <td class="typography__span-marker"><span
-                                                class="typography__span-uppercase">ЮНЕСКО</span> —
-                                          специализированное учреждение
-                                          <em class="typography__span-italic">Организации Объединённых Наций</em>
-                                          по
-                                          вопросам образования, науки и культуры</td>
-                              </tr>
-                              <tr class="typography__span-style-link">
-                                    <td class="typography__span-style-name">Ссылка</td>
-                                    <td class="typography__span-link">Посмотреть результаты отбора можно <a
-                                                class="typography__span-link-a" href="">на сайте нашей
-                                                Студии</a></td>
-                              </tr>
-                        </table>
-                  </section>
+                        </section>
+                        <section class="typography__span-style">
+                              <a id="span-style"></a>
+                              <h2 class="visually-hidden">Span</h2>
+                              <table class="typography__span-style-table">
+                                    <caption class="typography__span-style-headline">Span</caption>
+                                    <tr class="typography__span-style-marker">
+                                          <td class="typography__span-style-name">Верхний регистр и курсив</td>
+                                          <td class="typography__span-marker"><span
+                                                      class="typography__span-uppercase">ЮНЕСКО</span> —
+                                                специализированное учреждение
+                                                <em class="typography__span-italic">Организации Объединённых Наций</em>
+                                                по
+                                                вопросам образования, науки и культуры</td>
+                                    </tr>
+                                    <tr class="typography__span-style-link">
+                                          <td class="typography__span-style-name">Ссылка</td>
+                                          <td class="typography__span-link">Посмотреть результаты отбора можно <a
+                                                      class="typography__span-link-a" href="">на сайте нашей
+                                                      Студии</a></td>
+                                    </tr>
+                              </table>
+                        </section>
+                  </div>
             </main>
       </div>
 </body>

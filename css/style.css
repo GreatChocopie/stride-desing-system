@@ -137,10 +137,15 @@ input[type=radio].visually-hidden {
 
 .typography__main {
   width: 100%;
-  box-sizing: border-box;
   position: relative;
   margin-left: 250px;
   padding: 80px 30px;
+}
+
+.typography__main-container {
+  width: 1039px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .typography__main-header {
