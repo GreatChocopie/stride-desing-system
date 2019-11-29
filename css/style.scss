@@ -95,6 +95,7 @@ input[type="radio"].visually-hidden {
       z-index: 10;
 
 
+
 }
 
 .header__navigation {
@@ -104,6 +105,7 @@ input[type="radio"].visually-hidden {
       margin: 0;
       padding: 0;
       background-color: hsla(240, 4%, 95%, .9);
+
 }
 
 .header__navigation-logo {
@@ -129,6 +131,17 @@ input[type="radio"].visually-hidden {
       color: #181920;
 }
 
+.header__navigation-menu-item:hover {
+      color: rgba(24, 25, 32, .75);
+}
+
+.header__navigation-menu-item--current {
+      display: block;
+      font-size: 20px;
+      line-height: 30px;
+      color: #2d52da;
+}
+
 .header__navigation-list {
       display: flex;
       flex-direction: column;
@@ -144,7 +157,39 @@ input[type="radio"].visually-hidden {
       color: rgba(24, 25, 32, .5);
 }
 
+.header__navigation-item:hover {
+      color: rgba(24, 25, 32, .3);
+}
+
 .typography__main {
-      padding-left: 250px;
       position: relative;
+      margin-left: 250px;
+      padding: 80px 30px;
+}
+
+.typography__main-header {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      padding-bottom: 80px;
+      margin-bottom: 80px;
+      border-bottom: 1px solid rgba(24, 25, 32, .1);
+
+}
+
+.typography__header-headline {
+      padding: 0;
+      margin: 0;
+      width: 683px;
+      font-size: 90px;
+      line-height: 90px;
+      // letter-spacing: -2px;
+      font-weight: 700;
+      margin-bottom: 30px;
+}
+
+.typography__header-subtitle {
+      width: 683px;
+      font-size: 20px;
+      line-height: 30px;
 }
