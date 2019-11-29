@@ -490,6 +490,12 @@ input[type=radio].visually-hidden {
   padding: 80px 30px;
 }
 
+.form-elements__main-container {
+  width: 1039px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .form-elements__main-header {
   display: flex;
   flex-direction: column;
