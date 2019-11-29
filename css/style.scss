@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
       margin: 0;
       padding: 0;
       height: 100vh;
-      overflow: scroll;
+      overflow: auto;
       overflow-x: hidden;
       z-index: 10;
 
@@ -98,15 +98,25 @@ input[type="radio"].visually-hidden {
 }
 
 .header__navigation {
+      position: relative;
       box-sizing: border-box;
       width: 250px;
       margin: 0;
-      padding: 120px 30px 30px;
-      background-color: #f8f8f8;
+      padding: 0;
+      background-color: hsla(240, 4%, 95%, .9);
+}
+
+.header__navigation-logo {
+      position: fixed;
+      box-sizing: border-box;
+      z-index: 1;
+      width: 250px;
+      padding: 30px;
+      background-color: hsla(240, 4%, 95%, .9);
 }
 
 .header__navigation-menu {
-      padding: 0;
+      padding: 120px 30px 30px;
       margin: 0;
       display: flex;
       flex-direction: column;
