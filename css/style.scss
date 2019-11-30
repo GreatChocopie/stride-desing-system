@@ -448,10 +448,6 @@ input[type="radio"].visually-hidden {
 
 
 
-// .typography__span-style {
-//       margin-bottom: 40px;
-// }
-
 .typography__span-style-table {
       display: flex;
       flex-direction: column;
@@ -531,6 +527,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__main {
       width: 100%;
+      box-sizing: border-box;
       position: relative;
       margin-left: 250px;
       padding: 80px 30px;
@@ -570,4 +567,269 @@ input[type="radio"].visually-hidden {
       line-height: 30px;
       margin: 0;
       padding: 0;
+}
+
+.form-elements__field-style {
+      margin-bottom: 40px;
+}
+
+.form-elements__field-style-table {
+      display: flex;
+      flex-direction: column;
+}
+
+.form-elements__field-style-headline {
+      align-self: flex-start;
+      box-sizing: border-box;
+
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: 400;
+      margin-bottom: 30px;
+}
+
+.form-elements__field-style-ordinary {
+      box-sizing: border-box;
+      min-height: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__field-style-error {
+      box-sizing: border-box;
+      min-height: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__field-style-warning {
+      box-sizing: border-box;
+      min-height: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__field-style-success {
+      box-sizing: border-box;
+      min-height: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__field-style-blocked {
+      box-sizing: border-box;
+      min-height: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__field-style-icon {
+      box-sizing: border-box;
+      min-height: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__field-style-text {
+      box-sizing: border-box;
+      min-height: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__field-style-button {
+      box-sizing: border-box;
+      min-height: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__field-style-name {
+      box-sizing: border-box;
+      width: 326px;
+      font-size: 20px;
+      line-height: 30px;
+      color: rgba(24, 25, 32, .5);
+}
+
+.form-elements__field-ordinary {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+}
+
+.form-elements__field-ordinary-label {
+      color: rgba(24, 25, 32, .5);
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+}
+
+.form-elements__field-ordinary-input1 {
+      box-sizing: border-box;
+      border-color: rgba(24, 25, 32, .1);
+      margin-bottom: 10px;
+      padding: 9px 14px;
+      border-style: solid;
+      border-width: 1px;
+      transition: all .1s ease-in-out;
+      cursor: text;
+      height: 50px;
+      border-radius: 1px;
+      font-size: 17px;
+      line-height: 25px;
+}
+
+.form-elements__field-ordinary-input2 {
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      margin-bottom: 10px;
+      padding: 9px 0;
+      transition: all .1s ease-in-out;
+      cursor: text;
+      height: 50px;
+      border-radius: 1px;
+      font-size: 17px;
+      line-height: 25px;
+}
+
+.form-elements__field-ordinary-input1:hover {
+      border-color: rgba(24, 25, 32, .2);
+}
+
+.form-elements__field-ordinary-input2:hover {
+      border-color: rgba(24, 25, 32, .2);
+}
+
+.form-elements__field-ordinary-input1:focus {
+      outline: none;
+      padding-bottom: 8px;
+      border-color: rgba(24, 25, 32, .2);
+      border-bottom-color: #2d52da;
+      border-bottom-width: 2px;
+}
+
+.form-elements__field-ordinary-input2:focus {
+      outline: none;
+      padding-bottom: 8px;
+      border-color: rgba(24, 25, 32, .2);
+      border-bottom-color: #2d52da;
+      border-bottom-width: 2px;
+}
+
+.form-elements__field-success {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+}
+
+.form-elements__field-success-label {
+      color: rgba(24, 25, 32, .5);
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+}
+
+.form-elements__field-success-input1 {
+      box-sizing: border-box;
+      border-color: #0f995e;
+      margin-bottom: 10px;
+      padding: 9px 14px;
+      border-style: solid;
+      border-width: 1px;
+      transition: all .1s ease-in-out;
+      cursor: text;
+      height: 50px;
+      border-radius: 1px;
+      font-size: 17px;
+      line-height: 25px;
+}
+
+.form-elements__field-success-input2 {
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid #0f995e;
+      margin-bottom: 10px;
+      padding: 9px 0;
+      transition: all .1s ease-in-out;
+      cursor: text;
+      height: 50px;
+      border-radius: 1px;
+      font-size: 17px;
+      line-height: 25px;
+}
+
+// .form-elements__field-success-input1:hover {
+//       border-color: rgba(24, 25, 32, .2);
+// }
+
+// .form-elements__field-success-input2:hover {
+//       border-color: rgba(24, 25, 32, .2);
+// }
+
+.form-elements__field-success-input1:focus {
+      outline: none;
+      padding-bottom: 8px;
+      border-color: #0f995e;
+      border-bottom-color: #0f995e;
+      border-bottom-width: 2px;
+}
+
+.form-elements__field-success-input2:focus {
+      outline: none;
+      padding-bottom: 8px;
+      border-color: #0f995e;
+      border-bottom-color: #0f995e;
+      border-bottom-width: 2px;
+}
+
+.form-elements__field-success-text {
+      font-size: 14px;
+      line-height: 20px;
+      color: #0f995e;
+}
+
+.form-elements__field-warning {
+      width: 326px;
+      box-sizing: border-box;
+}
+
+.form-elements__field-error {
+      width: 326px;
+      box-sizing: border-box;
+}
+
+.form-elements__field-blocked {
+      width: 326px;
+      box-sizing: border-box;
+}
+
+.form-elements__field-icon {
+      width: 326px;
+      box-sizing: border-box;
+}
+
+.form-elements__field-button {
+      width: 326px;
+      box-sizing: border-box;
+
+}
+
+.form-elements__field-text {
+      width: 326px;
+      box-sizing: border-box;
+
 }

@@ -82,28 +82,42 @@
                               <table class="form-elements__field-style-table">
                                     <caption class="form-elements__field-style-headline">Поля</caption>
                                     <tr class="form-elements__field-style-ordinary">
-                                          <td class="form-elements__field-style-name">Обычные</td>
+                                          <td class="form-elements__field-style-name">Обычное</td>
                                           <td class="form-elements__field-ordinary">
-                                                <div><label>Лейбл</label><input></div>
+                                                <label class="form-elements__field-ordinary-label">Лейбл</label><input
+                                                      class="form-elements__field-ordinary-input1" type="text"
+                                                      placeholder="Заглушка">
                                           </td>
-                                          <td class="form-elements__field-ordinary">
-                                                <div><label>Лейбл</label><input></div>
+                                          <td>
+                                                <div class="form-elements__field-ordinary">
+                                                      <label
+                                                            class="form-elements__field-ordinary-label">Лейбл</label><input
+                                                            class="form-elements__field-ordinary-input2"
+                                                            placeholder="Заглушка" type="text">
+                                                </div>
                                           </td>
                                     </tr>
-                                    <tr class="form-elements__field-style-ordinary">
+                                    <tr class="form-elements__field-style-success">
                                           <td class="form-elements__field-style-name">Успех</td>
-                                          <td class="form-elements__field-success">
-                                                <div><label>Лейбл</label><input>
-                                                      <div>Успешно</div>
+                                          <td>
+                                                <div class="form-elements__field-success">
+                                                      <label
+                                                            class="form-elements__field-success-label">Лейбл</label><input
+                                                            class="form-elements__field-success-input1" type="text"
+                                                            placeholder="Заглушка">
+                                                      <div class="form-elements__field-success-text">Успешно</div>
                                                 </div>
                                           </td>
-                                          <td class="form-elements__field-success">
-                                                <div><label>Лейбл</label><input>
-                                                      <div>Успешно</div>
+                                          <td>
+                                                <div class="form-elements__field-success"><label
+                                                            class="form-elements__field-success-label">Лейбл</label><input
+                                                            class="form-elements__field-success-input2" type="text"
+                                                            placeholder="Заглушка">
+                                                      <div class="form-elements__field-success-text">Успешно</div>
                                                 </div>
                                           </td>
                                     </tr>
-                                    <tr class="form-elements__field-style-ordinary">
+                                    <tr class="form-elements__field-style-warning">
                                           <td class="form-elements__field-style-name">Предупреждение</td>
                                           <td class="form-elements__field-warning">
                                                 <div><label>Лейбл</label><input>
@@ -116,7 +130,7 @@
                                                 </div>
                                           </td>
                                     </tr>
-                                    <tr class="form-elements__field-style-ordinary">
+                                    <tr class="form-elements__field-style-error">
                                           <td class="form-elements__field-style-name">Ошибка</td>
                                           <td class="form-elements__field-error">
                                                 <div><label>Лейбл</label><input>
@@ -129,6 +143,59 @@
                                                 </div>
                                           </td>
                                     </tr>
+                                    <tr class="form-elements__field-style-blocked">
+                                          <td class="form-elements__field-style-name">Заблокированно</td>
+                                          <td class="form-elements__field-blocked">
+                                                <div class="form-elements__field-blocked-container"><label
+                                                            class="form-elements__field-blocked-label">Лейбл</label><input
+                                                            class="form-elements__field-blocked-input">
+                                                </div>
+                                          </td>
+                                          <td class="form-elements__field-blocked">
+                                                <div><label>Лейбл</label><input>
+                                                </div>
+                                          </td>
+                                    </tr>
+                                    <tr class="form-elements__field-style-icon">
+                                          <td class="form-elements__field-style-name">С иконкой</td>
+                                          <td class="form-elements__field-icon">
+                                                <div><label>Лейбл</label><input>
+                                                </div>
+                                          </td>
+                                          <td class="form-elements__field-icon">
+                                                <div><label>Лейбл</label><input>
+                                                </div>
+                                          </td>
+                                    </tr>
+                                    <tr class="form-elements__field-style-button">
+                                          <td class="form-elements__field-style-name">С кнопкой</td>
+                                          <td class="form-elements__field-button">
+                                                <div><label>Лейбл</label><input>
+                                                </div>
+                                          </td>
+                                          <td class="form-elements__field-button">
+                                                <div><label>Лейбл</label><input>
+                                                </div>
+                                          </td>
+                                    </tr>
+                                    <tr class="form-elements__field-style-text">
+                                          <td class="form-elements__field-style-name">Текстовое поле</td>
+                                          <td class="form-elements__field-text">
+                                                <div><label>Лейбл</label>
+                                                      <div>Минимум 50 символов</div>
+                                                </div>
+                                                <textarea></textarea>
+                                                <div>Это обязательное поле</div>
+                                          </td>
+                                          <td class="form-elements__field-text">
+                                                <div><label>Лейбл</label>
+                                                      <div>Минимум 50 символов</div>
+                                                </div>
+                                                <textarea></textarea>
+                                                <div>Это обязательное поле</div>
+                                          </td>
+                                    </tr>
+
 
                               </table>
                         </section>
