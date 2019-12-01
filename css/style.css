@@ -1188,4 +1188,159 @@ input[type=radio].visually-hidden {
   color: rgba(24, 25, 32, 0.5);
 }
 
+.form-elements__select-style {
+  margin-bottom: 40px;
+}
+
+.form-elements__select-style-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-elements__select-style-headline {
+  align-self: flex-start;
+  box-sizing: border-box;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.form-elements__select-style-ordinary {
+  box-sizing: border-box;
+  min-height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-elements__select-style-icon {
+  box-sizing: border-box;
+  min-height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-elements__select-style-blocked {
+  box-sizing: border-box;
+  min-height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-elements__select-style-name {
+  box-sizing: border-box;
+  width: 326px;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(24, 25, 32, 0.5);
+}
+
+.form-elements__select-ordinary {
+  width: 326px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-elements__select-icon {
+  width: 326px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-elements__select-blocked {
+  width: 326px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-elements__select-ordinary-label {
+  color: rgba(24, 25, 32, 0.5);
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.form-elements__select-icon-label {
+  color: rgba(24, 25, 32, 0.5);
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.form-elements__select-blocked-label {
+  color: rgba(24, 25, 32, 0.5);
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.form-elements__field-ordinary-select1 {
+  position: relative;
+  height: 50px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: rgba(24, 25, 32, 0.1);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.form-elements__field-ordinary-select2 {
+  position: relative;
+  height: 50px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: rgba(24, 25, 32, 0.1);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.form-elements__field-icon-select1 {
+  position: relative;
+  height: 50px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: rgba(24, 25, 32, 0.1);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.form-elements__field-icon-select2 {
+  position: relative;
+  height: 50px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: rgba(24, 25, 32, 0.1);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.form-elements__field-blocked-select1 {
+  position: relative;
+  height: 50px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: rgba(24, 25, 32, 0.1);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.form-elements__field-blocked-select2 {
+  position: relative;
+  height: 50px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: rgba(24, 25, 32, 0.1);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
