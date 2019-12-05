@@ -1459,3 +1459,672 @@ input[type="radio"].visually-hidden {
 .form-elements__field-blocked-select2:hover {
       border-color: rgba(24, 25, 32, .2);
 }
+
+.form-elements__button-style {
+      margin-bottom: 40px;
+}
+
+.form-elements__button-style-table {
+      display: flex;
+      flex-direction: column;
+}
+
+.form-elements__button-style-header {
+      align-self: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-width: 320px;
+      box-sizing: border-box;
+}
+
+.form-elements__button-style-headline {
+      align-self: flex-start;
+      box-sizing: border-box;
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: 400;
+      margin-bottom: 10px;
+}
+
+.form-elements__button-style-notice {
+      padding: 0;
+      width: 310px;
+      box-sizing: border-box;
+      padding-left: 30px;
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: start;
+      font-family: Pragmatica, sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      color: rgba(24, 25, 32, .5);
+}
+
+.form-elements__button-style-name {
+      box-sizing: border-box;
+      width: 326px;
+      font-size: 20px;
+      line-height: 30px;
+      color: rgba(24, 25, 32, .5);
+}
+
+.form-elements__button-style-ordinary {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-round {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-secondary {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-danger {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-icon {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-roundicon {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-dropdown {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-icondropdown {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-full {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-secondaryfull {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-blocked {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-small {
+      padding: 0;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-smallround {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-smallsecondary {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-text {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-style-smalltext {
+      box-sizing: border-box;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.form-elements__button-wrapper {
+      width: 326px;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+}
+
+.form-elements__button-ordinary1 {
+      min-width: 145px;
+      min-height: 50px;
+      box-sizing: border-box;
+      padding: 10px 30px;
+      margin-bottom: 10px;
+      border-radius: 1px;
+      background-color: #2d52da;
+      transition: all .1s ease-in-out;
+      color: #fff;
+      line-height: 30px;
+      cursor: pointer;
+      font-size: 17px;
+}
+
+.form-elements__button-ordinary1:hover,
+.form-elements__button-ordinary1:focus {
+      background-color: #294bc7;
+}
+
+.form-elements__button-ordinary2 {
+      min-width: 145px;
+      min-height: 50px;
+      padding: 9px 29px;
+      box-sizing: border-box;
+      border: 1px solid #2d52da;
+      border-radius: 1px;
+      transition: all .1s ease-in-out;
+      color: #2d52da;
+      font-size: 17px;
+      line-height: 30px;
+      cursor: pointer;
+}
+
+.form-elements__button-ordinary2:hover,
+.form-elements__button-ordinary2:focus {
+      opacity: .75;
+}
+
+.form-elements__button-round1 {
+      min-width: 145px;
+      min-height: 50px;
+      box-sizing: border-box;
+      padding: 10px 30px;
+      margin-bottom: 10px;
+      border-radius: 25px;
+      background-color: #2d52da;
+      transition: all .1s ease-in-out;
+      color: #fff;
+      line-height: 30px;
+      cursor: pointer;
+      font-size: 17px;
+}
+
+.form-elements__button-round1:hover,
+.form-elements__button-round1:focus {
+      background-color: #294bc7;
+}
+
+.form-elements__button-round2 {
+      min-width: 145px;
+      min-height: 50px;
+      padding: 9px 29px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #2d52da;
+      border-radius: 25px;
+      transition: all .1s ease-in-out;
+      color: #2d52da;
+      font-size: 17px;
+      line-height: 30px;
+      cursor: pointer;
+}
+
+.form-elements__button-round2:hover,
+.form-elements__button-round2:focus {
+      opacity: .75;
+}
+
+.form-elements__button-secondary1 {
+      min-width: 145px;
+      min-height: 50px;
+      box-sizing: border-box;
+      padding: 10px 30px;
+      margin-bottom: 10px;
+      transition: all .1s ease-in-out;
+      line-height: 30px;
+      cursor: pointer;
+      font-size: 17px;
+      background-color: rgba(24, 25, 32, .05);
+      color: rgba(24, 25, 32, .5);
+}
+
+.form-elements__button-secondary1:hover,
+.form-elements__button-secondary1:focus {
+      background-color: rgba(24, 25, 32, .1);
+      color: #2d52da;
+}
+
+
+.form-elements__button-secondary2 {
+      min-width: 145px;
+      min-height: 50px;
+      padding: 9px 29px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid rgba(24, 25, 32, .1);
+      border-radius: 1px;
+      transition: all .1s ease-in-out;
+      color: rgba(24, 25, 32, .5);
+      font-size: 17px;
+      line-height: 30px;
+      cursor: pointer;
+}
+
+.form-elements__button-secondary2:hover,
+.form-elements__button-secondary2:focus {
+      border-color: rgba(24, 25, 32, .2);
+      opacity: 1;
+      color: #2d52da;
+}
+
+.form-elements__button-danger1 {
+      min-width: 145px;
+      min-height: 50px;
+      box-sizing: border-box;
+      padding: 10px 30px;
+      margin-bottom: 10px;
+      transition: all .1s ease-in-out;
+      line-height: 30px;
+      cursor: pointer;
+      font-size: 17px;
+      background-color: #ea4d47;
+      color: #ffffff;
+}
+
+.form-elements__button-danger1:hover,
+.form-elements__button-danger1:focus {
+      background-color: #d54641;
+}
+
+.form-elements__button-danger2 {
+      min-width: 145px;
+      min-height: 50px;
+      padding: 9px 29px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ea4d47;
+      border-radius: 1px;
+      transition: all .1s ease-in-out;
+      color: #ea4d47;
+      font-size: 17px;
+      line-height: 30px;
+      cursor: pointer;
+}
+
+.form-elements__button-danger2:hover,
+.form-elements__button-danger2:focus {
+      border-color: #d54641;
+      color: #d54641;
+}
+
+.form-elements__button-icon1 {}
+
+.form-elements__button-icon2 {}
+
+
+.form-elements__button-roundicon1 {}
+
+.form-elements__button-roundicon2 {}
+
+.form-elements__button-dropdown1 {}
+
+.form-elements__button-dropdown2 {}
+
+.form-elements__button-icondropdown1 {}
+
+.form-elements__button-icondropdown2 {}
+
+
+.form-elements__button-full1 {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 30px;
+      margin-bottom: 10px;
+      border-radius: 1px;
+      background-color: #2d52da;
+      transition: all .1s ease-in-out;
+      color: #fff;
+      line-height: 30px;
+      cursor: pointer;
+      font-size: 17px;
+}
+
+.form-elements__button-full1:hover,
+.form-elements__button-full1:focus {
+      background-color: #294bc7;
+}
+
+.form-elements__button-full2 {
+      width: 100%;
+      padding: 9px 29px;
+      box-sizing: border-box;
+      border: 1px solid #2d52da;
+      border-radius: 1px;
+      transition: all .1s ease-in-out;
+      color: #2d52da;
+      font-size: 17px;
+      line-height: 30px;
+      cursor: pointer;
+}
+
+.form-elements__button-full2:hover,
+.form-elements__button-full2:focus {
+      opacity: .75;
+}
+
+.form-elements__button-secondaryfull1 {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 30px;
+      margin-bottom: 10px;
+      transition: all .1s ease-in-out;
+      line-height: 30px;
+      cursor: pointer;
+      font-size: 17px;
+      background-color: rgba(24, 25, 32, .05);
+      color: rgba(24, 25, 32, .5);
+}
+
+.form-elements__button-secondaryfull1:hover,
+.form-elements__button-secondaryfull1:focus {
+      background-color: rgba(24, 25, 32, .1);
+      color: #2d52da;
+}
+
+
+.form-elements__button-secondaryfull2 {
+      width: 100%;
+      padding: 9px 29px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid rgba(24, 25, 32, .1);
+      border-radius: 1px;
+      transition: all .1s ease-in-out;
+      color: rgba(24, 25, 32, .5);
+      font-size: 17px;
+      line-height: 30px;
+      cursor: pointer;
+}
+
+.form-elements__button-secondaryfull2:hover,
+.form-elements__button-secondaryfull2:focus {
+      border-color: rgba(24, 25, 32, .2);
+      opacity: 1;
+      color: #2d52da;
+}
+
+.form-elements__button-blocked1 {
+      min-width: 145px;
+      min-height: 50px;
+      box-sizing: border-box;
+      padding: 10px 30px;
+      margin-bottom: 10px;
+      border-radius: 1px;
+      background-color: #2d52da;
+      color: #ffffff;
+      line-height: 30px;
+      font-size: 17px;
+      opacity: .5;
+      cursor: not-allowed;
+}
+
+.form-elements__button-blocked2 {
+      min-width: 145px;
+      min-height: 50px;
+      padding: 9px 29px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #2d52da;
+      border-radius: 1px;
+      color: #2d52da;
+      font-size: 17px;
+      line-height: 30px;
+      opacity: .5;
+      cursor: not-allowed;
+}
+
+.form-elements__button-small1 {
+      min-width: 135px;
+      min-height: 30px;
+      padding: 5px 20px;
+      box-sizing: border-box;
+      border-radius: 1px;
+      background-color: #2d52da;
+      transition: all .1s ease-in-out;
+      color: #fff;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+}
+
+.form-elements__button-small1:hover,
+.form-elements__button-small1:focus {
+      background-color: #294bc7;
+}
+
+.form-elements__button-small2 {
+      min-width: 110px;
+      min-height: 32px;
+      padding: 5px 19px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #2d52da;
+      border-radius: 1px;
+      color: #2d52da;
+      transition: all .1s ease-in-out;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+}
+
+.form-elements__button-small2:hover,
+.form-elements__button-small2:focus {
+      opacity: .75;
+}
+
+.form-elements__button-smallround1 {
+      min-width: 135px;
+      min-height: 30px;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border-radius: 25px;
+      background-color: #2d52da;
+      transition: all .1s ease-in-out;
+      color: #fff;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+}
+
+.form-elements__button-smallround1:hover,
+.form-elements__button-smallround1:focus {
+      background-color: #294bc7;
+}
+
+.form-elements__button-smallround2 {
+      min-width: 110px;
+      min-height: 32px;
+      padding: 5px 19px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #2d52da;
+      border-radius: 25px;
+      color: #2d52da;
+      transition: all .1s ease-in-out;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+}
+
+.form-elements__button-smallround2:hover,
+.form-elements__button-smallround2:focus {
+      opacity: .75;
+}
+
+.form-elements__button-smallsecondary1 {
+      min-width: 135px;
+      min-height: 30px;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border-radius: 1px;
+      background-color: rgba(24, 25, 32, .05);
+      color: rgba(24, 25, 32, .5);
+      transition: all .1s ease-in-out;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+}
+
+.form-elements__button-smallsecondary1:hover,
+.form-elements__button-smallsecondary1:focus {
+      background-color: rgba(24, 25, 32, .1);
+      color: #2d52da;
+}
+
+.form-elements__button-smallsecondary2 {
+      min-width: 110px;
+      min-height: 32px;
+      padding: 5px 19px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid rgba(24, 25, 32, .1);
+      border-radius: 1px;
+      color: rgba(24, 25, 32, .5);
+      transition: all .1s ease-in-out;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+}
+
+.form-elements__button-smallsecondary2:hover,
+.form-elements__button-smallsecondary2:focus {
+      border-color: rgba(24, 25, 32, .2);
+      opacity: 1;
+      color: #2d52da;
+}
+
+
+.form-elements__button-text1 {
+      min-width: 198px;
+      min-height: 30px;
+      padding-left: 40px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      transition: all .1s ease;
+      color: #2d52da;
+      font-size: 20px;
+      line-height: 30px;
+      cursor: pointer;
+}
+
+.form-elements__button-text1:hover,
+.form-elements__button-text1:focus {
+      color: rgba(45, 82, 218, .75);
+}
+
+.form-elements__button-text2 {
+      min-width: 198px;
+      min-height: 30px;
+      padding-left: 40px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      transition: all .1s ease;
+      color: rgba(24, 25, 32, .5);
+      font-size: 20px;
+      line-height: 30px;
+      cursor: pointer;
+}
+
+.form-elements__button-text2:hover,
+.form-elements__button-text2:focus {
+      color: #2d52da;
+}
+
+.form-elements__button-smalltext1 {
+      min-width: 140px;
+      min-height: 20px;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      transition: all .1s ease;
+      color: #2d52da;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+}
+
+.form-elements__button-smalltext1:hover,
+.form-elements__button-smalltext1:focus {
+      color: rgba(45, 82, 218, .75);
+}
+
+.form-elements__button-smalltext2 {
+      min-width: 140px;
+      min-height: 20px;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      transition: all .1s ease;
+      color: rgba(24, 25, 32, .5);
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+}
+
+.form-elements__button-smalltext2:hover,
+.form-elements__button-smalltext2:focus {
+      color: #2d52da;
+}
