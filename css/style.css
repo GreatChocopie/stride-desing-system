@@ -2480,8 +2480,9 @@ input[type=radio].visually-hidden {
   min-height: 25px;
   padding-left: 40px;
   position: relative;
-  font-size: 16px;
-  line-height: 30px;
+  color: #181920;
+  font-size: 17px;
+  line-height: 25px;
   cursor: pointer;
 }
 
@@ -2531,7 +2532,8 @@ input[type=radio].visually-hidden {
   min-height: 25px;
   padding-left: 40px;
   position: relative;
-  font-size: 16px;
+  color: #181920;
+  font-size: 17px;
   line-height: 25px;
   cursor: pointer;
 }
@@ -2556,6 +2558,93 @@ input[type=radio].visually-hidden {
   height: 19px;
   background: #2d52da;
   border-radius: 100%;
+}
+
+.modal-map__main {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 250px;
+  padding: 80px 30px;
+}
+
+.modal-map__main-container {
+  width: 1039px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.modal-map__main-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+  border-bottom: 1px solid rgba(24, 25, 32, 0.1);
+}
+
+.modal-map__header-headline {
+  padding: 0;
+  margin: 0;
+  width: 683px;
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.modal-map__header-subtitle {
+  width: 683px;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-map__notice-style-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-map__notice-style-headline {
+  align-self: flex-start;
+  box-sizing: border-box;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.modal-map__notice-style-name {
+  box-sizing: border-box;
+  width: 326px;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(24, 25, 32, 0.5);
+}
+
+.modal-map__notice-style-ordinary {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-map__notice-style-snackbar {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-map__notice-style-tost {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
