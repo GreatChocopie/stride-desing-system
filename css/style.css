@@ -2258,4 +2258,219 @@ input[type=radio].visually-hidden {
   line-height: 25px;
 }
 
+.form-elements__addition-style {
+  margin-bottom: 40px;
+}
+
+.form-elements__addition-style-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-elements__addition-style-headline {
+  align-self: flex-start;
+  box-sizing: border-box;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.form-elements__addition-style-name {
+  box-sizing: border-box;
+  width: 326px;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(24, 25, 32, 0.5);
+}
+
+.form-elements__addition-wrapper {
+  width: 326px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-elements__addition-style-toggle {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-elements__addition-toggle1 {
+  min-width: 266px;
+  min-height: 52px;
+  padding: 0 1px;
+  margin: 0;
+  display: flex;
+}
+
+.addition-toggle1__option {
+  padding: 0;
+  margin: 0;
+}
+
+.addition-toggle1__input-label {
+  display: block;
+  padding: 10px 29px;
+  margin-left: -1px;
+  border: 1px solid #2d52da;
+  border-radius: 1px;
+  transition: all 0.1s ease-in-out;
+  color: #2d52da;
+  font-size: 17px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.addition-toggle1__input-label:hover,
+.addition-toggle1__input-label:focus {
+  background-color: rgba(45, 82, 218, 0.1);
+}
+
+.addition-toggle1__option-input:checked + .addition-toggle1__input-label {
+  background-color: #2d52da;
+  color: #fff;
+}
+
+.form-elements__addition-toggle2 {
+  min-width: 266px;
+  min-height: 52px;
+  padding: 0 1px;
+  margin: 0;
+  display: flex;
+}
+
+.addition-toggle2__option {
+  padding: 0;
+  margin: 0;
+}
+
+.addition-toggle2__input-label {
+  display: block;
+  padding: 10px 29px;
+  margin-left: -1px;
+  border: 1px solid rgba(24, 25, 32, 0.1);
+  border-radius: 1px;
+  transition: all 0.1s ease-in-out;
+  color: #181920;
+  font-size: 17px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.addition-toggle2__input-label:hover,
+.addition-toggle2__input-label:focus {
+  border-color: rgba(24, 25, 32, 0.2);
+  background-color: transparent;
+  color: #2d52da;
+}
+
+.addition-toggle2__option-input:checked + .addition-toggle2__input-label {
+  border-color: #2d52da;
+  background-color: transparent;
+  color: #2d52da;
+}
+
+.form-elements__addition-style-smalltoggle {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-elements__addition-smalltoggle1 {
+  min-width: 192px;
+  min-height: 30px;
+  padding: 0 1px;
+  margin: 0;
+  display: flex;
+}
+
+.addition-smalltoggle1__option {
+  padding: 0;
+  margin: 0;
+}
+
+.addition-smalltoggle1__input-label {
+  display: block;
+  padding: 5px 19px;
+  margin-left: -1px;
+  border: 1px solid #2d52da;
+  border-radius: 1px;
+  transition: all 0.1s ease-in-out;
+  color: #2d52da;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.addition-smalltoggle1__input-label:hover,
+.addition-smalltoggle1__input-label:focus {
+  background-color: rgba(45, 82, 218, 0.1);
+}
+
+.addition-smalltoggle1__option-input:checked + .addition-smalltoggle1__input-label {
+  background-color: #2d52da;
+  color: #fff;
+}
+
+.form-elements__addition-smalltoggle2 {
+  min-width: 192px;
+  min-height: 30px;
+  padding: 0 1px;
+  margin: 0;
+  display: flex;
+}
+
+.addition-smalltoggle2__option {
+  padding: 0;
+  margin: 0;
+}
+
+.addition-smalltoggle2__input-label {
+  display: block;
+  padding: 5px 19px;
+  margin-left: -1px;
+  border: 1px solid rgba(24, 25, 32, 0.1);
+  border-radius: 1px;
+  transition: all 0.1s ease-in-out;
+  color: #181920;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.addition-smalltoggle2__input-label:hover,
+.addition-smalltoggle2__input-label:focus {
+  border-color: rgba(24, 25, 32, 0.2);
+  background-color: transparent;
+  color: #2d52da;
+}
+
+.addition-smalltoggle2__option-input:checked + .addition-smalltoggle2__input-label {
+  border-color: #2d52da;
+  background-color: transparent;
+  color: #2d52da;
+}
+
+.form-elements__addition-style-checkbox {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-elements__addition-style-content {
+  width: 680px;
+  display: flex;
+  justify-content: flex-start;
+}
+
 /*# sourceMappingURL=style.css.map */
