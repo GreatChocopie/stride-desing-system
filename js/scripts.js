@@ -37,3 +37,17 @@ tostClose.addEventListener("click", function (evt) {
       evt.preventDefault();
       tostModal.classList.remove("notice-tost__modal-map-open");
 });
+
+
+var ordinaryMapOpen = document.querySelector(".map-ordinary__button");
+var ordinaryMapClose = document.querySelector(".map-ordinary__modal-popup-closebutton");
+var ordinaryMapModal = document.querySelector(".map-ordinary__modal-map-wrapper");
+
+ordinaryMapOpen.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      ordinaryMapModal.classList.add("map-ordinary__modal-map-open");
+});
+ordinaryMapClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      ordinaryMapModal.classList.remove("map-ordinary__modal-map-open");
+});
