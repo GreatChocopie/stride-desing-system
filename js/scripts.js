@@ -51,3 +51,17 @@ ordinaryMapClose.addEventListener("click", function (evt) {
       evt.preventDefault();
       ordinaryMapModal.classList.remove("map-ordinary__modal-map-open");
 });
+
+
+var randomMapOpen = document.querySelector(".map-random__button");
+var randomMapClose = document.querySelector(".map-random__modal-popup-closebutton");
+var randomMapModal = document.querySelector(".map-random__modal-map-wrapper");
+
+randomMapOpen.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      randomMapModal.classList.add("map-random__modal-map-open");
+});
+randomMapClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      randomMapModal.classList.remove("map-random__modal-map-open");
+});

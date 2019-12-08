@@ -2982,6 +2982,7 @@ input[type=radio].visually-hidden {
 }
 
 .map-random__modal-map-wrapper {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -3134,16 +3135,24 @@ input[type=radio].visually-hidden {
   margin-bottom: 10px;
   padding: 9px 14px;
   border: 1px solid rgba(24, 25, 32, 0.1);
+  font-size: 17px;
+  line-height: 25px;
   transition: all 0.1s ease-in-out;
   cursor: text;
   border-color: rgba(24, 25, 32, 0.1);
   outline: none;
+  background-image: url(../img/mail-blue.svg);
+  background-position-y: 50%;
+  background-position-x: 98%;
+  background-size: 30px;
+  background-repeat: no-repeat;
 }
 
 .map-random__modal-popup-input:focus {
-  padding-bottom: 8px;
-  border-color: rgba(24, 25, 32, 0.2) rgba(24, 25, 32, 0.2) #2d52da;
-  border-bottom-width: 2px;
+  border-color: rgba(24, 25, 32, 0.2);
+  border-bottom: none;
+  box-shadow: 0 2px 0 0 #2d52da;
+  box-shadow: inset;
 }
 
 .map-random__modal-popup-button-container {
