@@ -2626,7 +2626,7 @@ input[type=radio].visually-hidden {
 .modal-map__notice-style-ordinary {
   box-sizing: border-box;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -2634,7 +2634,7 @@ input[type=radio].visually-hidden {
 .modal-map__notice-style-snackbar {
   box-sizing: border-box;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -2678,7 +2678,7 @@ input[type=radio].visually-hidden {
 .modal-map__map-style-ordinary {
   box-sizing: border-box;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -2686,7 +2686,7 @@ input[type=radio].visually-hidden {
 .modal-map__map-style-random {
   box-sizing: border-box;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
