@@ -51,10 +51,10 @@ ordinaryMapClose.addEventListener("click", function (evt) {
       evt.preventDefault();
       ordinaryMapModal.classList.remove("map-ordinary__modal-map-open");
 });
-ordinaryMapModal.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      ordinaryMapModal.classList.remove("map-ordinary__modal-map-open");
-});
+// ordinaryMapModal.addEventListener("click", function (evt) {
+//       evt.preventDefault();
+//       ordinaryMapModal.classList.remove("map-ordinary__modal-map-open");
+// });
 window.addEventListener("keydown", function (evt) {
       if (evt.keyCode === 27) {
             if (ordinaryMapModal.classList.contains("map-ordinary__modal-map-open")) {
@@ -76,10 +76,7 @@ randomMapClose.addEventListener("click", function (evt) {
       evt.preventDefault();
       randomMapModal.classList.remove("map-random__modal-map-open");
 });
-randomMapModal.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      randomMapModal.classList.remove("map-random__modal-map-open");
-});
+
 window.addEventListener("keydown", function (evt) {
       if (evt.keyCode === 27) {
             if (randomMapModal.classList.contains("map-random__modal-map-open")) {

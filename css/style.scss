@@ -950,6 +950,7 @@ input[type="radio"].visually-hidden {
       border-radius: 1px;
       font-size: 17px;
       line-height: 25px;
+
 }
 
 // .form-elements__field-error-input1:hover {
@@ -1058,6 +1059,7 @@ input[type="radio"].visually-hidden {
       border-color: rgba(24, 25, 32, .1);
       margin-bottom: 10px;
       padding: 9px 14px;
+      padding-right: 40px;
       border-style: solid;
       border-width: 1px;
       transition: all .1s ease-in-out;
@@ -1066,44 +1068,48 @@ input[type="radio"].visually-hidden {
       border-radius: 1px;
       font-size: 17px;
       line-height: 25px;
+      background-image: url(../img/mail-blue.svg);
+      background-position: top 10px right 10px;
+      background-size: 30px;
+      background-repeat: no-repeat;
 }
 
 .form-elements__field-icon-input2 {
       box-sizing: border-box;
       border: none;
       border-bottom: 1px solid rgba(24, 25, 32, .1);
-      margin-bottom: 10px;
-      padding: 9px 0;
+      padding: 10px 40px 9px 0;
       transition: all .1s ease-in-out;
       cursor: text;
       height: 50px;
       border-radius: 1px;
       font-size: 17px;
       line-height: 25px;
+      background-image: url(../img/mail-blue.svg);
+      background-position: top 10px right 10px;
+      background-size: 30px;
+      background-repeat: no-repeat;
 }
 
 .form-elements__field-icon-input1:hover {
       border-color: rgba(24, 25, 32, .2);
+
 }
 
-.form-elements__field-ordinary-input2:hover {
+.form-elements__field-icon-input2:hover {
       border-color: rgba(24, 25, 32, .2);
 }
 
 .form-elements__field-icon-input1:focus {
       outline: none;
-      padding-bottom: 8px;
       border-color: rgba(24, 25, 32, .2);
-      border-bottom-color: #2d52da;
-      border-bottom-width: 2px;
+      border-bottom: 2px solid #2d52da;
 }
 
 .form-elements__field-icon-input2:focus {
       outline: none;
-      padding-bottom: 8px;
-      border-color: rgba(24, 25, 32, .2);
-      border-bottom-color: #2d52da;
-      border-bottom-width: 2px;
+      border-color: #2d52da;
+      border-width: 2px;
 }
 
 .form-elements__field-button {
@@ -3280,8 +3286,7 @@ input[type="radio"].visually-hidden {
       border-color: rgba(24, 25, 32, .1);
       outline: none;
       background-image: url(../img/mail-blue.svg);
-      background-position-y: 50%;
-      background-position-x: 98%;
+      background-position: top 10px right 10px;
       background-size: 30px;
       background-repeat: no-repeat;
 }
@@ -3290,9 +3295,8 @@ input[type="radio"].visually-hidden {
 
 .map-random__modal-popup-input:focus {
       border-color: rgba(24, 25, 32, .2);
-      border-bottom: none;
-      box-shadow: 0 2px 0 0 #2d52da;
-      box-shadow: inset;
+      border-bottom: 2px solid #2d52da;
+
 }
 
 .map-random__modal-popup-button-container {
