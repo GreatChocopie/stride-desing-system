@@ -1336,7 +1336,7 @@ input[type="radio"].visually-hidden {
       height: 20px;
       background-image: url(../img/report.svg);
       background-size: 20px;
-      opacity: 0.5;
+      opacity: 0.3;
 }
 
 .form-elements__select-style {
@@ -1555,10 +1555,10 @@ input[type="radio"].visually-hidden {
       cursor: not-allowed;
 }
 
-.form-elements__field-blocked-select2:disabled{
+.form-elements__field-blocked-select2:disabled {
       opacity: .5;
       cursor: not-allowed;
-    
+
 }
 
 .form-elements__button-style {
@@ -1590,10 +1590,11 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__button-style-notice {
+      position: relative;
       padding: 0;
       width: 310px;
       box-sizing: border-box;
-      padding-left: 30px;
+      padding-left: 25px;
       margin: 0;
       margin-bottom: 10px;
       text-align: start;
@@ -1601,6 +1602,18 @@ input[type="radio"].visually-hidden {
       font-size: 14px;
       line-height: 20px;
       color: rgba(24, 25, 32, .5);
+}
+
+.form-elements__button-style-notice::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-image: url(../img/report.svg);
+      background-size: 20px;
+      opacity: 0.3;
 }
 
 .form-elements__button-style-name {
@@ -1911,6 +1924,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__button-icon1 {
+      position: relative;
       min-width: 200px;
       min-height: 50px;
       box-sizing: border-box;
@@ -1924,6 +1938,17 @@ input[type="radio"].visually-hidden {
       cursor: pointer;
       font-size: 17px;
 }
+
+// .form-elements__button-icon1::after {
+//       content: "";
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 30px;
+//       height: 30px;
+//       margin: 10px;
+//       color: #ffffff;
+// }
 
 .form-elements__button-icon1:hover,
 .form-elements__button-icon1:focus {
@@ -3622,4 +3647,214 @@ input[type="radio"].visually-hidden {
 .blocks__footer1-wrapper {
       width: 100%;
       background-color: #f3f3f4;
+}
+
+
+
+// Остальное
+
+
+// слайдер
+.more-slider__container {
+      padding: 0;
+      margin: 0;
+}
+
+.blocks__more-sliders-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+}
+
+.blocks__more-slider-name {
+      padding: 0;
+      margin-bottom: 10px;
+      color: rgba(24, 25, 32, .5);
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: normal;
+}
+
+.more-slider__slider1 {
+      width: 683px;
+      box-sizing: border-box;
+      padding: 30px;
+      background-color: #f8f8fb;
+}
+
+.more-slider__slider1-text {
+      padding: 0;
+      margin-bottom: 30px;
+      font-size: 17px;
+      line-height: 25px;
+
+}
+
+.more-slider__slider1-autor {
+      display: flex;
+      align-items: center;
+}
+
+.more-slider__slider1-autor-name {
+      padding: 0;
+      margin-right: auto;
+      font-size: 20px;
+      line-height: 30px;
+      color: #181920;
+}
+
+.more-slider__slider1-autor-img {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+      border-radius: 50%;
+}
+
+.more-slider__slider2 {
+      display: none;
+}
+
+.more-slider__wrapper {
+      margin-bottom: 40px;
+}
+
+.more-slider__button-wrapper {
+      width: 120px;
+      display: flex;
+      justify-content: space-between;
+
+}
+
+.more-slider__button-back {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border: 2px solid rgba(24, 25, 32, .2);
+      border-radius: 100px;
+      opacity: 0.5;
+      transition: all .1s ease-in-out;
+      background: url(../img/chevron_left.svg) top 50% left 50% no-repeat;
+
+}
+
+.more-slider__button-back:hover,
+.more-slider__button-back:focus {
+      opacity: 1;
+}
+
+.more-slider__button-forward {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border: 2px solid rgba(24, 25, 32, .2);
+      border-radius: 100px;
+      opacity: 0.5;
+      transition: all .1s ease-in-out;
+      transition: all .1s ease-in-out;
+      background: url(../img/chevron_right.svg) top 50% left 50% no-repeat;
+}
+
+.more-slider__button-forward:hover,
+.more-slider__button-forward:focus {
+      opacity: 1;
+}
+
+// тарифы
+.blocks__more-tariff-name {
+      padding: 0;
+      margin-bottom: 10px;
+      color: rgba(24, 25, 32, .5);
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: normal;
+}
+
+.more-tariff__container {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+}
+
+.more-tariff__free {
+      width: 326px;
+      box-sizing: border-box;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      box-shadow: 0 5px 20px 0 rgba(24, 25, 32, .1);
+      transition: all .1s ease-in-out;
+      color: #181920;
+      cursor: pointer;
+}
+
+.more-tariff__free:hover {
+      box-shadow: 0 15px 30px 0 rgba(24, 25, 32, .1);
+      margin-top: -5px;
+}
+
+.more-tariff__free-header {
+      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      margin-bottom: 20px;
+}
+
+.more-tariff__free-headline {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 10px;
+      color: rgba(24, 25, 32, .5);
+      font-size: 13px;
+      font-weight: normal;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+}
+
+.more-tariff__free-price {
+      font-size: 60px;
+      line-height: 60px;
+      letter-spacing: -1.5px;
+      font-weight: 400;
+      margin-bottom: 10px;
+}
+
+.more-tariff__free-notice {
+      margin-bottom: 20px;
+      font-size: 17px;
+      line-height: 25px;
+}
+
+.more-tariff__free-list {
+      margin-bottom: 20px;
+
+}
+
+.more-tariff__free-list-item {
+      position: relative;
+      margin-bottom: 5px;
+      padding: 0;
+      padding-left: 35px;
+      font-size: 17px;
+      line-height: 25px;
+      color: #181920;
+
+}
+
+.more-tariff__free-button {
+      padding: 9px 29px;
+      border: 1px solid #2d52da;
+      border-radius: 1px;
+      transition: all .1s ease-in-out;
+      color: #2d52da;
+      font-size: 17px;
+      line-height: 30px;
+      cursor: pointer;
+      color: #2d52da;
+      font-size: 17px;
+      line-height: 30px;
+}
+
+.more-tariff__free-button:hover,
+.more-tariff__free-button:focus {
+      opacity: 0.75;
 }
