@@ -3943,7 +3943,6 @@ input[type=radio].visually-hidden {
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(24, 25, 32, 0.1);
-  border-top: none;
 }
 
 .more-table {
@@ -3960,7 +3959,6 @@ input[type=radio].visually-hidden {
   padding: 15px 14px 14px;
   clear: both;
   border-bottom: 1px solid rgba(24, 25, 32, 0.1);
-  border-top: 1px solid rgba(24, 25, 32, 0.1);
   font-size: 20px;
   line-height: 30px;
   color: #181920;
@@ -3977,7 +3975,8 @@ input[type=radio].visually-hidden {
 }
 
 .more-table__header-td1 {
-  width: 86px;
+  width: 55px;
+  padding-right: 15px;
   color: rgba(24, 25, 32, 0.5);
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -3985,7 +3984,8 @@ input[type=radio].visually-hidden {
 }
 
 .more-table__header-td2 {
-  width: 260px;
+  width: 230px;
+  padding: 0 15px;
   color: rgba(24, 25, 32, 0.5);
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -3993,7 +3993,9 @@ input[type=radio].visually-hidden {
 }
 
 .more-table__header-td3 {
-  width: 173px;
+  width: 143px;
+  padding: 0 15px;
+  text-align: start;
   color: rgba(24, 25, 32, 0.5);
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -4001,7 +4003,9 @@ input[type=radio].visually-hidden {
 }
 
 .more-table__header-td4 {
-  width: 173px;
+  width: 143px;
+  padding: 0 15px;
+  text-align: start;
   color: rgba(24, 25, 32, 0.5);
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -4009,7 +4013,9 @@ input[type=radio].visually-hidden {
 }
 
 .more-table__header-td5 {
-  width: 173px;
+  width: 143px;
+  padding: 0 15px;
+  text-align: start;
   color: rgba(24, 25, 32, 0.5);
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -4017,7 +4023,9 @@ input[type=radio].visually-hidden {
 }
 
 .more-table__header-td6 {
-  width: 173px;
+  width: 143px;
+  padding-left: 15px;
+  text-align: start;
   color: rgba(24, 25, 32, 0.5);
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -4039,42 +4047,52 @@ input[type=radio].visually-hidden {
 }
 
 .more-table__line-td1 {
-  width: 86px;
+  width: 56px;
+  padding-right: 15px;
   color: #181920;
   font-size: 14px;
   line-height: 20px;
 }
 
 .more-table__line-td2 {
-  width: 260px;
+  width: 230px;
+  padding: 0 15px;
   color: #181920;
   font-size: 14px;
   line-height: 20px;
 }
 
 .more-table__line-td3 {
-  width: 173px;
+  width: 143px;
+  padding: 0 15px;
+  text-align: start;
   color: #181920;
   font-size: 14px;
   line-height: 20px;
 }
 
 .more-table__line-td4 {
-  width: 173px;
+  width: 143px;
+  padding: 0 15px;
+  text-align: start;
   color: #181920;
   font-size: 14px;
   line-height: 20px;
 }
 
 .more-table__line-td5 {
-  width: 173px;
+  width: 143px;
+  padding: 0 15px;
+  text-align: start;
   color: #181920;
   font-size: 14px;
   line-height: 20px;
 }
 
 .more-table__line-td6 {
-  width: 173px;
+  width: 143px;
+  padding-left: 15px;
+  text-align: start;
   color: #181920;
   font-size: 14px;
   line-height: 20px;
