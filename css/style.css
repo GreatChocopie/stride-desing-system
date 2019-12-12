@@ -4364,4 +4364,45 @@ input[type=radio].visually-hidden {
   color: #2d52da;
 }
 
+.components__main {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 250px;
+  padding: 80px 30px;
+}
+
+.components__main-container {
+  width: 1039px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.components__main-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+  border-bottom: 1px solid rgba(24, 25, 32, 0.1);
+}
+
+.components__header-headline {
+  padding: 0;
+  margin: 0;
+  width: 683px;
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.components__header-subtitle {
+  width: 670px;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

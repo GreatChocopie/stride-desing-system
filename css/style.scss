@@ -96,8 +96,6 @@ input[type="radio"].visually-hidden {
       overflow-x: hidden;
       z-index: 10;
 
-
-
 }
 
 .header__navigation {
@@ -107,7 +105,6 @@ input[type="radio"].visually-hidden {
       margin: 0;
       padding: 0;
       background-color: hsla(240, 4%, 95%, .9);
-
 }
 
 .header__navigation-logo {
@@ -199,7 +196,6 @@ input[type="radio"].visually-hidden {
       width: 683px;
       font-size: 90px;
       line-height: 90px;
-      // letter-spacing: -2px;
       font-weight: 700;
       margin-bottom: 30px;
 }
@@ -4556,4 +4552,50 @@ input[type="radio"].visually-hidden {
 .more-table__body-button:focus {
       background-color: rgba(24, 25, 32, .1);
       color: #2d52da;
+}
+
+
+
+//  компоненты
+.components__main {
+      width: 100%;
+      box-sizing: border-box;
+      position: relative;
+      margin-left: 250px;
+      padding: 80px 30px;
+}
+
+.components__main-container {
+      width: 1039px;
+      margin: 0 auto;
+      padding: 0;
+}
+
+
+.components__main-header {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      padding-bottom: 80px;
+      margin-bottom: 80px;
+      border-bottom: 1px solid rgba(24, 25, 32, .1);
+
+}
+
+.components__header-headline {
+      padding: 0;
+      margin: 0;
+      width: 683px;
+      font-size: 90px;
+      line-height: 90px;
+      font-weight: 700;
+      margin-bottom: 30px;
+}
+
+.components__header-subtitle {
+      width: 670px;
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0;
+      padding: 0;
 }
