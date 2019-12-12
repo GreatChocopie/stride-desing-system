@@ -4405,4 +4405,140 @@ input[type=radio].visually-hidden {
   padding: 0;
 }
 
+.components__tooltip-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.components__tooltip-headline {
+  align-self: flex-start;
+  box-sizing: border-box;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.components__tooltip-hint-style {
+  width: 680px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.components__tooltip-name {
+  box-sizing: border-box;
+  width: 356px;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(24, 25, 32, 0.5);
+}
+
+.components__tooltip-bottom-style {
+  width: 680px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.components__tooltip-hint {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.components__tooltip-bottom {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.components__tooltip-hint-container {
+  position: relative;
+  display: flex;
+}
+
+.components__tooltip-hint-icon {
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon.svg) center no-repeat;
+  background-size: 20px;
+  z-index: 10;
+}
+
+.components__tooltip-hint-text {
+  padding: 0 10px;
+  color: rgba(24, 25, 32, 0.5);
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.components__tooltip-hint-popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  box-sizing: border-box;
+  width: 240px;
+  padding: 10px 10px 10px 40px;
+  color: #181920;
+  background-color: #fff;
+  box-shadow: 0 10px 30px 0 rgba(24, 25, 32, 0.1);
+  z-index: 2;
+  margin-top: -10px;
+  margin-left: -30px;
+}
+
+.components__tooltip-hint-icon:hover ~ .components__tooltip-hint-popup {
+  display: block;
+}
+
+.components__tooltip-bottom-container {
+  position: relative;
+}
+
+.components__tooltip-bottom-text {
+  display: block;
+  position: relative;
+  vertical-align: middle;
+  padding: 0 10px 0 50px;
+  font-size: 17px;
+  line-height: 30px;
+  cursor: default;
+  color: #181920;
+}
+
+.components__tooltip-bottom-text::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 10px;
+  background-image: url(../img/icon.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.components__tooltip-bottom-popup {
+  display: none;
+  position: absolute;
+  width: 240px;
+  box-sizing: border-box;
+  top: 100%;
+  left: 0;
+  margin-left: -30px;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px 0 rgba(24, 25, 32, 0.1);
+  color: rgba(24, 25, 32, 0.5);
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  z-index: 2;
+  transform: translate3d(0px, 5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.components__tooltip-bottom-text:hover ~ .components__tooltip-bottom-popup {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
