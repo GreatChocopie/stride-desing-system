@@ -4703,7 +4703,6 @@ input[type="radio"].visually-hidden {
 .components__tooltip-bottom-text {
       display: block;
       position: relative;
-      vertical-align: middle;
       padding: 0 10px 0 50px;
       font-size: 17px;
       line-height: 30px;
@@ -4770,11 +4769,184 @@ input[type="radio"].visually-hidden {
 
 .components__tab-name {
       box-sizing: border-box;
-      width: 356px;
+      width: 326px;
+      align-self: center;
       font-size: 20px;
       line-height: 30px;
       color: rgba(24, 25, 32, .5);
 }
+
+.components__tab-ordinary {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+}
+
+.components__tab-small {
+      display: flex;
+      justify-content: space-between;
+}
+
+// обычные табы
+
+.tab-ordinary__wrapper1 {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 10px;
+      border-bottom: 1px solid rgba(24, 25, 32, .1);
+}
+
+.tab-ordinary__wrapper1-button {
+      margin-right: 30px;
+      margin-bottom: -1px;
+      padding: 10px 0;
+      font-size: 17px;
+      line-height: 30px;
+      cursor: pointer;
+      color: #222;
+}
+
+.tab-ordinary__wrapper1-button:hover {
+      color: #2d52da;
+}
+
+.tab-ordinary__wrapper1-button:focus {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2d52da;
+      color: #2d52da;
+      outline: none;
+      transition: all .1s ease-in-out;
+}
+
+.tab-ordinary__wrapper1-button--current {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2d52da;
+      color: #2d52da;
+      outline: none;
+      transition: all .1s ease-in-out;
+}
+
+.tab-ordinary__wrapper2 {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: 1px solid rgba(24, 25, 32, .1);
+}
+
+.tab-ordinary__wrapper2-button {
+      padding: 10px 10px;
+      margin-bottom: -1px;
+      font-size: 17px;
+      line-height: 30px;
+      cursor: pointer;
+      color: #222;
+}
+
+.tab-ordinary__wrapper2-button:hover {
+      color: #2d52da;
+}
+
+.tab-ordinary__wrapper2-button:focus {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2d52da;
+      color: #2d52da;
+      outline: none;
+      transition: all .1s ease-in-out;
+}
+
+.tab-ordinary__wrapper2-button--current {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2d52da;
+      color: #2d52da;
+      outline: none;
+      transition: all .1s ease-in-out;
+}
+
+// маленькие табы
+
+.tab-small__wrapper1 {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 10px;
+      border-bottom: 1px solid rgba(24, 25, 32, .1);
+}
+
+.tab-small__wrapper1-button {
+      margin-right: 30px;
+      margin-bottom: -1px;
+      padding: 10px 0;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #222;
+}
+
+.tab-small__wrapper1-button:hover {
+      color: #2d52da;
+}
+
+.tab-small__wrapper1-button:focus {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2d52da;
+      color: #2d52da;
+      outline: none;
+      transition: all .1s ease-in-out;
+}
+
+.tab-small__wrapper1-button--current {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2d52da;
+      color: #2d52da;
+      outline: none;
+      transition: all .1s ease-in-out;
+}
+
+.tab-small__wrapper2 {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: 1px solid rgba(24, 25, 32, .1);
+}
+
+.tab-small__wrapper2-button {
+      padding: 10px 10px;
+      margin-bottom: -1px;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #222;
+}
+
+.tab-small__wrapper2-button:hover {
+      color: #2d52da;
+}
+
+.tab-small__wrapper2-button:focus {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2d52da;
+      color: #2d52da;
+      outline: none;
+      transition: all .1s ease-in-out;
+}
+
+.tab-small__wrapper2-button--current {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2d52da;
+      color: #2d52da;
+      outline: none;
+      transition: all .1s ease-in-out;
+}
+
 
 //  тэги
 .components__tag {
@@ -4798,11 +4970,141 @@ input[type="radio"].visually-hidden {
 
 .components__tag-name {
       box-sizing: border-box;
-      width: 356px;
+      width: 326px;
       font-size: 20px;
       line-height: 30px;
       color: rgba(24, 25, 32, .5);
 }
+
+.components__tag-ordinary {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+}
+
+.components__tag-round {
+      display: flex;
+      justify-content: space-between;
+}
+
+
+
+// обычные теги
+
+.tag-ordinary__wrapper1 {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+
+}
+
+.tag-ordinary__wrapper1-button {
+      margin-right: 5px;
+      padding: 5px 15px;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      background-color: #2d52da;
+      transition: all .1s ease-in-out;
+      color: #f3f3f4;
+}
+
+
+.tag-ordinary__wrapper1-button:focus,
+.tag-ordinary__wrapper1-button:hover {
+      opacity: 0.75;
+}
+
+
+
+.tag-ordinary__wrapper2 {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+}
+
+.tag-ordinary__wrapper2-button {
+      padding: 4px 14px;
+      margin-right: 5px;
+      border: 1px solid #2d52da;
+      border-radius: 1px;
+      transition: all .1s ease-in-out;
+      color: #2d52da;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+}
+
+
+
+.tag-ordinary__wrapper2-button:focus,
+.tag-ordinary__wrapper2-button:hover {
+      opacity: 0.75;
+}
+
+// скругленные теги
+
+.tag-round__wrapper1 {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+
+}
+
+.tag-round__wrapper1-button {
+      margin-right: 5px;
+      padding: 5px 15px;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      background-color: #2d52da;
+      transition: all .1s ease-in-out;
+      color: #f3f3f4;
+      border-radius: 15px;
+}
+
+
+.tag-round__wrapper1-button:focus,
+.tag-round__wrapper1-button:hover {
+      opacity: 0.75;
+}
+
+
+
+.tag-round__wrapper2 {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+}
+
+.tag-round__wrapper2-button {
+      padding: 4px 14px;
+      margin-right: 5px;
+      border: 1px solid #2d52da;
+      border-radius: 15px;
+      border-radius: 1px;
+      transition: all .1s ease-in-out;
+      color: #2d52da;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+}
+
+
+
+.tag-round__wrapper2-button:focus,
+.tag-round__wrapper2-button:hover {
+      opacity: 0.75;
+}
+
 
 //  прогресс-бары
 .components__progressbar {
@@ -4826,8 +5128,89 @@ input[type="radio"].visually-hidden {
 
 .components__progressbar-name {
       box-sizing: border-box;
-      width: 356px;
+      width: 326px;
       font-size: 20px;
       line-height: 30px;
       color: rgba(24, 25, 32, .5);
+}
+
+.components__progressbar-ordinary {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      align-items: center;
+}
+
+.components__progressbar-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+
+// обычный
+.progressbar-ordinary__wrapper {
+      width: 682px;
+}
+
+.progressbar-ordinary__bar {
+      position: relative;
+      height: 5px;
+      border-radius: 5px;
+      background-color: rgba(24, 25, 32, .1);
+}
+
+.progressbar-ordinary__bar::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25%;
+      height: 100%;
+      background-color: #2d52da;
+      border-radius: 5px;
+
+}
+
+// с текстом
+.progressbar-text__wrapper {
+      width: 682px;
+}
+
+.progressbar-text__bar {
+      margin-bottom: 5px;
+      position: relative;
+      height: 5px;
+      border-radius: 5px;
+      background-color: rgba(24, 25, 32, .1);
+}
+
+.progressbar-text__bar::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25%;
+      height: 100%;
+      background-color: #2d52da;
+      border-radius: 5px;
+
+}
+
+.progressbar-text__text-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+}
+
+.progressbar-text__text-1 {
+      font-size: 17px;
+      line-height: 25px;
+      color: #181920;
+}
+
+.progressbar-text__text-2 {
+      font-size: 17px;
+      line-height: 25px;
+      color: #181920;
 }
