@@ -196,6 +196,30 @@
                         </section>
                         <section class="blocks__more">
                               <h2 class="blocks__headline">Остальное</h2>
+                              <section class="blocks__more-file">
+                                    <h3 class="blocks__name">Добавление файла</h3>
+                                    <div class="more-file__form-wrapper">
+                                          <form class="more-file__form" enctype="multipart/form-data" method="post">
+                                                <p class="more-file__form-text">Перетащите файлы сюда или нажмите на
+                                                      кнопку
+                                                </p>
+                                                <label class="more-file__form-input-wrapper"><input
+                                                            id="more-file__form-input" type="file" name="photo" multiple
+                                                            accept="image/*,image/jpeg" onchange="getFileParam();">
+
+                                                      <span class="more-file__form-button">Выбрать файл</span>
+                                                </label>
+                                          </form>
+                                          <div class="more-file__form-value">
+                                                <div>
+                                                      <div id="more-file__file-name">&nbsp;</div>
+                                                      <div id="more-file__file-size">&nbsp;</div>
+                                                </div>
+                                                <div id="more-file__file-preview">&nbsp;</div>
+                                          </div>
+                                          <input class="more-file__form-submit" type="submit" value="Отправить">
+                                    </div>
+                              </section>
                               <section class="blocks__more-sliders">
                                     <h3 class="blocks__name">Слайдер с отзывами</h3>
                                     <div class="more-slider__container">
@@ -383,6 +407,7 @@
                   </div>
             </main>
       </div>
+      <script src="js/scripts.js"></script>
 </body>
 
 </html>
