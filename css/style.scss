@@ -1377,6 +1377,14 @@ input[type="radio"].visually-hidden {
       justify-content: space-between;
 }
 
+.form-elements__select-style-multiple {
+      box-sizing: border-box;
+      min-height: 100px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
 .form-elements__select-style-name {
       box-sizing: border-box;
       width: 326px;
@@ -1400,6 +1408,13 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__select-blocked {
+      width: 326px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+}
+
+.form-elements__select-multiple {
       width: 326px;
       box-sizing: border-box;
       display: flex;
@@ -1431,8 +1446,18 @@ input[type="radio"].visually-hidden {
       margin-bottom: 10px;
 }
 
+.form-elements__select-multiple-label {
+      color: rgba(24, 25, 32, .5);
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+}
+
 .form-elements__field-ordinary-select1 {
       height: 50px;
+      width: 326px;
+      box-sizing: border-box;
       margin-bottom: 10px;
       border-style: solid;
       border-color: rgba(24, 25, 32, .1);
@@ -1450,6 +1475,8 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-ordinary-select2 {
       height: 50px;
+      width: 326px;
+      box-sizing: border-box;
       margin-bottom: 10px;
       border-style: solid;
       border-color: rgba(24, 25, 32, .1);
@@ -1474,6 +1501,8 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-icon-select1 {
       height: 50px;
+      width: 326px;
+      box-sizing: border-box;
       margin-bottom: 10px;
       border-style: solid;
       border-color: rgba(24, 25, 32, .1);
@@ -1490,6 +1519,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-icon-select2 {
       height: 50px;
+      width: 326px;
       margin-bottom: 10px;
       border-style: solid;
       border-color: rgba(24, 25, 32, .1);
@@ -1516,6 +1546,8 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-blocked-select1 {
       height: 50px;
+      width: 326px;
+      box-sizing: border-box;
       margin-bottom: 10px;
       border-style: solid;
       border-color: rgba(24, 25, 32, .1);
@@ -1532,12 +1564,14 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-blocked-select2 {
       height: 50px;
+      width: 326px;
+      box-sizing: border-box;
       margin-bottom: 10px;
       border-style: solid;
       border-color: rgba(24, 25, 32, .1);
       transition: all .1s ease-in-out;
       cursor: pointer;
-      padding: 9px 50px 9px 15px;
+      padding: 9px 50px 9px 0;
       font-size: 17px;
       line-height: 25px;
       background: url(../img/keyboard.svg) top 50% right 10px no-repeat;
@@ -1556,6 +1590,127 @@ input[type="radio"].visually-hidden {
       cursor: not-allowed;
 
 }
+
+
+// множественный
+
+.field-multiple-select1__item-container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 50px;
+      width: 326px;
+      box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px solid rgba(24, 25, 32, .1);
+      transition: all .1s ease-in-out;
+      cursor: pointer;
+      padding: 9px 50px 9px 15px;
+      font-size: 17px;
+      line-height: 25px;
+      background: url(../img/keyboard.svg) top 50% right 10px no-repeat;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+}
+
+.field-multiple-select1__item {
+      position: relative;
+      vertical-align: center;
+      padding: 0 30px 0 0;
+      margin-right: 10px;
+      color: #222;
+      font-size: 17px;
+      line-height: 30px;
+}
+
+.field-multiple-select1__item::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      background-image: url(../img/not.svg);
+      background-size: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.3;
+}
+
+.field-multiple-select1__item:hover::after {
+      opacity: 0.5;
+}
+
+
+.field-multiple-select1__list {
+      width: 100%;
+      height: 200px;
+      box-sizing: border-box;
+      border: 1px solid rgba(24, 25, 32, .1);
+}
+
+.field-multiple-select1__list-item {
+      padding: 10px 15px;
+      font-size: 17px;
+      line-height: 25px;
+      color: #222;
+}
+
+.field-multiple-select2__item-container {
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      width: 326px;
+      box-sizing: border-box;
+      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      transition: all .1s ease-in-out;
+      cursor: pointer;
+      padding: 10px 50px 9px 0;
+      font-size: 17px;
+      line-height: 25px;
+      background: url(../img/keyboard.svg) top 50% right 10px no-repeat;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+}
+
+.field-multiple-select2__item {
+      vertical-align: center;
+      position: relative;
+      padding: 0 30px 0 0;
+      margin-right: 5px;
+      color: #222;
+      font-size: 17px;
+      line-height: 30px;
+}
+
+.field-multiple-select2__item::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      background-image: url(../img/not.svg);
+      background-size: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.3;
+}
+
+.field-multiple-select2__item:hover::after {
+      opacity: 0.5;
+}
+
+
+.form-elements__field-multiple-select1:hover {
+      border-color: rgba(24, 25, 32, .2);
+}
+
+.form-elements__field-multiple-select2:hover {
+      border-color: rgba(24, 25, 32, .2);
+}
+
 
 .form-elements__button-style {
       margin-bottom: 40px;
