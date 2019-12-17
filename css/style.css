@@ -5801,10 +5801,27 @@ input[type=radio].visually-hidden {
 }
 
 .components__cart1-link {
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+  padding-right: 30px;
   transition: all 0.1s ease;
   color: #2d52da;
   font-size: 20px;
   line-height: 30px;
+}
+
+.components__cart1-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/forward.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
 }
 
 .components__cart1-link:hover,
