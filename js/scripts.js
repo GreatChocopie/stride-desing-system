@@ -42,12 +42,17 @@ tostClose.addEventListener("click", function (evt) {
 var ordinaryMapOpen = document.querySelector(".map-ordinary__button");
 var ordinaryMapClose = document.querySelector(".map-ordinary__modal-popup-closebutton");
 var ordinaryMapModal = document.querySelector(".map-ordinary__modal-map-wrapper");
+var ordinaryMapCancel = document.querySelector(".map-ordinary__modal-popup-button2");
 
 ordinaryMapOpen.addEventListener("click", function (evt) {
       evt.preventDefault();
       ordinaryMapModal.classList.add("map-ordinary__modal-map-open");
 });
 ordinaryMapClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      ordinaryMapModal.classList.remove("map-ordinary__modal-map-open");
+});
+ordinaryMapCancel.addEventListener("click", function (evt) {
       evt.preventDefault();
       ordinaryMapModal.classList.remove("map-ordinary__modal-map-open");
 });
@@ -67,14 +72,22 @@ window.addEventListener("keydown", function (evt) {
 var randomMapOpen = document.querySelector(".map-random__button");
 var randomMapClose = document.querySelector(".map-random__modal-popup-closebutton");
 var randomMapModal = document.querySelector(".map-random__modal-map-wrapper");
-
+var randomMapInput = document.querySelector(".map-random__modal-popup-input");
+var randomMapCancel = document.querySelector(".map-random__modal-popup-button2");
 randomMapOpen.addEventListener("click", function (evt) {
       evt.preventDefault();
       randomMapModal.classList.add("map-random__modal-map-open");
+      randomMapInput.focus();
 });
 randomMapClose.addEventListener("click", function (evt) {
       evt.preventDefault();
       randomMapModal.classList.remove("map-random__modal-map-open");
+
+});
+randomMapCancel.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      randomMapModal.classList.remove("map-random__modal-map-open");
+
 });
 
 window.addEventListener("keydown", function (evt) {
