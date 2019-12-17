@@ -5885,8 +5885,13 @@ input[type=radio].visually-hidden {
   color: rgba(24, 25, 32, 0.5);
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
   margin-bottom: 10px;
   font-weight: normal;
+}
+
+.icon__sprite-wrapper {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
