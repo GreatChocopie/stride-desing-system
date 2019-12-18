@@ -137,9 +137,9 @@ input[type=radio].visually-hidden {
 
 .typography__main {
   width: 100%;
+  box-sizing: border-box;
   position: relative;
-  margin-left: 250px;
-  padding: 80px 30px;
+  padding: 80px 30px 80px 280px;
 }
 
 .typography__main-container {
@@ -487,8 +487,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  margin-left: 250px;
-  padding: 80px 30px;
+  padding: 80px 30px 80px 280px;
 }
 
 .form-elements__main-container {
@@ -1398,6 +1397,7 @@ input[type=radio].visually-hidden {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 
 .form-elements__field-ordinary-select2 {
@@ -1416,13 +1416,16 @@ input[type=radio].visually-hidden {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 
-.form-elements__field-ordinary-select1:hover {
+.form-elements__field-ordinary-select1:hover,
+.form-elements__field-ordinary-select1:focus {
   border-color: rgba(24, 25, 32, 0.2);
 }
 
-.form-elements__field-ordinary-select2:hover {
+.form-elements__field-ordinary-select2:hover,
+.form-elements__field-ordinary-select2:focus {
   border-color: rgba(24, 25, 32, 0.2);
 }
 
@@ -1442,6 +1445,7 @@ input[type=radio].visually-hidden {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 
 .form-elements__field-icon-select2 {
@@ -1459,13 +1463,16 @@ input[type=radio].visually-hidden {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 
-.form-elements__field-icon-select1:hover {
+.form-elements__field-icon-select1:hover,
+.form-elements__field-icon-select1:focus {
   border-color: rgba(24, 25, 32, 0.2);
 }
 
-.form-elements__field-icon-select2:hover {
+.form-elements__field-icon-select2:hover,
+.form-elements__field-icon-select2:focus {
   border-color: rgba(24, 25, 32, 0.2);
 }
 
@@ -3409,8 +3416,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  margin-left: 250px;
-  padding: 80px 30px;
+  padding: 80px 30px 80px 280px;
 }
 
 .modal-map__main-container {
@@ -4070,8 +4076,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  margin-left: 250px;
-  padding: 80px 30px;
+  padding: 80px 30px 80px 280px;
 }
 
 .blocks__main-container {
@@ -5348,8 +5353,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  margin-left: 250px;
-  padding: 80px 30px;
+  padding: 80px 30px 80px 280px;
 }
 
 .components__main-container {
@@ -6043,9 +6047,9 @@ input[type=radio].visually-hidden {
 
 .icon__main {
   width: 100%;
+  box-sizing: border-box;
   position: relative;
-  margin-left: 250px;
-  padding: 80px 30px;
+  padding: 80px 30px 80px 280px;
 }
 
 .icon__main-container {
