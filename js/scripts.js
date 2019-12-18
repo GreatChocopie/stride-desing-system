@@ -17,7 +17,42 @@ multiple2Open.addEventListener("click", function (evt) {
 
 
 
+var buttonDrop1Open = document.querySelector(".form-elements__button-dropdown1-wrapper");
+var buttonDrop1List = document.querySelector(".button-dropdown1__list-wrapper");
 
+
+buttonDrop1Open.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buttonDrop1List.classList.toggle("button-dropdown1__list-open");
+});
+
+var buttonDrop2Open = document.querySelector(".form-elements__button-dropdown2-wrapper");
+var buttonDrop2List = document.querySelector(".button-dropdown2__list-wrapper");
+
+
+buttonDrop2Open.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buttonDrop2List.classList.toggle("button-dropdown2__list-open");
+});
+
+
+var buttonDropIcon1Open = document.querySelector(".form-elements__button-icondropdown1-wrapper");
+var buttonDropIcon1List = document.querySelector(".button-icondropdown1__list-wrapper");
+
+
+buttonDropIcon1Open.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buttonDropIcon1List.classList.toggle("button-icondropdown1__list-open");
+});
+
+var buttonDropIcon2Open = document.querySelector(".form-elements__button-icondropdown2-wrapper");
+var buttonDropIcon2List = document.querySelector(".button-icondropdown2__list-wrapper");
+
+
+buttonDropIcon2Open.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buttonDropIcon2List.classList.toggle("button-icondropdown2__list-open");
+});
 
 
 
