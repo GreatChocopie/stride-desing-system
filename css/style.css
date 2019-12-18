@@ -1562,18 +1562,43 @@ input[type=radio].visually-hidden {
   opacity: 0.5;
 }
 
+.field-multiple-select1__list-wrapper {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
 .field-multiple-select1__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
   width: 100%;
   height: 200px;
   box-sizing: border-box;
   border: 1px solid rgba(24, 25, 32, 0.1);
+  overflow: auto;
 }
 
 .field-multiple-select1__list-item {
+  display: block;
   padding: 10px 15px;
   font-size: 17px;
   line-height: 25px;
   color: #222;
+}
+
+.field-multiple-select1__list-item:hover,
+.field-multiple-select1__list-item:focus {
+  background-color: rgba(45, 82, 218, 0.05);
+}
+
+.field-multiple-select1__list-item--curent {
+  color: #2d52da;
+}
+
+.form-elements__field-multiple-select1:hover {
+  border-color: rgba(24, 25, 32, 0.2);
 }
 
 .field-multiple-select2__item-container {
@@ -1581,6 +1606,7 @@ input[type=radio].visually-hidden {
   justify-content: space-between;
   height: 50px;
   width: 326px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(24, 25, 32, 0.1);
   transition: all 0.1s ease-in-out;
@@ -1622,12 +1648,49 @@ input[type=radio].visually-hidden {
   opacity: 0.5;
 }
 
-.form-elements__field-multiple-select1:hover {
-  border-color: rgba(24, 25, 32, 0.2);
+.field-multiple-select2__list-wrapper {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+.field-multiple-select2__list {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  border: 1px solid rgba(24, 25, 32, 0.1);
+  overflow: auto;
+}
+
+.field-multiple-select2__list-item {
+  display: block;
+  padding: 10px 15px;
+  font-size: 17px;
+  line-height: 25px;
+  color: #222;
+}
+
+.field-multiple-select2__list-item:hover,
+.field-multiple-select2__list-item:focus {
+  background-color: rgba(45, 82, 218, 0.05);
+}
+
+.field-multiple-select2__list-item--curent {
+  color: #2d52da;
 }
 
 .form-elements__field-multiple-select2:hover {
   border-color: rgba(24, 25, 32, 0.2);
+}
+
+.field-multiple-select__list-open {
+  display: block;
+  width: 100%;
+  position: relative;
 }
 
 .form-elements__button-style {

@@ -1,3 +1,28 @@
+var multiple1Open = document.querySelector(".form-elements__field-multiple-select1");
+var multiple1List = document.querySelector(".field-multiple-select1__list-wrapper");
+
+
+multiple1Open.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      multiple1List.classList.toggle("field-multiple-select__list-open");
+});
+
+var multiple2Open = document.querySelector(".form-elements__field-multiple-select2");
+var multiple2List = document.querySelector(".field-multiple-select2__list-wrapper");
+
+multiple2Open.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      multiple2List.classList.toggle("field-multiple-select__list-open");
+});
+
+
+
+
+
+
+
+
+
 var ordinaryOpen = document.querySelector(".notice-ordinary__button");
 var ordinaryClose = document.querySelector(".notice-ordinary__modal-map-closebutton");
 var ordinaryModal = document.querySelector(".notice-ordinary__modal-map-wrapper");
