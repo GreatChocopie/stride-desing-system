@@ -1689,6 +1689,13 @@ input[type="radio"].visually-hidden {
       border-color: rgba(24, 25, 32, .2);
 }
 
+.field-multiple-select1__list-open {
+      display: block;
+      width: 100%;
+      position: relative;
+      z-index: 10;
+}
+
 .field-multiple-select2__item-container {
       display: flex;
       justify-content: space-between;
@@ -1778,10 +1785,11 @@ input[type="radio"].visually-hidden {
       border-color: rgba(24, 25, 32, .2);
 }
 
-.field-multiple-select__list-open {
+.field-multiple-select2__list-open {
       display: block;
       width: 100%;
       position: relative;
+      z-index: 10;
 }
 
 
@@ -2364,6 +2372,7 @@ input[type="radio"].visually-hidden {
       display: block;
       width: 100%;
       position: relative;
+      z-index: 10;
 }
 
 
@@ -2448,6 +2457,7 @@ input[type="radio"].visually-hidden {
       display: block;
       width: 100%;
       position: relative;
+      z-index: 10;
 }
 
 
@@ -2531,6 +2541,7 @@ input[type="radio"].visually-hidden {
 .button-icondropdown1__list-open {
       display: block;
       position: relative;
+      z-index: 10;
 }
 
 
@@ -2616,6 +2627,7 @@ input[type="radio"].visually-hidden {
 .button-icondropdown2__list-open {
       display: block;
       position: relative;
+      z-index: 10;
 }
 
 

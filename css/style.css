@@ -1608,6 +1608,13 @@ input[type=radio].visually-hidden {
   border-color: rgba(24, 25, 32, 0.2);
 }
 
+.field-multiple-select1__list-open {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
 .field-multiple-select2__item-container {
   display: flex;
   justify-content: space-between;
@@ -1694,10 +1701,11 @@ input[type=radio].visually-hidden {
   border-color: rgba(24, 25, 32, 0.2);
 }
 
-.field-multiple-select__list-open {
+.field-multiple-select2__list-open {
   display: block;
   width: 100%;
   position: relative;
+  z-index: 10;
 }
 
 .form-elements__button-style {
@@ -2269,6 +2277,7 @@ input[type=radio].visually-hidden {
   display: block;
   width: 100%;
   position: relative;
+  z-index: 10;
 }
 
 .form-elements__button-dropdown2-wrapper {
@@ -2349,6 +2358,7 @@ input[type=radio].visually-hidden {
   display: block;
   width: 100%;
   position: relative;
+  z-index: 10;
 }
 
 .form-elements__button-icondropdown1-wrapper {
@@ -2430,6 +2440,7 @@ input[type=radio].visually-hidden {
 .button-icondropdown1__list-open {
   display: block;
   position: relative;
+  z-index: 10;
 }
 
 .form-elements__button-icondropdown2-wrapper {
@@ -2511,6 +2522,7 @@ input[type=radio].visually-hidden {
 .button-icondropdown2__list-open {
   display: block;
   position: relative;
+  z-index: 10;
 }
 
 .form-elements__button-full1 {

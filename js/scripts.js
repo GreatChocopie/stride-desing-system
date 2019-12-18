@@ -4,7 +4,7 @@ var multiple1List = document.querySelector(".field-multiple-select1__list-wrappe
 
 multiple1Open.addEventListener("click", function (evt) {
       evt.preventDefault();
-      multiple1List.classList.toggle("field-multiple-select__list-open");
+      multiple1List.classList.toggle("field-multiple-select1__list-open");
 });
 
 var multiple2Open = document.querySelector(".form-elements__field-multiple-select2");
@@ -12,7 +12,7 @@ var multiple2List = document.querySelector(".field-multiple-select2__list-wrappe
 
 multiple2Open.addEventListener("click", function (evt) {
       evt.preventDefault();
-      multiple2List.classList.toggle("field-multiple-select__list-open");
+      multiple2List.classList.toggle("field-multiple-select2__list-open");
 });
 
 
