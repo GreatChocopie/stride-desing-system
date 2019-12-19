@@ -1,6 +1,7 @@
 $color-black1: rgba(24, 25, 32, 1);
 $color-black2: rgba(34, 34, 34, 1);
 $color-black3: rgba(51, 51, 51, 1);
+$color-black4: rgba(24, 25, 32, .75);
 $color-white1: rgba(255, 255, 255, 1);
 $color-white2: rgba(243, 243, 244);
 $color-gray1: rgba(24, 25, 32, 0.5);
@@ -24,6 +25,8 @@ $color-yellow2: rgba(248, 181, 43, 0.1);
 $color-red1: rgba(234, 77, 71, 1);
 $color-red2: rgba(234, 77, 71, 0.1);
 $color-red3: rgba(213, 70, 65, 1);
+
+
 
 
 
@@ -4075,7 +4078,7 @@ input[type="radio"].visually-hidden {
 
 .notice-ordinary__button:hover,
 .notice-ordinary__button:focus {
-      background-color: $color-blue3
+      background-color: $color-blue3;
 }
 
 .notice-ordinary__modal-map {
@@ -4098,14 +4101,14 @@ input[type="radio"].visually-hidden {
       width: 30px;
       height: 30px;
       background-image: url(../img/close.svg);
-      opacity: .25;
+      opacity: 0.25;
       transition: all .1s ease-in-out;
 
 }
 
-.notice-ordinary__modal-map-close:hover,
-.notice-ordinary__modal-map-close:focus {
-      opacity: .5;
+.notice-ordinary__modal-map-closebutton:hover,
+.notice-ordinary__modal-map-closebutton:focus {
+      opacity: 0.5;
 }
 
 .notice-ordinary__modal-map-header {
@@ -4181,7 +4184,7 @@ input[type="radio"].visually-hidden {
 
 .notice-snackbar__button:hover,
 .notice-snackbar__button:focus {
-      background-color: $color-blue3
+      background-color: $color-blue3;
 }
 
 .notice-snackbar__modal-map-wrapper {
@@ -4201,7 +4204,7 @@ input[type="radio"].visually-hidden {
       margin: 20px;
       display: flex;
       justify-content: space-between;
-      background-color: $color-blue2;
+      background-color: $color-black4;
 
 }
 
@@ -4260,7 +4263,7 @@ input[type="radio"].visually-hidden {
       bottom: 0;
       left: 0;
       transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-      background-color: $color-blue2;
+      background-color: $color-black4;
 }
 
 .notice-tost__modal-map-open {
@@ -4343,7 +4346,7 @@ input[type="radio"].visually-hidden {
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(180deg, $color-blue2, $color-blue2);
+      background-image: linear-gradient(180deg, $color-black4, $color-black4);
       z-index: 10;
 }
 
@@ -4354,7 +4357,7 @@ input[type="radio"].visually-hidden {
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(180deg, $color-blue2, $color-blue2);
+      background-image: linear-gradient(180deg, $color-black4, $color-black4);
       z-index: 10;
 }
 
@@ -4427,7 +4430,7 @@ input[type="radio"].visually-hidden {
 
 .map-ordinary__modal-popup-button1:hover,
 .map-ordinary__modal-popup-button1:focus {
-      background-color: $color-blue3
+      background-color: $color-blue3;
 }
 
 .map-ordinary__modal-popup-button2 {
@@ -4435,7 +4438,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       padding: 10px 30px;
       margin: 0;
-      background-color: $color-gray1;
+      background-color: $color-gray5;
       color: $color-gray1;
       transition: all .1s ease-in-out;
       line-height: 30px;
@@ -4550,7 +4553,7 @@ input[type="radio"].visually-hidden {
 
 .map-random__modal-popup-button1:hover,
 .map-random__modal-popup-button1:focus {
-      background-color: $color-blue3
+      background-color: $color-blue3;
 }
 
 .map-random__modal-popup-button2 {
@@ -4558,7 +4561,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       padding: 10px 30px;
       margin: 0;
-      background-color: $color-gray1;
+      background-color: $color-gray5;
       color: $color-gray1;
       transition: all .1s ease-in-out;
       line-height: 30px;

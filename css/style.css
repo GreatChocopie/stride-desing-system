@@ -3930,8 +3930,8 @@ input[type=radio].visually-hidden {
   transition: all 0.1s ease-in-out;
 }
 
-.notice-ordinary__modal-map-close:hover,
-.notice-ordinary__modal-map-close:focus {
+.notice-ordinary__modal-map-closebutton:hover,
+.notice-ordinary__modal-map-closebutton:focus {
   opacity: 0.5;
 }
 
@@ -4024,7 +4024,7 @@ input[type=radio].visually-hidden {
   margin: 20px;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(45, 82, 218, 0.75);
+  background-color: rgba(24, 25, 32, 0.75);
 }
 
 .notice-snackbar__modal-map-main {
@@ -4078,7 +4078,7 @@ input[type=radio].visually-hidden {
   bottom: 0;
   left: 0;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  background-color: rgba(45, 82, 218, 0.75);
+  background-color: rgba(24, 25, 32, 0.75);
 }
 
 .notice-tost__modal-map-open {
@@ -4155,7 +4155,7 @@ input[type=radio].visually-hidden {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(180deg, rgba(45, 82, 218, 0.75), rgba(45, 82, 218, 0.75));
+  background-image: linear-gradient(180deg, rgba(24, 25, 32, 0.75), rgba(24, 25, 32, 0.75));
   z-index: 10;
 }
 
@@ -4166,7 +4166,7 @@ input[type=radio].visually-hidden {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(180deg, rgba(45, 82, 218, 0.75), rgba(45, 82, 218, 0.75));
+  background-image: linear-gradient(180deg, rgba(24, 25, 32, 0.75), rgba(24, 25, 32, 0.75));
   z-index: 10;
 }
 
@@ -4244,7 +4244,7 @@ input[type=radio].visually-hidden {
   box-sizing: border-box;
   padding: 10px 30px;
   margin: 0;
-  background-color: rgba(24, 25, 32, 0.5);
+  background-color: rgba(242, 242, 243, 0.9);
   color: rgba(24, 25, 32, 0.5);
   transition: all 0.1s ease-in-out;
   line-height: 30px;
@@ -4364,7 +4364,7 @@ input[type=radio].visually-hidden {
   box-sizing: border-box;
   padding: 10px 30px;
   margin: 0;
-  background-color: rgba(24, 25, 32, 0.5);
+  background-color: rgba(242, 242, 243, 0.9);
   color: rgba(24, 25, 32, 0.5);
   transition: all 0.1s ease-in-out;
   line-height: 30px;
