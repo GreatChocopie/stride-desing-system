@@ -3776,7 +3776,7 @@ input[type=radio].visually-hidden {
 
 .modal-map__main-container {
   width: 1039px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -4432,7 +4432,7 @@ input[type=radio].visually-hidden {
 
 .blocks__main-container {
   width: 1039px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -5708,7 +5708,7 @@ input[type=radio].visually-hidden {
 
 .components__main-container {
   width: 1039px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -6404,7 +6404,7 @@ input[type=radio].visually-hidden {
 
 .icon__main-container {
   width: 1039px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
