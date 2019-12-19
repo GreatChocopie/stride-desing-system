@@ -1,23 +1,29 @@
 $color-black1: rgba(24, 25, 32, 1);
+$color-black2: rgba(34, 34, 34, 1);
+$color-black3: rgba(51, 51, 51, 1);
 $color-white1: rgba(255, 255, 255, 1);
 $color-white2: rgba(243, 243, 244);
 $color-gray1: rgba(24, 25, 32, 0.5);
 $color-gray2:rgba(24, 25, 32, 0.2);
 $color-gray3:rgba(24, 25, 32, 0.1);
-$color-gray3: rgba(24, 25, 32, 0.05);
+$color-gray8: rgba(24, 25, 32, 0.05);
+$color-gray4: rgba(243, 243, 244, 1);
+$color-gray5:rgba(242, 242, 243, 0.9);
+$color-gray6:rgba(24, 25, 32, 0.3);
+$color-gray7:rgba(204, 204, 204, 1);
 $color-blue1: rgba(45, 82, 218, 1);
 $color-blue2: rgba(45, 82, 218, 0.75);
 $color-blue3:rgb(41, 75, 199, 1);
+$color-blue4: rgba(45, 82, 218, 0.3);
+$color-blue5: rgba(45, 82, 218, 0.1);
 $color-green1: rgba(15, 153, 94);
 $color-green2: rgba(15, 153, 94, 0.1);
-$color-yellow1: rgba(248, 181, 43, 0.1);
-$color-yellow2: rgba(248, 181, 43, 0.2);
+$color-green3: rgba(15, 153, 94, 0.75);
+$color-yellow1: rgba(248, 181, 43, 1);
+$color-yellow2: rgba(248, 181, 43, 0.1);
 $color-red1: rgba(234, 77, 71, 1);
-$color-red2: rgba(234, 77, 71, 0.1);;
+$color-red2: rgba(234, 77, 71, 0.1);
 $color-red3: rgba(213, 70, 65, 1);
-
-
-
 
 
 
@@ -25,23 +31,22 @@ $color-red3: rgba(213, 70, 65, 1);
 /* ====================
 Переменные шрифтов в SCSS
 */
-$font-family-roboto: Roboto,
--apple-system,
-BlinkMacSystem,
-"Segoe UI",
-Oxygen,
+$font-family-1: -apple-system,
+BlinkMacSystemFont,
+Segoe UI,
+Helvetica,
+Arial,
+Roboto,
 Ubuntu,
-Cantarell,
-"Open Sans",
-"Helvetica Neue",
-sans-serif;
-$font-family-opensans: "Open Sans",
-sans-serif;
+sans-serif,
+Apple Color Emoji,
+Segoe UI Emojiж;
+
 
 
 body {
-      font-family: Roboto, sans-serif;
-      color: #181920;
+      font-family: $font-family-1;
+      color: $color-black1;
       font-size: 14px;
       line-height: 20px;
       padding: 0;
@@ -115,7 +120,7 @@ input[type="radio"].visually-hidden {
       width: 250px;
       margin: 0;
       padding: 0;
-      background-color: hsla(240, 4%, 95%, .9);
+      background-color: $color-gray5;
 }
 
 .header__navigation-logo {
@@ -124,7 +129,7 @@ input[type="radio"].visually-hidden {
       z-index: 1;
       width: 250px;
       padding: 30px;
-      background-color: hsla(240, 4%, 95%, .9);
+      background-color: $color-gray5;
 }
 
 .header__navigation-menu {
@@ -138,22 +143,22 @@ input[type="radio"].visually-hidden {
       display: block;
       font-size: 20px;
       line-height: 30px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .header__navigation-menu-item:hover {
-      color: rgba(24, 25, 32, .75);
+      color: $color-gray6;
 }
 
 .header__navigation-menu-item:focus {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .header__navigation-menu-item--current {
       display: block;
       font-size: 20px;
       line-height: 30px;
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .header__navigation-list {
@@ -168,12 +173,12 @@ input[type="radio"].visually-hidden {
       font-size: 17px;
       line-height: 25px;
       margin-bottom: 5px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .header__navigation-item:hover,
 .header__navigation-item:focus {
-      color: rgba(24, 25, 32, .3);
+      color: $color-gray7;
 }
 
 // typography__main
@@ -197,7 +202,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       padding-bottom: 80px;
       margin-bottom: 80px;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 
 }
 
@@ -268,7 +273,7 @@ input[type="radio"].visually-hidden {
       padding: 0 15px 0 0;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray3;
 }
 
 .typography__tittle-h1 {
@@ -343,7 +348,7 @@ input[type="radio"].visually-hidden {
       padding: 0 15px 0 0;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray3;
 }
 
 .typography__text-subtitle {
@@ -352,7 +357,7 @@ input[type="radio"].visually-hidden {
       padding: 0 15px;
       font-size: 20px;
       line-height: 30px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .typography__text-paragraph {
@@ -361,7 +366,7 @@ input[type="radio"].visually-hidden {
       padding: 0 15px;
       font-size: 17px;
       line-height: 25px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .typography__tech-style {
@@ -413,7 +418,7 @@ input[type="radio"].visually-hidden {
       padding: 0 15px 0 0;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: color-gray1;
 }
 
 .typography__tech-link {
@@ -424,21 +429,21 @@ input[type="radio"].visually-hidden {
 
 .typography__tech-link-a {
       transition: all .1s ease;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 20px;
       line-height: 30px;
 }
 
 .typography__tech-link-a:hover,
 .typography__tech-link-a:focus {
-      color: rgba(45, 82, 218, .75);
+      color: $color-blue2;
 }
 
 .typography__tech-auxiliary {
       box-sizing: border-box;
       width: 713px;
       padding: 0 15px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 14px;
       line-height: 20px;
 }
@@ -447,7 +452,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       width: 713px;
       padding: 0 15px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -492,7 +497,7 @@ input[type="radio"].visually-hidden {
       padding: 0 15px 0 0;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .typography__span-marker {
@@ -501,7 +506,7 @@ input[type="radio"].visually-hidden {
       padding: 0 15px;
       font-size: 20px;
       line-height: 30px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .typography__span-uppercase {
@@ -514,19 +519,19 @@ input[type="radio"].visually-hidden {
       padding: 0 15px;
       font-size: 20px;
       line-height: 30px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .typography__span-link-a {
       transition: all .1s ease;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 20px;
       line-height: 30px;
 }
 
 .typography__span-link-a:hover,
 .typography__span-link-a:focus {
-      color: rgba(45, 82, 218, .75);
+      color: $color-blue2;
 }
 
 
@@ -552,7 +557,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       padding-bottom: 80px;
       margin-bottom: 80px;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 
 }
 
@@ -667,7 +672,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .form-elements__field-ordinary {
@@ -705,7 +710,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-ordinary-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -714,7 +719,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-ordinary-input1 {
       box-sizing: border-box;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       margin-bottom: 10px;
       padding: 9px 14px;
       border-style: solid;
@@ -730,7 +735,7 @@ input[type="radio"].visually-hidden {
 .form-elements__field-ordinary-input2 {
       box-sizing: border-box;
       border: none;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
       margin-bottom: 10px;
       padding: 9px 0;
       transition: all .1s ease-in-out;
@@ -742,26 +747,26 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-ordinary-input1:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-ordinary-input2:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-ordinary-input1:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: rgba(24, 25, 32, .2);
-      border-bottom-color: #2d52da;
+      border-color: $color-gray2;
+      border-bottom-color: $color-blue1;
       border-bottom-width: 2px;
 }
 
 .form-elements__field-ordinary-input2:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: rgba(24, 25, 32, .2);
-      border-bottom-color: #2d52da;
+      border-color: $color-gray2;
+      border-bottom-color: $color-blue1;
       border-bottom-width: 2px;
 }
 
@@ -773,7 +778,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-success-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -782,7 +787,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-success-input1 {
       box-sizing: border-box;
-      border-color: #0f995e;
+      border-color: $color-green1;
       margin-bottom: 10px;
       padding: 9px 14px;
       border-style: solid;
@@ -798,7 +803,7 @@ input[type="radio"].visually-hidden {
 .form-elements__field-success-input2 {
       box-sizing: border-box;
       border: none;
-      border-bottom: 1px solid #0f995e;
+      border-bottom: 1px solid $color-green1;
       margin-bottom: 10px;
       padding: 9px 0;
       transition: all .1s ease-in-out;
@@ -810,33 +815,33 @@ input[type="radio"].visually-hidden {
 }
 
 // .form-elements__field-success-input1:hover {
-//       border-color: rgba(24, 25, 32, .2);
+//       border-color: $color-gray2;
 // }
 
 // .form-elements__field-success-input2:hover {
-//       border-color: rgba(24, 25, 32, .2);
+//       border-color: $color-gray2;
 // }
 
 .form-elements__field-success-input1:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: #0f995e;
-      border-bottom-color: #0f995e;
+      border-color: $color-green1;
+      border-bottom-color: $color-green1;
       border-bottom-width: 2px;
 }
 
 .form-elements__field-success-input2:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: #0f995e;
-      border-bottom-color: #0f995e;
+      border-color: $color-green1;
+      border-bottom-color: $color-green1;
       border-bottom-width: 2px;
 }
 
 .form-elements__field-success-text {
       font-size: 14px;
       line-height: 20px;
-      color: #0f995e;
+      color: $color-green1;
 
 }
 
@@ -848,7 +853,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-warning-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -857,7 +862,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-warning-input1 {
       box-sizing: border-box;
-      border-color: #f8b52b;
+      border-color: $color-yellow1;
       margin-bottom: 10px;
       padding: 9px 14px;
       border-style: solid;
@@ -873,7 +878,7 @@ input[type="radio"].visually-hidden {
 .form-elements__field-warning-input2 {
       box-sizing: border-box;
       border: none;
-      border-bottom: 1px solid #f8b52b;
+      border-bottom: 1px solid $color-yellow1;
       margin-bottom: 10px;
       padding: 9px 0;
       transition: all .1s ease-in-out;
@@ -885,33 +890,33 @@ input[type="radio"].visually-hidden {
 }
 
 // .form-elements__field-warning-input1:hover {
-//       border-color: rgba(24, 25, 32, .2);
+//       border-color: $color-gray2;
 // }
 
 // .form-elements__field-warning-input2:hover {
-//       border-color: rgba(24, 25, 32, .2);
+//       border-color: $color-gray2;
 // }
 
 .form-elements__field-warning-input1:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: #f8b52b;
-      border-bottom-color: #f8b52b;
+      border-color: $color-yellow1;
+      border-bottom-color: $color-yellow1;
       border-bottom-width: 2px;
 }
 
 .form-elements__field-warning-input2:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: #f8b52b;
-      border-bottom-color: #f8b52b;
+      border-color: $color-yellow1;
+      border-bottom-color: $color-yellow1;
       border-bottom-width: 2px;
 }
 
 .form-elements__field-warning-text {
       font-size: 14px;
       line-height: 20px;
-      color: #f8b52b;
+      color: $color-yellow1;
 }
 
 .form-elements__field-error {
@@ -922,7 +927,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-error-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -931,7 +936,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-error-input1 {
       box-sizing: border-box;
-      border-color: #ea4d47;
+      border-color: $color-red1;
       margin-bottom: 10px;
       padding: 9px 14px;
       border-style: solid;
@@ -947,7 +952,7 @@ input[type="radio"].visually-hidden {
 .form-elements__field-error-input2 {
       box-sizing: border-box;
       border: none;
-      border-bottom: 1px solid #ea4d47;
+      border-bottom: 1px solid $color-red1;
       margin-bottom: 10px;
       padding: 9px 0;
       transition: all .1s ease-in-out;
@@ -960,33 +965,33 @@ input[type="radio"].visually-hidden {
 }
 
 // .form-elements__field-error-input1:hover {
-//       border-color: rgba(24, 25, 32, .2);
+//       border-color: $color-gray2;
 // }
 
 // .form-elements__field-error-input2:hover {
-//       border-color: rgba(24, 25, 32, .2);
+//       border-color: $color-gray2;
 // }
 
 .form-elements__field-error-input1:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: #ea4d47;
-      border-bottom-color: #ea4d47;
+      border-color: $color-red1;
+      border-bottom-color: $color-red1;
       border-bottom-width: 2px;
 }
 
 .form-elements__field-error-input2:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: #ea4d47;
-      border-bottom-color: #ea4d47;
+      border-color: $color-red1;
+      border-bottom-color: $color-red1;
       border-bottom-width: 2px;
 }
 
 .form-elements__field-error-text {
       font-size: 14px;
       line-height: 20px;
-      color: #ea4d47;
+      color: $color-red1;
 }
 
 .form-elements__field-blocked {
@@ -997,7 +1002,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-blocked-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -1006,7 +1011,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-blocked-input1 {
       box-sizing: border-box;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       margin-bottom: 10px;
       padding: 9px 14px;
       border-style: solid;
@@ -1022,19 +1027,19 @@ input[type="radio"].visually-hidden {
 .form-elements__field-blocked-input1:disabled {
       opacity: .5;
       cursor: not-allowed;
-      background-color: #ffffff;
+      background-color: $color-white1;
 }
 
 .form-elements__field-blocked-input2:disabled {
       opacity: .5;
       cursor: not-allowed;
-      background-color: #ffffff;
+      background-color: $color-white1;
 }
 
 .form-elements__field-blocked-input2 {
       box-sizing: border-box;
       border: none;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
       margin-bottom: 10px;
       padding: 9px 0;
       transition: all .1s ease-in-out;
@@ -1053,7 +1058,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-icon-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -1062,7 +1067,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-icon-input1 {
       box-sizing: border-box;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       margin-bottom: 10px;
       padding: 9px 14px;
       padding-right: 40px;
@@ -1083,7 +1088,7 @@ input[type="radio"].visually-hidden {
 .form-elements__field-icon-input2 {
       box-sizing: border-box;
       border: none;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
       padding: 10px 40px 9px 0;
       transition: all .1s ease-in-out;
       cursor: text;
@@ -1098,23 +1103,23 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-icon-input1:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 
 }
 
 .form-elements__field-icon-input2:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-icon-input1:focus {
       outline: none;
-      border-color: rgba(24, 25, 32, .2);
-      border-bottom: 2px solid #2d52da;
+      border-color: $color-gray2;
+      border-bottom: 2px solid $color-blue1;
 }
 
 .form-elements__field-icon-input2:focus {
       outline: none;
-      border-color: #2d52da;
+      border-color: $color-blue1;
       border-width: 2px;
 }
 
@@ -1127,7 +1132,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-button-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -1137,7 +1142,7 @@ input[type="radio"].visually-hidden {
 .form-elements__field-button-input1 {
       position: relative;
       box-sizing: border-box;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       margin-bottom: 10px;
       padding: 9px 69px 9px 14px;
       border-style: solid;
@@ -1160,28 +1165,27 @@ input[type="radio"].visually-hidden {
       padding-bottom: 5px;
       margin: 10px;
       border: none;
-      font-family: Pragmatica, sans-serif;
       font-size: 13px;
       line-height: 20px;
       font-weight: 500;
-      color: #fff;
+      color: $color-white1;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       border-radius: 100px;
       align-items: center;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
       cursor: pointer;
 }
 
 .form-elements__input1-button:hover {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .form-elements__field-button-input2 {
       box-sizing: border-box;
       border: none;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
       margin-bottom: 10px;
       padding: 9px 69px 9px 0;
       transition: all .1s ease-in-out;
@@ -1202,45 +1206,44 @@ input[type="radio"].visually-hidden {
       padding-bottom: 5px;
       margin: 10px;
       border: none;
-      font-family: Pragmatica, sans-serif;
       font-size: 13px;
       line-height: 20px;
       font-weight: 500;
-      color: #fff;
+      color: $color-white1;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       border-radius: 100px;
       align-items: center;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
       cursor: pointer;
 }
 
 .form-elements__input2-button:hover {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .form-elements__field-button-input1:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-button-input2:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-button-input1:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: rgba(24, 25, 32, .2);
-      border-bottom-color: #2d52da;
+      border-color: $color-gray2;
+      border-bottom-color: $color-blue1;
       border-bottom-width: 2px;
 }
 
 .form-elements__field-button-input2:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: rgba(24, 25, 32, .2);
-      border-bottom-color: #2d52da;
+      border-color: $color-gray2;
+      border-bottom-color: $color-blue1;
       border-bottom-width: 2px;
 }
 
@@ -1259,7 +1262,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-text-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -1269,12 +1272,12 @@ input[type="radio"].visually-hidden {
 .form-elements__field-text-min {
       font-size: 14px;
       line-height: 20px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .form-elements__field-text-textarea1 {
       box-sizing: border-box;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       margin-bottom: 10px;
       padding: 9px 14px;
       border-style: solid;
@@ -1290,7 +1293,7 @@ input[type="radio"].visually-hidden {
 .form-elements__field-text-textarea2 {
       box-sizing: border-box;
       border: none;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
       margin-bottom: 10px;
       padding: 9px 0;
       transition: all .1s ease-in-out;
@@ -1302,26 +1305,26 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__field-text-textarea1:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-text-textarea2:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-text-textarea1:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: rgba(24, 25, 32, .2);
-      border-bottom-color: #2d52da;
+      border-color: $color-gray2;
+      border-bottom-color: $color-blue1;
       border-bottom-width: 2px;
 }
 
 .form-elements__field-text-textarea2:focus {
       outline: none;
       padding-bottom: 8px;
-      border-color: rgba(24, 25, 32, .2);
-      border-bottom-color: #2d52da;
+      border-color: $color-gray2;
+      border-bottom-color: $color-blue1;
       border-bottom-width: 2px;
 }
 
@@ -1330,7 +1333,7 @@ input[type="radio"].visually-hidden {
       padding-left: 25px;
       font-size: 14px;
       line-height: 20px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .form-elements__field-text-text::after {
@@ -1400,7 +1403,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .form-elements__select-ordinary {
@@ -1432,7 +1435,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__select-ordinary-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -1440,7 +1443,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__select-icon-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -1449,7 +1452,7 @@ input[type="radio"].visually-hidden {
 
 
 .form-elements__select-blocked-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -1457,7 +1460,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-elements__select-multiple-label {
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -1470,7 +1473,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       margin-bottom: 10px;
       border-style: solid;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       transition: all .1s ease-in-out;
       cursor: pointer;
       padding: 9px 50px 9px 15px;
@@ -1490,7 +1493,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       margin-bottom: 10px;
       border-style: solid;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       transition: all .1s ease-in-out;
       cursor: pointer;
       padding: 9px 50px 9px 15px;
@@ -1505,12 +1508,12 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-ordinary-select1:hover,
 .form-elements__field-ordinary-select1:focus {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-ordinary-select2:hover,
 .form-elements__field-ordinary-select2:focus {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-icon-select1 {
@@ -1519,7 +1522,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       margin-bottom: 10px;
       border-style: solid;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       transition: all .1s ease-in-out;
       cursor: pointer;
       padding: 9px 50px 9px 50px;
@@ -1537,7 +1540,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       margin-bottom: 10px;
       border-style: solid;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       transition: all .1s ease-in-out;
       cursor: pointer;
       padding: 9px 50px 9px 50px;
@@ -1554,12 +1557,12 @@ input[type="radio"].visually-hidden {
 
 .form-elements__field-icon-select1:hover,
 .form-elements__field-icon-select1:focus {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-icon-select2:hover,
 .form-elements__field-icon-select2:focus {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .form-elements__field-blocked-select1 {
@@ -1568,7 +1571,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       margin-bottom: 10px;
       border-style: solid;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       transition: all .1s ease-in-out;
       cursor: pointer;
       padding: 9px 50px 9px 15px;
@@ -1586,7 +1589,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       margin-bottom: 10px;
       border-style: solid;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       transition: all .1s ease-in-out;
       cursor: pointer;
       padding: 9px 50px 9px 0;
@@ -1620,7 +1623,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       box-sizing: border-box;
       box-sizing: border-box;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       transition: all .1s ease-in-out;
       cursor: pointer;
       padding: 9px 50px 9px 15px;
@@ -1637,7 +1640,7 @@ input[type="radio"].visually-hidden {
       vertical-align: center;
       padding: 0 30px 0 0;
       margin-right: 10px;
-      color: #222;
+      color: $color-black2;
       font-size: 17px;
       line-height: 30px;
 }
@@ -1674,7 +1677,7 @@ input[type="radio"].visually-hidden {
       width: 100%;
       height: 200px;
       box-sizing: border-box;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       overflow: auto;
 }
 
@@ -1683,21 +1686,21 @@ input[type="radio"].visually-hidden {
       padding: 10px 15px;
       font-size: 17px;
       line-height: 25px;
-      color: #222;
+      color: $color-black2;
 }
 
 .field-multiple-select1__list-item:hover,
 .field-multiple-select1__list-item:focus {
-      background-color: rgba(45, 82, 218, .05);
+      background-color: $color-blue4;
 
 }
 
 .field-multiple-select1__list-item--curent {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .form-elements__field-multiple-select1:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .field-multiple-select1__list-open {
@@ -1714,7 +1717,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
       transition: all .1s ease-in-out;
       cursor: pointer;
       padding: 10px 50px 9px 0;
@@ -1732,7 +1735,7 @@ input[type="radio"].visually-hidden {
       position: relative;
       padding: 0 30px 0 0;
       margin-right: 5px;
-      color: #222;
+      color: $color-black2;
       font-size: 17px;
       line-height: 30px;
 }
@@ -1769,7 +1772,7 @@ input[type="radio"].visually-hidden {
       width: 100%;
       height: 200px;
       box-sizing: border-box;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       overflow: auto;
 }
 
@@ -1778,22 +1781,22 @@ input[type="radio"].visually-hidden {
       padding: 10px 15px;
       font-size: 17px;
       line-height: 25px;
-      color: #222;
+      color: $color-black2;
 }
 
 .field-multiple-select2__list-item:hover,
 .field-multiple-select2__list-item:focus {
-      background-color: rgba(45, 82, 218, .05);
+      background-color: $color-blue4;
 }
 
 .field-multiple-select2__list-item--curent {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 
 
 .form-elements__field-multiple-select2:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .field-multiple-select2__list-open {
@@ -1845,10 +1848,9 @@ input[type="radio"].visually-hidden {
       margin: 0;
       margin-bottom: 10px;
       text-align: start;
-      font-family: Pragmatica, sans-serif;
       font-size: 14px;
       line-height: 20px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .form-elements__button-style-notice::before {
@@ -1868,7 +1870,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .form-elements__button-style-ordinary {
@@ -2017,9 +2019,9 @@ input[type="radio"].visually-hidden {
       padding: 10px 30px;
       margin-bottom: 10px;
       border-radius: 1px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       cursor: pointer;
       font-size: 17px;
@@ -2027,7 +2029,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-ordinary1:hover,
 .form-elements__button-ordinary1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .form-elements__button-ordinary2 {
@@ -2035,10 +2037,10 @@ input[type="radio"].visually-hidden {
       min-height: 50px;
       padding: 9px 29px;
       box-sizing: border-box;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -2056,9 +2058,9 @@ input[type="radio"].visually-hidden {
       padding: 10px 30px;
       margin-bottom: 10px;
       border-radius: 25px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       cursor: pointer;
       font-size: 17px;
@@ -2066,7 +2068,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-round1:hover,
 .form-elements__button-round1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .form-elements__button-round2 {
@@ -2075,10 +2077,10 @@ input[type="radio"].visually-hidden {
       padding: 9px 29px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 25px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -2099,14 +2101,14 @@ input[type="radio"].visually-hidden {
       line-height: 30px;
       cursor: pointer;
       font-size: 17px;
-      background-color: rgba(24, 25, 32, .05);
-      color: rgba(24, 25, 32, .5);
+      background-color: $color-gray5;
+      color: $color-gray1;
 }
 
 .form-elements__button-secondary1:hover,
 .form-elements__button-secondary1:focus {
-      background-color: rgba(24, 25, 32, .1);
-      color: #2d52da;
+      background-color: $color-gray3;
+      color: $color-blue1;
 }
 
 
@@ -2116,10 +2118,10 @@ input[type="radio"].visually-hidden {
       padding: 9px 29px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -2127,9 +2129,9 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-secondary2:hover,
 .form-elements__button-secondary2:focus {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
       opacity: 1;
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .form-elements__button-danger1 {
@@ -2142,13 +2144,13 @@ input[type="radio"].visually-hidden {
       line-height: 30px;
       cursor: pointer;
       font-size: 17px;
-      background-color: #ea4d47;
-      color: #ffffff;
+      background-color: $color-red1;
+      color: $color-white1;
 }
 
 .form-elements__button-danger1:hover,
 .form-elements__button-danger1:focus {
-      background-color: #d54641;
+      background-color: $color-red3;
 }
 
 .form-elements__button-danger2 {
@@ -2157,10 +2159,10 @@ input[type="radio"].visually-hidden {
       padding: 9px 29px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border: 1px solid #ea4d47;
+      border: 1px solid $color-red1;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: #ea4d47;
+      color: $color-red1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -2168,8 +2170,8 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-danger2:hover,
 .form-elements__button-danger2:focus {
-      border-color: #d54641;
-      color: #d54641;
+      border-color: $color-red3;
+      color: $color-red3;
 }
 
 .form-elements__button-icon1 {
@@ -2180,9 +2182,9 @@ input[type="radio"].visually-hidden {
       padding: 10px 30px 10px 60px;
       margin-bottom: 10px;
       border-radius: 1px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       cursor: pointer;
       font-size: 17px;
@@ -2202,7 +2204,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-icon1:hover,
 .form-elements__button-icon1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .form-elements__button-icon2 {
@@ -2211,10 +2213,10 @@ input[type="radio"].visually-hidden {
       min-height: 50px;
       padding: 9px 29px 9px 59px;
       box-sizing: border-box;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -2246,9 +2248,9 @@ input[type="radio"].visually-hidden {
       padding: 10px 30px 10px 60px;
       margin-bottom: 10px;
       border-radius: 25px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       cursor: pointer;
       font-size: 17px;
@@ -2269,7 +2271,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-roundicon1:hover,
 .form-elements__button-roundicon1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .form-elements__button-roundicon2 {
@@ -2278,10 +2280,10 @@ input[type="radio"].visually-hidden {
       min-height: 50px;
       padding: 9px 29px 9px 59px;
       box-sizing: border-box;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 25px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -2316,9 +2318,9 @@ input[type="radio"].visually-hidden {
       padding: 10px 60px 10px 20px;
       margin-bottom: 10px;
       border-radius: 25px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       cursor: pointer;
       font-size: 17px;
@@ -2339,7 +2341,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-dropdown1:hover,
 .form-elements__button-dropdown1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .button-dropdown1__list-wrapper {
@@ -2356,8 +2358,8 @@ input[type="radio"].visually-hidden {
       width: 100%;
       height: 200px;
       box-sizing: border-box;
-      border: 1px solid rgba(24, 25, 32, .1);
-      background-color: #ffffff;
+      border: 1px solid $color-gray3;
+      background-color: $color-white1;
       overflow: auto;
 }
 
@@ -2366,16 +2368,16 @@ input[type="radio"].visually-hidden {
       padding: 10px 15px;
       font-size: 17px;
       line-height: 25px;
-      color: #222;
+      color: $color-black2;
 }
 
 .button-dropdown1__list-item:hover,
 .button-dropdown1__list-item:focus {
-      background-color: rgba(45, 82, 218, .05);
+      background-color: $color-blue4;
 }
 
 .button-dropdown1__list-item--curent {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 
@@ -2399,10 +2401,10 @@ input[type="radio"].visually-hidden {
       padding: 9px 59px 9px 19px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 25px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -2441,8 +2443,8 @@ input[type="radio"].visually-hidden {
       width: 100%;
       height: 200px;
       box-sizing: border-box;
-      border: 1px solid rgba(24, 25, 32, .1);
-      background-color: #ffffff;
+      border: 1px solid $color-gray3;
+      background-color: $color-white1;
       overflow: auto;
 }
 
@@ -2451,16 +2453,16 @@ input[type="radio"].visually-hidden {
       padding: 10px 15px;
       font-size: 17px;
       line-height: 25px;
-      color: #222;
+      color: $color-black2;
 }
 
 .button-dropdown2__list-item:hover,
 .button-dropdown2__list-item:focus {
-      background-color: rgba(45, 82, 218, .05);
+      background-color: $color-blue4;
 }
 
 .button-dropdown2__list-item--curent {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 
@@ -2485,9 +2487,9 @@ input[type="radio"].visually-hidden {
       padding: 10px;
       margin-bottom: 10px;
       border-radius: 25px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       cursor: pointer;
       font-size: 17px;
@@ -2509,7 +2511,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-icondropdown1:hover,
 .form-elements__button-icondropdown1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .button-icondropdown1__list-wrapper {
@@ -2526,8 +2528,8 @@ input[type="radio"].visually-hidden {
       width: 100%;
       height: 200px;
       box-sizing: border-box;
-      border: 1px solid rgba(24, 25, 32, .1);
-      background-color: #ffffff;
+      border: 1px solid $color-gray3;
+      background-color: $color-white1;
       overflow: auto;
 }
 
@@ -2536,16 +2538,16 @@ input[type="radio"].visually-hidden {
       padding: 10px 15px;
       font-size: 17px;
       line-height: 25px;
-      color: #222;
+      color: $color-black2;
 }
 
 .button-icondropdown1__list-item:hover,
 .button-icondropdown1__list-item:focus {
-      background-color: rgba(45, 82, 218, .05);
+      background-color: $color-blue4;
 }
 
 .button-icondropdown1__list-item--curent {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 
@@ -2569,10 +2571,10 @@ input[type="radio"].visually-hidden {
       padding: 9px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 25px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -2612,8 +2614,8 @@ input[type="radio"].visually-hidden {
       width: 100%;
       height: 200px;
       box-sizing: border-box;
-      border: 1px solid rgba(24, 25, 32, .1);
-      background-color: #ffffff;
+      border: 1px solid $color-gray3;
+      background-color: $color-white1;
       overflow: auto;
 }
 
@@ -2622,16 +2624,16 @@ input[type="radio"].visually-hidden {
       padding: 10px 15px;
       font-size: 17px;
       line-height: 25px;
-      color: #222;
+      color: $color-black2;
 }
 
 .button-icondropdown2__list-item:hover,
 .button-icondropdown2__list-item:focus {
-      background-color: rgba(45, 82, 218, .05);
+      background-color: $color-blue4;
 }
 
 .button-icondropdown2__list-item--curent {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 
@@ -2649,9 +2651,9 @@ input[type="radio"].visually-hidden {
       padding: 10px 30px;
       margin-bottom: 10px;
       border-radius: 1px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       cursor: pointer;
       font-size: 17px;
@@ -2659,17 +2661,17 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-full1:hover,
 .form-elements__button-full1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .form-elements__button-full2 {
       width: 100%;
       padding: 9px 29px;
       box-sizing: border-box;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -2689,14 +2691,14 @@ input[type="radio"].visually-hidden {
       line-height: 30px;
       cursor: pointer;
       font-size: 17px;
-      background-color: rgba(24, 25, 32, .05);
-      color: rgba(24, 25, 32, .5);
+      background-color: $color-gray5;
+      color: $color-gray1;
 }
 
 .form-elements__button-secondaryfull1:hover,
 .form-elements__button-secondaryfull1:focus {
-      background-color: rgba(24, 25, 32, .1);
-      color: #2d52da;
+      background-color: $color-gray3;
+      color: $color-blue1;
 }
 
 
@@ -2705,10 +2707,10 @@ input[type="radio"].visually-hidden {
       padding: 9px 29px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -2716,9 +2718,9 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-secondaryfull2:hover,
 .form-elements__button-secondaryfull2:focus {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
       opacity: 1;
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .form-elements__button-blocked1 {
@@ -2728,8 +2730,8 @@ input[type="radio"].visually-hidden {
       padding: 10px 30px;
       margin-bottom: 10px;
       border-radius: 1px;
-      background-color: #2d52da;
-      color: #ffffff;
+      background-color: $color-blue1;
+      color: $color-white1;
       line-height: 30px;
       font-size: 17px;
       opacity: .5;
@@ -2742,9 +2744,9 @@ input[type="radio"].visually-hidden {
       padding: 9px 29px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 1px;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 17px;
       line-height: 30px;
       opacity: .5;
@@ -2757,9 +2759,9 @@ input[type="radio"].visually-hidden {
       padding: 5px 20px;
       box-sizing: border-box;
       border-radius: 1px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       font-size: 14px;
       line-height: 20px;
       cursor: pointer;
@@ -2767,7 +2769,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-small1:hover,
 .form-elements__button-small1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .form-elements__button-small2 {
@@ -2776,9 +2778,9 @@ input[type="radio"].visually-hidden {
       padding: 5px 19px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 1px;
-      color: #2d52da;
+      color: $color-blue1;
       transition: all .1s ease-in-out;
       font-size: 14px;
       line-height: 20px;
@@ -2797,9 +2799,9 @@ input[type="radio"].visually-hidden {
       margin-bottom: 10px;
       box-sizing: border-box;
       border-radius: 25px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       font-size: 14px;
       line-height: 20px;
       cursor: pointer;
@@ -2807,7 +2809,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-smallround1:hover,
 .form-elements__button-smallround1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .form-elements__button-smallround2 {
@@ -2816,9 +2818,9 @@ input[type="radio"].visually-hidden {
       padding: 5px 19px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 25px;
-      color: #2d52da;
+      color: $color-blue1;
       transition: all .1s ease-in-out;
       font-size: 14px;
       line-height: 20px;
@@ -2837,8 +2839,8 @@ input[type="radio"].visually-hidden {
       margin-bottom: 10px;
       box-sizing: border-box;
       border-radius: 1px;
-      background-color: rgba(24, 25, 32, .05);
-      color: rgba(24, 25, 32, .5);
+      background-color: $color-gray5;
+      color: $color-gray1;
       transition: all .1s ease-in-out;
       font-size: 14px;
       line-height: 20px;
@@ -2847,8 +2849,8 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-smallsecondary1:hover,
 .form-elements__button-smallsecondary1:focus {
-      background-color: rgba(24, 25, 32, .1);
-      color: #2d52da;
+      background-color: $color-gray3;
+      color: $color-blue1;
 }
 
 .form-elements__button-smallsecondary2 {
@@ -2857,9 +2859,9 @@ input[type="radio"].visually-hidden {
       padding: 5px 19px;
       margin-bottom: 10px;
       box-sizing: border-box;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       border-radius: 1px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       transition: all .1s ease-in-out;
       font-size: 14px;
       line-height: 20px;
@@ -2868,9 +2870,9 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-smallsecondary2:hover,
 .form-elements__button-smallsecondary2:focus {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
       opacity: 1;
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 
@@ -2882,7 +2884,7 @@ input[type="radio"].visually-hidden {
       margin-bottom: 10px;
       box-sizing: border-box;
       transition: all .1s ease;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 20px;
       line-height: 30px;
       cursor: pointer;
@@ -2903,7 +2905,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-text1:hover,
 .form-elements__button-text1:focus {
-      color: rgba(45, 82, 218, .75);
+      color: $color-blue2;
 }
 
 .form-elements__button-text2 {
@@ -2914,7 +2916,7 @@ input[type="radio"].visually-hidden {
       margin-bottom: 10px;
       box-sizing: border-box;
       transition: all .1s ease;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 20px;
       line-height: 30px;
       cursor: pointer;
@@ -2935,7 +2937,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-text2:hover,
 .form-elements__button-text2:focus {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .form-elements__button-smalltext1 {
@@ -2946,7 +2948,7 @@ input[type="radio"].visually-hidden {
       margin-bottom: 10px;
       box-sizing: border-box;
       transition: all .1s ease;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 14px;
       line-height: 20px;
       cursor: pointer;
@@ -2967,7 +2969,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-smalltext1:hover,
 .form-elements__button-smalltext1:focus {
-      color: rgba(45, 82, 218, .75);
+      color: $color-blue2;
 }
 
 .form-elements__button-smalltext2 {
@@ -2978,7 +2980,7 @@ input[type="radio"].visually-hidden {
       margin-bottom: 10px;
       box-sizing: border-box;
       transition: all .1s ease;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 14px;
       line-height: 20px;
       cursor: pointer;
@@ -2999,7 +3001,7 @@ input[type="radio"].visually-hidden {
 
 .form-elements__button-smalltext2:hover,
 .form-elements__button-smalltext2:focus {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 
@@ -3028,7 +3030,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .form-elements__messenge-style-success {
@@ -3075,8 +3077,8 @@ input[type="radio"].visually-hidden {
       width: 326px;
       box-sizing: border-box;
       padding: 20px;
-      background-color: #0f995e;
-      color: #fff;
+      background-color: $color-green1;
+      color: $color-white1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -3085,8 +3087,8 @@ input[type="radio"].visually-hidden {
       width: 326px;
       box-sizing: border-box;
       padding: 20px;
-      background-color: rgba(15, 153, 94, .1);
-      color: #0f995e;
+      background-color: $color-green2;
+      color: $color-green1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -3096,8 +3098,8 @@ input[type="radio"].visually-hidden {
       width: 326px;
       box-sizing: border-box;
       padding: 60px 20px 20px 20px;
-      background-color: #0f995e;
-      color: #fff;
+      background-color: $color-green1;
+      color: $color-white1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -3110,7 +3112,7 @@ input[type="radio"].visually-hidden {
       width: 25px;
       height: 25px;
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: $color-white1;
       background-image: url(../img/done.svg);
       background-size: 20px;
       background-position: center;
@@ -3122,8 +3124,8 @@ input[type="radio"].visually-hidden {
       width: 326px;
       box-sizing: border-box;
       padding: 60px 20px 20px 20px;
-      background-color: rgba(15, 153, 94, .1);
-      color: #0f995e;
+      background-color: $color-green2;
+      color: $color-green1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -3136,7 +3138,7 @@ input[type="radio"].visually-hidden {
       width: 25px;
       height: 25px;
       border-radius: 50%;
-      background-color: #0f995e;
+      background-color: $color-green1;
       background-image: url(../img/done.svg);
       background-size: 20px;
       background-position: center;
@@ -3147,8 +3149,8 @@ input[type="radio"].visually-hidden {
       width: 326px;
       box-sizing: border-box;
       padding: 20px;
-      background-color: #ea4d47;
-      color: #fff;
+      background-color: $color-red1;
+      color: $color-white1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -3157,8 +3159,8 @@ input[type="radio"].visually-hidden {
       width: 326px;
       box-sizing: border-box;
       padding: 20px;
-      background-color: rgba(234, 77, 71, .1);
-      color: #ea4d47;
+      background-color: $color-red2;
+      color: $color-red1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -3168,8 +3170,8 @@ input[type="radio"].visually-hidden {
       width: 326px;
       box-sizing: border-box;
       padding: 60px 20px 20px 20px;
-      background-color: #ea4d47;
-      color: #fff;
+      background-color: $color-red1;
+      color: $color-white1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -3192,8 +3194,8 @@ input[type="radio"].visually-hidden {
       width: 326px;
       box-sizing: border-box;
       padding: 60px 20px 20px 20px;
-      background-color: rgba(234, 77, 71, .1);
-      color: #ea4d47;
+      background-color: $color-red2;
+      color: $color-red1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -3238,7 +3240,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .form-elements__addition-wrapper {
@@ -3276,10 +3278,10 @@ input[type="radio"].visually-hidden {
       display: block;
       padding: 10px 29px;
       margin-left: -1px;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -3287,12 +3289,12 @@ input[type="radio"].visually-hidden {
 
 .addition-toggle1__input-label:hover,
 .addition-toggle1__input-label:focus {
-      background-color: rgba(45, 82, 218, .1);
+      background-color: $color-blue5;
 }
 
 .addition-toggle1__option-input:checked+.addition-toggle1__input-label {
-      background-color: #2d52da;
-      color: #fff;
+      background-color: $color-blue1;
+      color: $color-white1;
 }
 
 .form-elements__addition-toggle2 {
@@ -3312,10 +3314,10 @@ input[type="radio"].visually-hidden {
       display: block;
       padding: 10px 29px;
       margin-left: -1px;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: #181920;
+      color: $color-black1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -3323,15 +3325,15 @@ input[type="radio"].visually-hidden {
 
 .addition-toggle2__input-label:hover,
 .addition-toggle2__input-label:focus {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
       background-color: transparent;
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .addition-toggle2__option-input:checked+.addition-toggle2__input-label {
-      border-color: #2d52da;
+      border-color: $color-blue1;
       background-color: transparent;
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 
@@ -3360,10 +3362,10 @@ input[type="radio"].visually-hidden {
       display: block;
       padding: 5px 19px;
       margin-left: -1px;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 14px;
       line-height: 20px;
       cursor: pointer;
@@ -3371,12 +3373,12 @@ input[type="radio"].visually-hidden {
 
 .addition-smalltoggle1__input-label:hover,
 .addition-smalltoggle1__input-label:focus {
-      background-color: rgba(45, 82, 218, .1);
+      background-color: $color-blue5;
 }
 
 .addition-smalltoggle1__option-input:checked+.addition-smalltoggle1__input-label {
-      background-color: #2d52da;
-      color: #fff;
+      background-color: $color-blue1;
+      color: $color-white1;
 }
 
 .form-elements__addition-smalltoggle2 {
@@ -3396,10 +3398,10 @@ input[type="radio"].visually-hidden {
       display: block;
       padding: 5px 19px;
       margin-left: -1px;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: #181920;
+      color: $color-black1;
       font-size: 14px;
       line-height: 20px;
       cursor: pointer;
@@ -3407,15 +3409,15 @@ input[type="radio"].visually-hidden {
 
 .addition-smalltoggle2__input-label:hover,
 .addition-smalltoggle2__input-label:focus {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
       background-color: transparent;
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .addition-smalltoggle2__option-input:checked+.addition-smalltoggle2__input-label {
-      border-color: #2d52da;
+      border-color: $color-blue1;
       background-color: transparent;
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 // checkbox
@@ -3441,7 +3443,7 @@ input[type="radio"].visually-hidden {
       min-height: 25px;
       padding-left: 40px;
       position: relative;
-      color: #181920;
+      color: $color-black1;
       font-size: 17px;
       line-height: 25px;
       cursor: pointer;
@@ -3455,7 +3457,7 @@ input[type="radio"].visually-hidden {
       top: 0;
       width: 25px;
       height: 25px;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
 }
 
 .addition-checkbox__option-input:checked+.addition-checkbox__input-label::before {
@@ -3498,7 +3500,7 @@ input[type="radio"].visually-hidden {
       min-height: 25px;
       padding-left: 40px;
       position: relative;
-      color: #181920;
+      color: $color-black1;
       font-size: 17px;
       line-height: 25px;
       cursor: pointer;
@@ -3512,7 +3514,7 @@ input[type="radio"].visually-hidden {
       top: 0;
       width: 25px;
       height: 25px;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       border-radius: 25px;
 }
 
@@ -3523,7 +3525,7 @@ input[type="radio"].visually-hidden {
       left: 4px;
       width: 19px;
       height: 19px;
-      background: #2d52da;
+      background: $color-blue1;
       border-radius: 100%;
 }
 
@@ -3570,7 +3572,7 @@ input[type="radio"].visually-hidden {
 // серый
 .tumbler-small__name {
       font-size: 14px;
-      color: #181920;
+      color: $color-black1;
       line-height: 20px;
 }
 
@@ -3591,7 +3593,7 @@ input[type="radio"].visually-hidden {
       height: 20px;
       padding: 3px;
       border-radius: 50px;
-      background-color: rgba(24, 25, 32, .1);
+      background-color: $color-gray3;
       cursor: pointer;
 }
 
@@ -3600,7 +3602,7 @@ input[type="radio"].visually-hidden {
       position: absolute;
       top: 3px;
       left: 3px;
-      background-color: #fff;
+      background-color: $color-white1;
       border-radius: 50px;
       width: 14px;
       height: 14px;
@@ -3608,7 +3610,7 @@ input[type="radio"].visually-hidden {
 }
 
 .tumbler-small__grey-input:checked+.tumbler-small__grey {
-      background-color: #0f995e;
+      background-color: $color-green1;
       transition: transform 200ms ease 0s;
 }
 
@@ -3619,7 +3621,7 @@ input[type="radio"].visually-hidden {
 // белый 
 .tumbler-small__name {
       font-size: 14px;
-      color: #181920;
+      color: $color-black1;
       line-height: 20px;
 }
 
@@ -3640,7 +3642,7 @@ input[type="radio"].visually-hidden {
       height: 20px;
       padding: 3px;
       border-radius: 50px;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       cursor: pointer;
 }
 
@@ -3649,8 +3651,8 @@ input[type="radio"].visually-hidden {
       position: absolute;
       top: 2px;
       left: 2px;
-      background-color: #fff;
-      box-shadow: 0 2px 5px 0 rgba(24, 25, 32, .2);
+      background-color: $color-white1;
+      box-shadow: 0 2px 5px 0 $color-gray2;
       border-radius: 50px;
       width: 14px;
       height: 14px;
@@ -3658,7 +3660,7 @@ input[type="radio"].visually-hidden {
 }
 
 .tumbler-small__white-input:checked+.tumbler-small__white {
-      background-color: #0f995e;
+      background-color: $color-green1;
       transition: transform 200ms ease 0s;
 }
 
@@ -3684,7 +3686,7 @@ input[type="radio"].visually-hidden {
 // серый
 .tumbler-big__name {
       width: 270px;
-      color: #181920;
+      color: $color-black1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -3706,7 +3708,7 @@ input[type="radio"].visually-hidden {
       height: 25px;
       padding: 6px;
       border-radius: 50px;
-      background-color: rgba(24, 25, 32, .1);
+      background-color: $color-gray3;
       cursor: pointer;
 }
 
@@ -3715,7 +3717,7 @@ input[type="radio"].visually-hidden {
       position: absolute;
       top: 6px;
       left: 6px;
-      background-color: #fff;
+      background-color: $color-white1;
       border-radius: 50px;
       width: 14px;
       height: 14px;
@@ -3723,7 +3725,7 @@ input[type="radio"].visually-hidden {
 }
 
 .tumbler-big__grey-input:checked+.tumbler-big__grey {
-      background-color: #0f995e;
+      background-color: $color-green1;
       transition: transform 200ms ease 0s;
 }
 
@@ -3734,7 +3736,7 @@ input[type="radio"].visually-hidden {
 // белый 
 .tumbler-big__name {
       width: 270px;
-      color: #181920;
+      color: $color-black1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -3756,7 +3758,7 @@ input[type="radio"].visually-hidden {
       height: 25px;
       padding: 6px;
       border-radius: 50px;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       cursor: pointer;
 }
 
@@ -3765,8 +3767,8 @@ input[type="radio"].visually-hidden {
       position: absolute;
       top: 5px;
       left: 5px;
-      background-color: #fff;
-      box-shadow: 0 2px 5px 0 rgba(24, 25, 32, .2);
+      background-color: $color-white1;
+      box-shadow: 0 2px 5px 0 $color-gray2;
       border-radius: 50px;
       width: 14px;
       height: 14px;
@@ -3774,7 +3776,7 @@ input[type="radio"].visually-hidden {
 }
 
 .tumbler-big__white-input:checked+.tumbler-big__white {
-      background-color: #0f995e;
+      background-color: $color-green1;
       transition: transform 200ms ease 0s;
 }
 
@@ -3804,7 +3806,7 @@ input[type="radio"].visually-hidden {
 // серый
 .tumbler-blocked__name {
       font-size: 14px;
-      color: #181920;
+      color: $color-black1;
       line-height: 20px;
 }
 
@@ -3825,7 +3827,7 @@ input[type="radio"].visually-hidden {
       height: 20px;
       padding: 3px;
       border-radius: 50px;
-      background-color: rgba(24, 25, 32, .1);
+      background-color: $color-gray3;
 }
 
 .tumbler-blocked__grey::before {
@@ -3833,7 +3835,7 @@ input[type="radio"].visually-hidden {
       position: absolute;
       top: 3px;
       left: 3px;
-      background-color: #fff;
+      background-color: $color-white1;
       border-radius: 50px;
       width: 14px;
       height: 14px;
@@ -3841,7 +3843,7 @@ input[type="radio"].visually-hidden {
 }
 
 .tumbler-blocked__grey-input:checked+.tumbler-blocked__grey {
-      background-color: #0f995e;
+      background-color: $color-green1;
       transition: transform 200ms ease 0s;
 }
 
@@ -3852,7 +3854,7 @@ input[type="radio"].visually-hidden {
 // белый 
 .tumbler-blocked__name {
       font-size: 14px;
-      color: #181920;
+      color: $color-black1;
       line-height: 20px;
 }
 
@@ -3873,7 +3875,7 @@ input[type="radio"].visually-hidden {
       height: 20px;
       padding: 3px;
       border-radius: 50px;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
 }
 
 .tumbler-blocked__white::before {
@@ -3881,8 +3883,8 @@ input[type="radio"].visually-hidden {
       position: absolute;
       top: 2px;
       left: 2px;
-      background-color: #fff;
-      box-shadow: 0 2px 5px 0 rgba(24, 25, 32, .2);
+      background-color: $color-white1;
+      box-shadow: 0 2px 5px 0 $color-gray2;
       border-radius: 50px;
       width: 14px;
       height: 14px;
@@ -3890,7 +3892,7 @@ input[type="radio"].visually-hidden {
 }
 
 .tumbler-blocked__white-input:checked+.tumbler-blocked__white {
-      background-color: #0f995e;
+      background-color: $color-green1;
       transition: transform 200ms ease 0s;
 }
 
@@ -3923,7 +3925,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       padding-bottom: 80px;
       margin-bottom: 80px;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 
 }
 
@@ -3964,7 +3966,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .modal-map__notice-style-ordinary {
@@ -4016,7 +4018,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .modal-map__map-style-ordinary {
@@ -4058,17 +4060,13 @@ input[type="radio"].visually-hidden {
       display: block;
 }
 
-.notice-ordinary__modal-map-close {
-      display: none;
-}
-
 
 .notice-ordinary__button {
       min-height: 50px;
       padding: 10px 30px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -4077,7 +4075,7 @@ input[type="radio"].visually-hidden {
 
 .notice-ordinary__button:hover,
 .notice-ordinary__button:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .notice-ordinary__modal-map {
@@ -4087,8 +4085,8 @@ input[type="radio"].visually-hidden {
       margin: 20px;
       display: flex;
       flex-direction: column;
-      background-color: #fff;
-      box-shadow: 0 10px 20px 0 rgba(24, 25, 32, .1);
+      background-color: $color-white1;
+      box-shadow: 0 10px 20px 0 $color-gray3;
 
 }
 
@@ -4118,7 +4116,7 @@ input[type="radio"].visually-hidden {
       margin-bottom: 10px;
       font-size: 20px;
       line-height: 30px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .notice-ordinary__modal-map-header::before {
@@ -4138,7 +4136,7 @@ input[type="radio"].visually-hidden {
       margin-bottom: 10px;
       font-size: 17px;
       line-height: 25px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .notice-ordinary__modal-map-link {
@@ -4149,7 +4147,7 @@ input[type="radio"].visually-hidden {
       margin: 0;
       font-size: 17px;
       line-height: 25px;
-      color: rgba(45, 82, 218, .75);
+      color: $color-blue2;
 }
 
 .notice-ordinary__modal-map-link::before {
@@ -4159,7 +4157,7 @@ input[type="radio"].visually-hidden {
       position: absolute;
       top: 0;
       right: 0;
-      color: rgba(45, 82, 218, .75);
+      color: $color-blue2;
 }
 
 .notice-ordinary__modal-map-link:hover,
@@ -4172,9 +4170,9 @@ input[type="radio"].visually-hidden {
       // min-width: 246px;
       min-height: 50px;
       padding: 10px 30px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -4183,7 +4181,7 @@ input[type="radio"].visually-hidden {
 
 .notice-snackbar__button:hover,
 .notice-snackbar__button:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .notice-snackbar__modal-map-wrapper {
@@ -4203,7 +4201,7 @@ input[type="radio"].visually-hidden {
       margin: 20px;
       display: flex;
       justify-content: space-between;
-      background-color: rgba(24, 25, 32, .75);
+      background-color: $color-blue2;
 
 }
 
@@ -4213,7 +4211,7 @@ input[type="radio"].visually-hidden {
       margin-right: 30px;
       font-size: 17px;
       line-height: 25px;
-      color: #ffffff;
+      color: $color-white1;
 }
 
 .notice-snackbar__modal-map-cancel {
@@ -4221,13 +4219,13 @@ input[type="radio"].visually-hidden {
       padding: 0;
       font-size: 17px;
       line-height: 25px;
-      color: #0f995e;
+      color: $color-green1;
 }
 
 
 .notice-snackbar__modal-map-cancel:hover,
 .notice-snackbar__modal-map-cancel:focus {
-      color: rgba(15, 153, 94, .75);
+      color: $color-green3;
 }
 
 .notice-snackbar__modal-map-open {
@@ -4240,9 +4238,9 @@ input[type="radio"].visually-hidden {
 .notice-tost__button {
       min-height: 50px;
       padding: 10px 30px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -4251,7 +4249,7 @@ input[type="radio"].visually-hidden {
 
 .notice-tost__button:hover,
 .notice-tost__button:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .notice-tost__modal-map-wrapper {
@@ -4262,7 +4260,7 @@ input[type="radio"].visually-hidden {
       bottom: 0;
       left: 0;
       transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-      background-color: rgba(24, 25, 32, .75);
+      background-color: $color-blue2;
 }
 
 .notice-tost__modal-map-open {
@@ -4286,7 +4284,7 @@ input[type="radio"].visually-hidden {
       margin: 0;
       font-size: 17px;
       line-height: 25px;
-      color: #ffffff;
+      color: $color-white1;
 }
 
 .notice-tost__modal-map-cancel {
@@ -4294,22 +4292,22 @@ input[type="radio"].visually-hidden {
       padding: 0;
       font-size: 17px;
       line-height: 25px;
-      color: #0f995e;
+      color: $color-green1;
 }
 
 
 .notice-tost__modal-map-cancel:hover,
 .notice-tost__modal-map-cancel:focus {
-      color: rgba(15, 153, 94, .75);
+      color: $color-green3;
 }
 
 // окна
 .map-ordinary__button {
       min-height: 50px;
       padding: 10px 30px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -4318,15 +4316,15 @@ input[type="radio"].visually-hidden {
 
 .map-ordinary__button:hover,
 .map-ordinary__button:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .map-random__button {
       min-height: 50px;
       padding: 10px 30px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
@@ -4335,7 +4333,7 @@ input[type="radio"].visually-hidden {
 
 .map-random__button:hover,
 .map-random__button:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .map-ordinary__modal-map-wrapper {
@@ -4345,7 +4343,7 @@ input[type="radio"].visually-hidden {
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(180deg, rgba(24, 25, 32, .75), rgba(24, 25, 32, .75));
+      background-image: linear-gradient(180deg, $color-blue2, $color-blue2);
       z-index: 10;
 }
 
@@ -4356,7 +4354,7 @@ input[type="radio"].visually-hidden {
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(180deg, rgba(24, 25, 32, .75), rgba(24, 25, 32, .75));
+      background-image: linear-gradient(180deg, $color-blue2, $color-blue2);
       z-index: 10;
 }
 
@@ -4386,7 +4384,7 @@ input[type="radio"].visually-hidden {
       padding: 30px;
       display: flex;
       flex-direction: column;
-      background-color: #fff;
+      background-color: $color-white1;
 }
 
 .map-ordinary__modal-popup-headline {
@@ -4395,14 +4393,14 @@ input[type="radio"].visually-hidden {
       margin: 0;
       margin-bottom: 10px;
       padding: 0;
-      color: #181920;
+      color: $color-black1;
 }
 
 .map-ordinary__modal-popup-text {
       padding: 0;
       margin: 0;
       margin-bottom: 40px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 17px;
       line-height: 25px;
 }
@@ -4419,17 +4417,17 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       padding: 10px 30px;
       margin: 0;
-      background-color: #2d52da;
-      color: #ffffff;
+      background-color: $color-blue1;
+      color: $color-white1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       font-size: 17px;
 }
 
 .map-ordinary__modal-popup-button1:hover,
 .map-ordinary__modal-popup-button1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .map-ordinary__modal-popup-button2 {
@@ -4437,8 +4435,8 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       padding: 10px 30px;
       margin: 0;
-      background-color: rgba(24, 25, 32, .05);
-      color: rgba(24, 25, 32, .5);
+      background-color: $color-gray1;
+      color: $color-gray1;
       transition: all .1s ease-in-out;
       line-height: 30px;
       font-size: 17px;
@@ -4446,8 +4444,8 @@ input[type="radio"].visually-hidden {
 
 .map-ordinary__modal-popup-button2:hover,
 .map-ordinary__modal-popup-button2:focus {
-      background-color: rgba(24, 25, 32, .1);
-      color: #2d52da;
+      background-color: $color-gray3;
+      color: $color-blue1;
 }
 
 .map-ordinary__modal-popup-closebutton {
@@ -4481,7 +4479,7 @@ input[type="radio"].visually-hidden {
       padding: 30px;
       display: flex;
       flex-direction: column;
-      background-color: #fff;
+      background-color: $color-white1;
 }
 
 .map-random__modal-popup-headline {
@@ -4490,7 +4488,7 @@ input[type="radio"].visually-hidden {
       margin: 0;
       margin-bottom: 10px;
       padding: 0;
-      color: #181920;
+      color: $color-black1;
 }
 
 .map-random__modal-popup-form {
@@ -4507,12 +4505,12 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       margin-bottom: 10px;
       padding: 9px 40px 9px 14px;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
       font-size: 17px;
       line-height: 25px;
       transition: all .1s ease-in-out;
       cursor: text;
-      border-color: rgba(24, 25, 32, .1);
+      border-color: $color-gray3;
       outline: none;
       background-image: url(../img/mail-blue.svg);
       background-position: top 10px right 10px;
@@ -4521,12 +4519,12 @@ input[type="radio"].visually-hidden {
 }
 
 .map-random__modal-popup-input:hover {
-      border-color: rgba(24, 25, 32, .2);
+      border-color: $color-gray2;
 }
 
 .map-random__modal-popup-input:focus {
-      border-color: rgba(24, 25, 32, .2);
-      border-bottom: 2px solid #2d52da;
+      border-color: $color-gray2;
+      border-bottom: 2px solid $color-blue1;
 
 }
 
@@ -4542,17 +4540,17 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       padding: 10px 30px;
       margin: 0;
-      background-color: #2d52da;
-      color: #ffffff;
+      background-color: $color-blue1;
+      color: $color-white1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       font-size: 17px;
 }
 
 .map-random__modal-popup-button1:hover,
 .map-random__modal-popup-button1:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .map-random__modal-popup-button2 {
@@ -4560,8 +4558,8 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       padding: 10px 30px;
       margin: 0;
-      background-color: rgba(24, 25, 32, .05);
-      color: rgba(24, 25, 32, .5);
+      background-color: $color-gray1;
+      color: $color-gray1;
       transition: all .1s ease-in-out;
       line-height: 30px;
       font-size: 17px;
@@ -4569,8 +4567,8 @@ input[type="radio"].visually-hidden {
 
 .map-random__modal-popup-button2:hover,
 .map-random__modal-popup-button2:focus {
-      background-color: rgba(24, 25, 32, .1);
-      color: #2d52da;
+      background-color: $color-gray3;
+      color: $color-blue1;
 }
 
 .map-random__modal-popup-closebutton {
@@ -4618,7 +4616,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       padding-bottom: 80px;
       margin-bottom: 80px;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 
 }
 
@@ -4663,13 +4661,13 @@ input[type="radio"].visually-hidden {
       line-height: 45px;
       font-weight: 400;
       margin-bottom: 30px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .blocks__name {
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       padding: 0;
       margin: 0;
       margin-bottom: 10px;
@@ -4679,7 +4677,7 @@ input[type="radio"].visually-hidden {
 // хедер1
 .blocks__header1-wrapper {
       width: 100%;
-      background-color: #f3f3f4;
+      background-color: $color-gray4;
 }
 
 .blocks__header1-navigation {
@@ -4710,7 +4708,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header1-navigation__menu-link {
-      color: #181920;
+      color: $color-black1;
       font-size: 12px;
       line-height: 20px;
       font-weight: 500;
@@ -4732,8 +4730,8 @@ input[type="radio"].visually-hidden {
       margin-left: 15px;
       padding: 5px 15px;
       border-radius: 1px;
-      background-color: #294bc7;
-      color: #fff;
+      background-color: $color-blue3;
+      color: $color-white1;
       font-size: 12px;
       line-height: 20px;
       font-weight: 500;
@@ -4754,13 +4752,13 @@ input[type="radio"].visually-hidden {
 //  футер1
 .blocks__footer1-wrapper {
       width: 100%;
-      background-color: #f3f3f4;
+      background-color: $color-gray4;
       padding-top: 40px;
 }
 
 .footer1__top-container {
       padding-bottom: 30px;
-      border-bottom: 1px solid rgba(24, 25, 32, .1)
+      border-bottom: 1px solid $color-gray3
 }
 
 .footer1__top {
@@ -4781,7 +4779,7 @@ input[type="radio"].visually-hidden {
       height: 50px;
       margin-bottom: 20px;
       align-items: center;
-      border: 2px solid rgba(24, 25, 32, .2);
+      border: 2px solid $color-gray2;
       opacity: 0.5;
       transition: all .1s ease-in-out;
       border-radius: 100px;
@@ -4799,7 +4797,7 @@ input[type="radio"].visually-hidden {
 .footer1__top-subscribe-label {
       margin: 0;
       padding: 0;
-      color: #181920;
+      color: $color-black1;
       font-weight: 500;
       font-size: 13px;
       letter-spacing: 1.5px;
@@ -4816,21 +4814,21 @@ input[type="radio"].visually-hidden {
       cursor: text;
       border: 0;
       outline: none;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid $color-gray7;
       background-color: transparent;
-      color: #333;
+      color: $color-black3;
       vertical-align: middle;
       font-size: 17px;
       line-height: 25px;
 }
 
 .footer1__top-subscribe-input:hover {
-      border-bottom: 1px solid rgba(24, 25, 32, .3);
+      border-bottom: 1px solid $color-gray6;
 }
 
 .footer1__top-subscribe-input:focus {
       padding-bottom: 8px;
-      border-bottom: 2px solid #2d52da;
+      border-bottom: 2px solid $color-blue1;
 }
 
 
@@ -4844,23 +4842,22 @@ input[type="radio"].visually-hidden {
       padding-bottom: 5px;
       margin: 10px;
       border: none;
-      font-family: Pragmatica, sans-serif;
       font-size: 13px;
       line-height: 20px;
       font-weight: 500;
-      color: #fff;
+      color: $color-white1;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       border-radius: 100px;
       align-items: center;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
       cursor: pointer;
 }
 
 .footer1__top-subscribe-input-button:hover,
 .footer1__top-subscribe-input-button:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .footer1__top-column1 {
@@ -4873,7 +4870,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       margin: 0;
       margin-bottom: 20px;
-      color: #181920;
+      color: $color-black1;
       font-weight: 500;
       font-size: 13px;
       letter-spacing: 1.5px;
@@ -4885,7 +4882,7 @@ input[type="radio"].visually-hidden {
       display: block;
       margin-bottom: 10px;
       transition: all .1s ease-in-out;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 14px;
       line-height: 20px;
       font-weight: 400;
@@ -4906,7 +4903,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       margin: 0;
       margin-bottom: 20px;
-      color: #181920;
+      color: $color-black1;
       font-weight: 500;
       font-size: 13px;
       letter-spacing: 1.5px;
@@ -4918,7 +4915,7 @@ input[type="radio"].visually-hidden {
       display: block;
       margin-bottom: 10px;
       transition: all .1s ease-in-out;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 14px;
       line-height: 20px;
       font-weight: 400;
@@ -4939,7 +4936,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       margin: 0;
       margin-bottom: 20px;
-      color: #181920;
+      color: $color-black1;
       font-weight: 500;
       font-size: 13px;
       letter-spacing: 1.5px;
@@ -4951,7 +4948,7 @@ input[type="radio"].visually-hidden {
       display: block;
       margin-bottom: 10px;
       transition: all .1s ease-in-out;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 14px;
       line-height: 20px;
       font-weight: 400;
@@ -4998,7 +4995,7 @@ input[type="radio"].visually-hidden {
       font-size: 14px;
       line-height: 20px;
       font-weight: 400;
-      color: #181920;
+      color: $color-black1;
 }
 
 .footer1__bottom-regulations-link:hover,
@@ -5013,7 +5010,7 @@ input[type="radio"].visually-hidden {
       font-size: 14px;
       line-height: 20px;
       font-weight: 400;
-      color: #181920;
+      color: $color-black1;
 }
 
 .footer1__bottom-confidentiality-link:hover,
@@ -5025,7 +5022,7 @@ input[type="radio"].visually-hidden {
       width: 252px;
       padding: 0 0 0 15px;
       box-sizing: border-box;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 
@@ -5042,16 +5039,16 @@ input[type="radio"].visually-hidden {
       text-align: center;
       margin-bottom: 20px;
       padding: 28px;
-      border: 2px dashed rgba(24, 25, 32, .1);
+      border: 2px dashed $color-gray3;
       border-radius: 8px;
-      background-color: #f3f3f4;
+      background-color: $color-gray4;
 }
 
 .more-file__form-text {
       margin-bottom: 20px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .more-file__form-button {
@@ -5059,37 +5056,37 @@ input[type="radio"].visually-hidden {
       padding: 10px 30px;
       margin-bottom: 10px;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       font-size: 17px;
       border-radius: 25px;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       cursor: pointer;
       outline: none;
 }
 
 .more-file__form-button:hover,
 .more-file__form-button:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .more-file__form-submit {
       display: inline-block;
       padding: 5px 15px;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       line-height: 30px;
       font-size: 14px;
       border-radius: 25px;
       border: none;
       outline: none;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       cursor: pointer;
 }
 
 .more-file__form-submit:hover,
 .more-file__form-submit:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .more-file__form-input-wrapper {
@@ -5111,13 +5108,13 @@ input[type="radio"].visually-hidden {
 #more-file__file-name {
       font-size: 17px;
       line-height: 25px;
-      color: #181920;
+      color: $color-black1;
 }
 
 #more-file__file-size {
       font-size: 17px;
       line-height: 25px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .more-file__file-preview-img {
@@ -5166,7 +5163,7 @@ input[type="radio"].visually-hidden {
       margin-right: auto;
       font-size: 20px;
       line-height: 30px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .more-slider__slider1-autor-img {
@@ -5195,7 +5192,7 @@ input[type="radio"].visually-hidden {
       position: relative;
       width: 50px;
       height: 50px;
-      border: 2px solid rgba(24, 25, 32, .2);
+      border: 2px solid $color-gray2;
       border-radius: 100px;
       opacity: 0.5;
       transition: all .1s ease-in-out;
@@ -5212,7 +5209,7 @@ input[type="radio"].visually-hidden {
       position: relative;
       width: 50px;
       height: 50px;
-      border: 2px solid rgba(24, 25, 32, .2);
+      border: 2px solid $color-gray2;
       border-radius: 100px;
       opacity: 0.5;
       transition: all .1s ease-in-out;
@@ -5274,13 +5271,13 @@ input[type="radio"].visually-hidden {
       border-radius: 100px;
       transition: all .1s ease-in-out;
       transition: all .1s ease-in-out;
-      background: #ffffff url(../img/chevron_right.svg) top 50% left 50% no-repeat;
+      background: $color-white1 url(../img/chevron_right.svg) top 50% left 50% no-repeat;
       z-index: 3;
 }
 
 .more-photo__button-forward:hover,
 .more-photo__button-forward:focus {
-      box-shadow: 0 10px 20px 0 rgba(24, 25, 32, .1);
+      box-shadow: 0 10px 20px 0 $color-gray3;
       transform: translate(0, -2px);
 }
 
@@ -5293,14 +5290,14 @@ input[type="radio"].visually-hidden {
       margin-left: -25px;
       border-radius: 100px;
       transition: all .1s ease-in-out;
-      background: #ffffff url(../img/chevron_left.svg) top 50% left 50% no-repeat;
+      background: $color-white1 url(../img/chevron_left.svg) top 50% left 50% no-repeat;
       z-index: 3;
 
 }
 
 .more-photo__button-back:hover,
 .more-photo__button-back:focus {
-      box-shadow: 0 10px 20px 0 rgba(24, 25, 32, .1);
+      box-shadow: 0 10px 20px 0 $color-gray3;
       transform: translate(0, -2px);
 }
 
@@ -5315,7 +5312,7 @@ input[type="radio"].visually-hidden {
 .blocks__more-tariff-name {
       padding: 0;
       margin-bottom: 10px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 20px;
       line-height: 30px;
       font-weight: normal;
@@ -5332,20 +5329,20 @@ input[type="radio"].visually-hidden {
       padding: 20px;
       display: flex;
       flex-direction: column;
-      background-color: #fff;
-      box-shadow: 0 5px 20px 0 rgba(24, 25, 32, .1);
+      background-color: $color-white1;
+      box-shadow: 0 5px 20px 0 $color-gray3;
       transition: all .1s ease-in-out;
-      color: #181920;
+      color: $color-black1;
       cursor: pointer;
 }
 
 .more-tariff__free:hover {
-      box-shadow: 0 15px 30px 0 rgba(24, 25, 32, .1);
+      box-shadow: 0 15px 30px 0 $color-gray3;
       transform: translate(0, -5px);
 }
 
 .more-tariff__free-header {
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
       margin-bottom: 20px;
 }
 
@@ -5353,7 +5350,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       margin: 0;
       margin-bottom: 10px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       font-weight: normal;
       letter-spacing: 1.5px;
@@ -5386,7 +5383,7 @@ input[type="radio"].visually-hidden {
       padding-left: 35px;
       font-size: 17px;
       line-height: 25px;
-      color: #181920;
+      color: $color-black1;
 
 }
 
@@ -5440,13 +5437,13 @@ input[type="radio"].visually-hidden {
 
 .more-tariff__free-button {
       padding: 9px 29px;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 1px;
       transition: all .1s ease-in-out;
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 17px;
       line-height: 30px;
 }
@@ -5460,23 +5457,23 @@ input[type="radio"].visually-hidden {
       width: 326px;
       box-sizing: border-box;
       padding: 16px 20px 20px;
-      border-top: 4px solid #2d52da;
+      border-top: 4px solid $color-blue1;
       display: flex;
       flex-direction: column;
-      background-color: #fff;
-      box-shadow: 0 5px 20px 0 rgba(24, 25, 32, .1);
+      background-color: $color-white1;
+      box-shadow: 0 5px 20px 0 $color-gray3;
       transition: all .1s ease-in-out;
-      color: #181920;
+      color: $color-black1;
       cursor: pointer;
 }
 
 .more-tariff__premium:hover {
-      box-shadow: 0 15px 30px 0 rgba(24, 25, 32, .1);
+      box-shadow: 0 15px 30px 0 $color-gray3;
       transform: translate(0, -5px);
 }
 
 .more-tariff__premium-header {
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
       margin-bottom: 20px;
 }
 
@@ -5484,7 +5481,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       margin: 0;
       margin-bottom: 10px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       font-weight: normal;
       letter-spacing: 1.5px;
@@ -5517,7 +5514,7 @@ input[type="radio"].visually-hidden {
       padding-left: 35px;
       font-size: 17px;
       line-height: 25px;
-      color: #181920;
+      color: $color-black1;
 
 }
 
@@ -5575,39 +5572,39 @@ input[type="radio"].visually-hidden {
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #fff;
+      color: $color-white1;
       font-size: 17px;
       line-height: 30px;
 }
 
 .more-tariff__premium-button:hover,
 .more-tariff__premium-button:focus {
-      background-color: #294bc7;
+      background-color: $color-blue3
 }
 
 .more-tariff__unlimited {
       width: 326px;
       box-sizing: border-box;
       padding: 16px 20px 20px;
-      border-top: 4px solid #181920;
+      border-top: 4px solid $color-black1;
       display: flex;
       flex-direction: column;
-      background-color: #fff;
-      box-shadow: 0 5px 20px 0 rgba(24, 25, 32, .1);
+      background-color: $color-white1;
+      box-shadow: 0 5px 20px 0 $color-gray3;
       transition: all .1s ease-in-out;
-      color: #181920;
+      color: $color-black1;
       cursor: pointer;
 }
 
 .more-tariff__unlimited:hover {
-      box-shadow: 0 15px 30px 0 rgba(24, 25, 32, .1);
+      box-shadow: 0 15px 30px 0 $color-gray3;
       transform: translate(0, -5px);
 }
 
 .more-tariff__unlimited-header {
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
       margin-bottom: 20px;
 }
 
@@ -5615,7 +5612,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       margin: 0;
       margin-bottom: 10px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       font-weight: normal;
       letter-spacing: 1.5px;
@@ -5648,7 +5645,7 @@ input[type="radio"].visually-hidden {
       padding-left: 35px;
       font-size: 17px;
       line-height: 25px;
-      color: #181920;
+      color: $color-black1;
 
 }
 
@@ -5707,8 +5704,8 @@ input[type="radio"].visually-hidden {
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
-      background-color: #181920;
-      color: #ffffff;
+      background-color: $color-black1;
+      color: $color-white1;
       font-size: 17px;
       line-height: 30px;
 }
@@ -5724,7 +5721,7 @@ input[type="radio"].visually-hidden {
 .blocks__more-table-name {
       padding: 0;
       margin-bottom: 10px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 20px;
       line-height: 30px;
       font-weight: normal;
@@ -5735,7 +5732,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      border: 1px solid rgba(24, 25, 32, .1);
+      border: 1px solid $color-gray3;
 }
 
 .more-table {
@@ -5751,10 +5748,10 @@ input[type="radio"].visually-hidden {
       text-align: start;
       padding: 15px 14px 14px;
       clear: both;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
       font-size: 20px;
       line-height: 30px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .more-table__header-line {
@@ -5764,13 +5761,13 @@ input[type="radio"].visually-hidden {
       justify-content: space-between;
       padding: 15px 15px;
       flex-shrink: 1;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 }
 
 .more-table__header-td1 {
       width: 55px;
       padding-right: 15px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -5779,7 +5776,7 @@ input[type="radio"].visually-hidden {
 .more-table__header-td2 {
       width: 230px;
       padding: 0 15px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -5789,7 +5786,7 @@ input[type="radio"].visually-hidden {
       width: 143px;
       padding: 0 15px;
       text-align: start;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -5799,7 +5796,7 @@ input[type="radio"].visually-hidden {
       width: 143px;
       padding: 0 15px;
       text-align: start;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -5809,7 +5806,7 @@ input[type="radio"].visually-hidden {
       width: 143px;
       padding: 0 15px;
       text-align: start;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -5819,7 +5816,7 @@ input[type="radio"].visually-hidden {
       width: 143px;
       padding-left: 15px;
       text-align: start;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -5834,7 +5831,7 @@ input[type="radio"].visually-hidden {
       justify-content: space-between;
       padding: 15px 15px;
       flex-shrink: 1;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 }
 
 .more-table__body-line:last-child {
@@ -5844,7 +5841,7 @@ input[type="radio"].visually-hidden {
 .more-table__body-td1 {
       width: 56px;
       padding-right: 15px;
-      color: #181920;
+      color: $color-black1;
       font-size: 14px;
       line-height: 20px;
 }
@@ -5852,7 +5849,7 @@ input[type="radio"].visually-hidden {
 .more-table__body-td2 {
       width: 230px;
       padding: 0 15px;
-      color: #181920;
+      color: $color-black1;
       font-size: 14px;
       line-height: 20px;
 }
@@ -5861,7 +5858,7 @@ input[type="radio"].visually-hidden {
       width: 143px;
       padding: 0 15px;
       text-align: start;
-      color: #181920;
+      color: $color-black1;
       font-size: 14px;
       line-height: 20px;
 }
@@ -5870,7 +5867,7 @@ input[type="radio"].visually-hidden {
       width: 143px;
       padding: 0 15px;
       text-align: start;
-      color: #181920;
+      color: $color-black1;
       font-size: 14px;
       line-height: 20px;
 }
@@ -5879,7 +5876,7 @@ input[type="radio"].visually-hidden {
       width: 143px;
       padding: 0 15px;
       text-align: start;
-      color: #181920;
+      color: $color-black1;
       font-size: 14px;
       line-height: 20px;
 }
@@ -5888,7 +5885,7 @@ input[type="radio"].visually-hidden {
       width: 143px;
       padding-left: 15px;
       text-align: start;
-      color: #181920;
+      color: $color-black1;
       font-size: 14px;
       line-height: 20px;
 }
@@ -5897,7 +5894,7 @@ input[type="radio"].visually-hidden {
       height: 15px;
       width: 1027px;
       margin: 0 auto;
-      background-color: rgba(24, 25, 32, .2);
+      background-color: $color-gray2;
       order: 10;
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
@@ -5907,14 +5904,14 @@ input[type="radio"].visually-hidden {
       padding: 5px 20px;
       font-size: 14px;
       line-height: 20px;
-      background-color: rgba(24, 25, 32, .05);
-      color: rgba(24, 25, 32, .5);
+      background-color: $color-gray1;
+      color: $color-gray1;
 }
 
 .more-table__body-button:hover,
 .more-table__body-button:focus {
-      background-color: rgba(24, 25, 32, .1);
-      color: #2d52da;
+      background-color: $color-gray3;
+      color: $color-blue1;
 }
 
 
@@ -5940,7 +5937,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       padding-bottom: 80px;
       margin-bottom: 80px;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 
 }
 
@@ -5992,7 +5989,7 @@ input[type="radio"].visually-hidden {
       width: 356px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .components__tooltip-bottom-style {
@@ -6029,7 +6026,7 @@ input[type="radio"].visually-hidden {
 
 .components__tooltip-hint-text {
       padding: 0 10px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 13px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -6045,9 +6042,9 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       width: 240px;
       padding: 10px 10px 10px 40px;
-      color: #181920;
-      background-color: #fff;
-      box-shadow: 0 10px 30px 0 rgba(24, 25, 32, .1);
+      color: $color-black1;
+      background-color: $color-white1;
+      box-shadow: 0 10px 30px 0 $color-gray3;
       z-index: 2;
       margin-top: -10px;
       margin-left: -30px;
@@ -6069,7 +6066,7 @@ input[type="radio"].visually-hidden {
       font-size: 17px;
       line-height: 30px;
       cursor: default;
-      color: #181920;
+      color: $color-black1;
 }
 
 .components__tooltip-bottom-text::before {
@@ -6095,9 +6092,9 @@ input[type="radio"].visually-hidden {
       margin-left: -30px;
       margin-top: 5px;
       padding: 10px;
-      background-color: #fff;
-      box-shadow: 0 10px 30px 0 rgba(24, 25, 32, .1);
-      color: rgba(24, 25, 32, .5);
+      background-color: $color-white1;
+      box-shadow: 0 10px 30px 0 $color-gray3;
+      color: $color-gray1;
       font-size: 14px;
       line-height: 20px;
       text-align: center;
@@ -6135,7 +6132,7 @@ input[type="radio"].visually-hidden {
       align-self: center;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .components__tab-ordinary {
@@ -6157,7 +6154,7 @@ input[type="radio"].visually-hidden {
       display: flex;
       justify-content: flex-start;
       padding: 0 10px;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 }
 
 .tab-ordinary__wrapper1-button {
@@ -6167,25 +6164,25 @@ input[type="radio"].visually-hidden {
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
-      color: #222;
+      color: $color-black2;
 }
 
 .tab-ordinary__wrapper1-button:hover {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .tab-ordinary__wrapper1-button:focus {
       padding-bottom: 8px;
-      border-bottom: 2px solid #2d52da;
-      color: #2d52da;
+      border-bottom: 2px solid $color-blue1;
+      color: $color-blue1;
       outline: none;
       transition: all .1s ease-in-out;
 }
 
 .tab-ordinary__wrapper1-button--current {
       padding-bottom: 8px;
-      border-bottom: 2px solid #2d52da;
-      color: #2d52da;
+      border-bottom: 2px solid $color-blue1;
+      color: $color-blue1;
       outline: none;
       transition: all .1s ease-in-out;
 }
@@ -6195,7 +6192,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       display: flex;
       justify-content: flex-start;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 }
 
 .tab-ordinary__wrapper2-button {
@@ -6204,25 +6201,25 @@ input[type="radio"].visually-hidden {
       font-size: 17px;
       line-height: 30px;
       cursor: pointer;
-      color: #222;
+      color: $color-black2;
 }
 
 .tab-ordinary__wrapper2-button:hover {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .tab-ordinary__wrapper2-button:focus {
       padding-bottom: 8px;
-      border-bottom: 2px solid #2d52da;
-      color: #2d52da;
+      border-bottom: 2px solid $color-blue1;
+      color: $color-blue1;
       outline: none;
       transition: all .1s ease-in-out;
 }
 
 .tab-ordinary__wrapper2-button--current {
       padding-bottom: 8px;
-      border-bottom: 2px solid #2d52da;
-      color: #2d52da;
+      border-bottom: 2px solid $color-blue1;
+      color: $color-blue1;
       outline: none;
       transition: all .1s ease-in-out;
 }
@@ -6235,7 +6232,7 @@ input[type="radio"].visually-hidden {
       display: flex;
       justify-content: flex-start;
       padding: 0 10px;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 }
 
 .tab-small__wrapper1-button {
@@ -6247,25 +6244,25 @@ input[type="radio"].visually-hidden {
       letter-spacing: 1.5px;
       text-transform: uppercase;
       cursor: pointer;
-      color: #222;
+      color: $color-black2;
 }
 
 .tab-small__wrapper1-button:hover {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .tab-small__wrapper1-button:focus {
       padding-bottom: 8px;
-      border-bottom: 2px solid #2d52da;
-      color: #2d52da;
+      border-bottom: 2px solid $color-blue1;
+      color: $color-blue1;
       outline: none;
       transition: all .1s ease-in-out;
 }
 
 .tab-small__wrapper1-button--current {
       padding-bottom: 8px;
-      border-bottom: 2px solid #2d52da;
-      color: #2d52da;
+      border-bottom: 2px solid $color-blue1;
+      color: $color-blue1;
       outline: none;
       transition: all .1s ease-in-out;
 }
@@ -6275,7 +6272,7 @@ input[type="radio"].visually-hidden {
       box-sizing: border-box;
       display: flex;
       justify-content: flex-start;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 }
 
 .tab-small__wrapper2-button {
@@ -6286,25 +6283,25 @@ input[type="radio"].visually-hidden {
       letter-spacing: 1.5px;
       text-transform: uppercase;
       cursor: pointer;
-      color: #222;
+      color: $color-black2;
 }
 
 .tab-small__wrapper2-button:hover {
-      color: #2d52da;
+      color: $color-blue1;
 }
 
 .tab-small__wrapper2-button:focus {
       padding-bottom: 8px;
-      border-bottom: 2px solid #2d52da;
-      color: #2d52da;
+      border-bottom: 2px solid $color-blue1;
+      color: $color-blue1;
       outline: none;
       transition: all .1s ease-in-out;
 }
 
 .tab-small__wrapper2-button--current {
       padding-bottom: 8px;
-      border-bottom: 2px solid #2d52da;
-      color: #2d52da;
+      border-bottom: 2px solid $color-blue1;
+      color: $color-blue1;
       outline: none;
       transition: all .1s ease-in-out;
 }
@@ -6335,7 +6332,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .components__tag-ordinary {
@@ -6368,9 +6365,9 @@ input[type="radio"].visually-hidden {
       letter-spacing: 1.5px;
       text-transform: uppercase;
       cursor: pointer;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #f3f3f4;
+      color: $color-gray4;
 }
 
 
@@ -6391,10 +6388,10 @@ input[type="radio"].visually-hidden {
 .tag-ordinary__wrapper2-button {
       padding: 4px 14px;
       margin-right: 5px;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 12px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -6425,9 +6422,9 @@ input[type="radio"].visually-hidden {
       letter-spacing: 1.5px;
       text-transform: uppercase;
       cursor: pointer;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       transition: all .1s ease-in-out;
-      color: #f3f3f4;
+      color: $color-gray4;
       border-radius: 15px;
 }
 
@@ -6449,11 +6446,11 @@ input[type="radio"].visually-hidden {
 .tag-round__wrapper2-button {
       padding: 4px 14px;
       margin-right: 5px;
-      border: 1px solid #2d52da;
+      border: 1px solid $color-blue1;
       border-radius: 15px;
       border-radius: 1px;
       transition: all .1s ease-in-out;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 12px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -6493,7 +6490,7 @@ input[type="radio"].visually-hidden {
       width: 326px;
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
 }
 
 .components__progressbar-ordinary {
@@ -6519,7 +6516,7 @@ input[type="radio"].visually-hidden {
       position: relative;
       height: 5px;
       border-radius: 5px;
-      background-color: rgba(24, 25, 32, .1);
+      background-color: $color-gray3;
 }
 
 .progressbar-ordinary__bar::before {
@@ -6529,7 +6526,7 @@ input[type="radio"].visually-hidden {
       left: 0;
       width: 25%;
       height: 100%;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       border-radius: 5px;
 
 }
@@ -6544,7 +6541,7 @@ input[type="radio"].visually-hidden {
       position: relative;
       height: 5px;
       border-radius: 5px;
-      background-color: rgba(24, 25, 32, .1);
+      background-color: $color-gray3;
 }
 
 .progressbar-text__bar::before {
@@ -6554,7 +6551,7 @@ input[type="radio"].visually-hidden {
       left: 0;
       width: 25%;
       height: 100%;
-      background-color: #2d52da;
+      background-color: $color-blue1;
       border-radius: 5px;
 
 }
@@ -6568,13 +6565,13 @@ input[type="radio"].visually-hidden {
 .progressbar-text__text-1 {
       font-size: 17px;
       line-height: 25px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .progressbar-text__text-2 {
       font-size: 17px;
       line-height: 25px;
-      color: #181920;
+      color: $color-black1;
 }
 
 
@@ -6599,14 +6596,14 @@ input[type="radio"].visually-hidden {
       padding: 40px;
       display: flex;
       flex-direction: column;
-      box-shadow: 0 5px 20px 0 rgba(24, 25, 32, .1);
+      box-shadow: 0 5px 20px 0 $color-gray3;
       transition: all .1s ease-in-out;
-      color: #181920;
+      color: $color-black1;
       cursor: pointer;
 }
 
 .components__cart1:hover {
-      box-shadow: 0 -15px 35px 0 rgba(24, 25, 32, .1);
+      box-shadow: 0 -15px 35px 0 $color-gray3;
       transform: translate(0, -5px);
 }
 
@@ -6624,14 +6621,14 @@ input[type="radio"].visually-hidden {
       font-size: 30px;
       line-height: 45px;
       font-weight: 400;
-      color: #181920;
+      color: $color-black1;
 }
 
 .components__cart1-notice {
       padding: 0;
       margin: 0;
       margin-bottom: 20px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       font-size: 20px;
       line-height: 30px;
 }
@@ -6642,7 +6639,7 @@ input[type="radio"].visually-hidden {
       position: relative;
       padding-right: 30px;
       transition: all .1s ease;
-      color: #2d52da;
+      color: $color-blue1;
       font-size: 20px;
       line-height: 30px;
 }
@@ -6662,7 +6659,7 @@ input[type="radio"].visually-hidden {
 
 .components__cart1-link:hover,
 .components__cart1-link:focus {
-      color: rgba(45, 82, 218, .75);
+      color: $color-blue2;
 }
 
 
@@ -6687,7 +6684,7 @@ input[type="radio"].visually-hidden {
       padding: 0;
       padding-bottom: 80px;
       margin-bottom: 80px;
-      border-bottom: 1px solid rgba(24, 25, 32, .1);
+      border-bottom: 1px solid $color-gray3;
 
 }
 
@@ -6716,13 +6713,13 @@ input[type="radio"].visually-hidden {
       line-height: 45px;
       font-weight: 400;
       margin-bottom: 30px;
-      color: #181920;
+      color: $color-black1;
 }
 
 .icon__name {
       font-size: 20px;
       line-height: 30px;
-      color: rgba(24, 25, 32, .5);
+      color: $color-gray1;
       padding: 0;
       margin: 0;
       margin-bottom: 20px;
