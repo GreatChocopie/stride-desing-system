@@ -23,10 +23,16 @@ var buttonDropIcon2List = document.querySelector(".button-icondropdown2__list-wr
 
 multiple1Open.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       multiple1List.classList.toggle("field-multiple-select1__list-open");
 });
 
-
+document.querySelector('body').addEventListener("click", function (evt) {
+      if (multiple1List.classList.contains("field-multiple-select1__list-open")) {
+            evt.preventDefault();
+            multiple1List.classList.remove("field-multiple-select1__list-open");
+      }
+});
 
 multiple2Open.addEventListener("click", function (evt) {
       evt.preventDefault();

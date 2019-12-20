@@ -13,6 +13,7 @@ function getFileParam() {
 
                   document.getElementById('more-file__file-name').innerHTML = 'Имя: ' + file.name;
                   document.getElementById('more-file__file-size').innerHTML = 'Размер: ' + fileSize;
+                  var elemBut = document.querySelector(".more-file__form-submit").style.display = "block";
 
                   if (/\.(jpe?g|bmp|gif|png)$/i.test(file.name)) {
                         var elPreview = document.getElementById('more-file__file-preview');
@@ -61,6 +62,15 @@ function getFileParam() {
 }
 
 
+var form_input = document.getElementById('more-file__form-input');
+
+form_input.addEventListener("change", getFileParam);
+console.log('change ok 3')
+document.querySelector(".more-file__form-submit").addEventListener('click', function (e) {
+      var form_elem = document.querySelector('.more-file__form');
+      form_elem.submit();
+
+})
 
 
 
