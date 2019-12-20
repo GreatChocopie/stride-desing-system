@@ -1,4 +1,3 @@
-
 var ordinaryOpen = document.querySelector(".notice-ordinary__button");
 var ordinaryClose = document.querySelector(".notice-ordinary__modal-map-closebutton");
 var ordinaryModal = document.querySelector(".notice-ordinary__modal-map-wrapper");
@@ -63,7 +62,6 @@ tostClose.addEventListener("click", function (evt) {
 
 
 
-
 ordinaryMapOpen.addEventListener("click", function (evt) {
       evt.preventDefault();
       ordinaryMapModal.classList.add("map-ordinary__modal-map-open");
@@ -84,7 +82,12 @@ window.addEventListener("keydown", function (evt) {
             }
       }
 });
-
+ordinaryMapModal.addEventListener("click", function (evt) {
+      if (evt.target.classList.contains("map-ordinary__modal-map-container")) {
+            evt.preventDefault();
+            ordinaryMapModal.classList.remove("map-ordinary__modal-map-open");
+      }
+});
 
 
 
@@ -109,5 +112,11 @@ window.addEventListener("keydown", function (evt) {
             if (randomMapModal.classList.contains("map-random__modal-map-open")) {
                   randomMapModal.classList.remove("map-random__modal-map-open");
             }
+      }
+});
+randomMapModal.addEventListener("click", function (evt) {
+      if (evt.target.classList.contains("map-random__modal-map-container")) {
+            evt.preventDefault();
+            randomMapModal.classList.remove("map-random__modal-map-open");
       }
 });
