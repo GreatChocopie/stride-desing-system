@@ -4939,6 +4939,14 @@ input[type=radio].visually-hidden {
   height: 50px;
 }
 
+.more-slider__wrapper {
+  margin-bottom: 40px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .more-slider__container {
   padding: 0;
   margin: 0;
@@ -4986,11 +4994,46 @@ input[type=radio].visually-hidden {
 }
 
 .more-slider__slider2 {
+  width: 683px;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #f8f8fb;
+}
+
+.more-slider__slider2-text {
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.more-slider__slider2-autor {
+  display: flex;
+  align-items: center;
+}
+
+.more-slider__slider2-autor-name {
+  padding: 0;
+  margin-right: auto;
+  font-size: 20px;
+  line-height: 30px;
+  color: #181920;
+}
+
+.more-slider__slider2-autor-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.more-slider__slider2,
+.more-slider__slider1 {
   display: none;
 }
 
-.more-slider__wrapper {
-  margin-bottom: 40px;
+.more-slider__slider--active {
+  display: block;
 }
 
 .more-slider__button-wrapper {
@@ -5008,6 +5051,7 @@ input[type=radio].visually-hidden {
   opacity: 0.5;
   transition: all 0.1s ease-in-out;
   background: url(../img/chevron_left.svg) top 50% left 50% no-repeat;
+  outline: none;
 }
 
 .more-slider__button-back:hover,
@@ -5025,6 +5069,7 @@ input[type=radio].visually-hidden {
   transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   background: url(../img/chevron_right.svg) top 50% left 50% no-repeat;
+  outline: none;
 }
 
 .more-slider__button-forward:hover,
@@ -5048,6 +5093,7 @@ input[type=radio].visually-hidden {
 }
 
 .more-photo__slider {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -5074,6 +5120,7 @@ input[type=radio].visually-hidden {
   transition: all 0.1s ease-in-out;
   background: white url(../img/chevron_right.svg) top 50% left 50% no-repeat;
   z-index: 3;
+  outline: none;
 }
 
 .more-photo__button-forward:hover,
@@ -5093,12 +5140,17 @@ input[type=radio].visually-hidden {
   transition: all 0.1s ease-in-out;
   background: white url(../img/chevron_left.svg) top 50% left 50% no-repeat;
   z-index: 3;
+  outline: none;
 }
 
 .more-photo__button-back:hover,
 .more-photo__button-back:focus {
   box-shadow: 0 10px 20px 0 rgba(24, 25, 32, 0.1);
   transform: translate(0, -2px);
+}
+
+.more-photo__slider--active {
+  display: block;
 }
 
 .blocks__more-tariff {
