@@ -36,36 +36,74 @@ document.querySelector('body').addEventListener("click", function (evt) {
 
 multiple2Open.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       multiple2List.classList.toggle("field-multiple-select2__list-open");
 });
-
+document.querySelector('body').addEventListener("click", function (evt) {
+      if (multiple2List.classList.contains("field-multiple-select2__list-open")) {
+            evt.preventDefault();
+            multiple2List.classList.remove("field-multiple-select2__list-open");
+      }
+});
 
 
 
 
 buttonDrop1Open.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       buttonDrop1List.classList.toggle("button-dropdown1__list-open");
 });
+
+document.querySelector('body').addEventListener("click", function (evt) {
+      if (buttonDrop1List.classList.contains("button-dropdown1__list-open")) {
+            evt.preventDefault();
+            buttonDrop1List.classList.remove("button-dropdown1__list-open");
+      }
+});
+
 
 
 
 buttonDrop2Open.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       buttonDrop2List.classList.toggle("button-dropdown2__list-open");
 });
+document.querySelector('body').addEventListener("click", function (evt) {
+      if (buttonDrop2List.classList.contains("button-dropdown2__list-open")) {
+            evt.preventDefault();
+            buttonDrop2List.classList.remove("button-dropdown2__list-open");
+      }
+});
+
 
 
 
 
 buttonDropIcon1Open.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       buttonDropIcon1List.classList.toggle("button-icondropdown1__list-open");
+});
+
+document.querySelector('body').addEventListener("click", function (evt) {
+      if (buttonDropIcon1List.classList.contains("button-icondropdown1__list-open")) {
+            evt.preventDefault();
+            buttonDropIcon1List.classList.remove("button-icondropdown1__list-open");
+      }
 });
 
 
 
 buttonDropIcon2Open.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       buttonDropIcon2List.classList.toggle("button-icondropdown2__list-open");
+});
+document.querySelector('body').addEventListener("click", function (evt) {
+      if (buttonDropIcon2List.classList.contains("button-icondropdown2__list-open")) {
+            evt.preventDefault();
+            buttonDropIcon2List.classList.remove("button-icondropdown2__list-open");
+      }
 });
