@@ -1720,7 +1720,11 @@ input[type="radio"].visually-hidden {
       color: $color-blue1;
 }
 
-.form-elements__field-multiple-select1:hover {
+.field-multiple-select1__item-container:hover {
+      border-color: $color-gray2;
+}
+
+.field-multiple-select1__item-container:focus {
       border-color: $color-gray2;
 }
 
@@ -1816,8 +1820,13 @@ input[type="radio"].visually-hidden {
 
 
 
-.form-elements__field-multiple-select2:hover {
+.field-multiple-select2__item-container:hover {
       border-color: $color-gray2;
+}
+
+.field-multiple-select2__item-container:focus {
+      border-color: $color-gray2;
+
 }
 
 .field-multiple-select2__list-open {

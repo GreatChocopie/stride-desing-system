@@ -35,29 +35,53 @@ var randomMapCancel = document.querySelector(".map-random__modal-popup-button2")
 
 ordinaryOpen.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       ordinaryModal.classList.add("notice-ordinary__modal-map-open");
 });
 ordinaryClose.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       ordinaryModal.classList.remove("notice-ordinary__modal-map-open");
+});
+document.querySelector('body').addEventListener("click", function (evt) {
+      if (ordinaryModal.classList.contains("notice-ordinary__modal-map-open")) {
+            evt.preventDefault();
+            ordinaryModal.classList.remove("notice-ordinary__modal-map-open");
+      }
 });
 
 snackbarOpen.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       snackbarModal.classList.add("notice-snackbar__modal-map-open");
 });
 snackbarClose.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       snackbarModal.classList.remove("notice-snackbar__modal-map-open");
+});
+document.querySelector('body').addEventListener("click", function (evt) {
+      if (snackbarModal.classList.contains("notice-snackbar__modal-map-open")) {
+            evt.preventDefault();
+            snackbarModal.classList.remove("notice-snackbar__modal-map-open");
+      }
 });
 
 tostOpen.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       tostModal.classList.add("notice-tost__modal-map-open");
 });
 tostClose.addEventListener("click", function (evt) {
       evt.preventDefault();
+      evt.stopPropagation();
       tostModal.classList.remove("notice-tost__modal-map-open");
+});
+document.querySelector('body').addEventListener("click", function (evt) {
+      if (tostModal.classList.contains("notice-tost__modal-map-open")) {
+            evt.preventDefault();
+            tostModal.classList.remove("notice-tost__modal-map-open");
+      }
 });
 
 

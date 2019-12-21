@@ -1626,7 +1626,11 @@ input[type=radio].visually-hidden {
   color: #2d52da;
 }
 
-.form-elements__field-multiple-select1:hover {
+.field-multiple-select1__item-container:hover {
+  border-color: rgba(24, 25, 32, 0.2);
+}
+
+.field-multiple-select1__item-container:focus {
   border-color: rgba(24, 25, 32, 0.2);
 }
 
@@ -1719,7 +1723,11 @@ input[type=radio].visually-hidden {
   color: #2d52da;
 }
 
-.form-elements__field-multiple-select2:hover {
+.field-multiple-select2__item-container:hover {
+  border-color: rgba(24, 25, 32, 0.2);
+}
+
+.field-multiple-select2__item-container:focus {
   border-color: rgba(24, 25, 32, 0.2);
 }
 
