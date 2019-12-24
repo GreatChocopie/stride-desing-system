@@ -3319,6 +3319,10 @@ input[type=radio].visually-hidden {
   color: #2d52da;
 }
 
+#addition-checkbox__option-input1:focus ~ .addition-checkbox__input-label::before {
+  outline: #3b99fc auto 5px;
+}
+
 .form-elements__addition-style-checkbox {
   box-sizing: border-box;
   padding: 0;
@@ -3359,6 +3363,11 @@ input[type=radio].visually-hidden {
 .addition-checkbox__option-input:checked + .addition-checkbox__input-label::before {
   background-size: 23px;
   background-image: url(../img/check-blue.svg);
+}
+
+#addition-radio__option-input1:focus ~ .addition-radio__input-label::before,
+#addition-radio__option-input2:focus ~ .addition-radio__input-label::before {
+  outline: #3b99fc auto 5px;
 }
 
 .form-elements__addition-style-radio {
@@ -3455,6 +3464,11 @@ input[type=radio].visually-hidden {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+}
+
+.tumbler-small__grey-input:focus ~ .tumbler-small__grey,
+.tumbler-small__white-input:focus ~ .tumbler-small__white {
+  outline: #3b99fc auto 5px;
 }
 
 .tumbler-small__name {
@@ -3566,6 +3580,11 @@ input[type=radio].visually-hidden {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+}
+
+.tumbler-big__grey-input:focus ~ .tumbler-big__grey,
+.tumbler-big__white-input:focus ~ .tumbler-big__white {
+  outline: #3b99fc auto 5px;
 }
 
 .tumbler-big__name {
@@ -4872,6 +4891,7 @@ input[type=radio].visually-hidden {
   border: 2px dashed rgba(24, 25, 32, 0.1);
   border-radius: 8px;
   background-color: #f3f3f4;
+  z-index: 1000;
 }
 
 .more-file__form-text {
@@ -4892,12 +4912,16 @@ input[type=radio].visually-hidden {
   border-radius: 25px;
   background-color: #2d52da;
   cursor: pointer;
-  outline: none;
+  z-index: 1000;
 }
 
-.more-file__form-button:hover,
+.more-file__form-button:hover {
+  background-color: #294bc7;
+}
+
 .more-file__form-button:focus {
   background-color: #294bc7;
+  outline: #3b99fc auto 5px;
 }
 
 .more-file__form-submit {
@@ -4909,7 +4933,6 @@ input[type=radio].visually-hidden {
   font-size: 14px;
   border-radius: 25px;
   border: none;
-  outline: none;
   background-color: #2d52da;
   cursor: pointer;
 }
